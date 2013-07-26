@@ -1,0 +1,114 @@
+.tile-portofsavannah {
+	height:65px;
+	background-color: $dark-blue;
+	color:white;
+	text-align:center;
+}
+
+.tile-portofbrunswick {
+	height:65px;
+	background-color: $blue;
+	color:white;
+	text-align:center;
+}
+
+.tile-videos {
+	height:290px;
+	text-align:center;
+	background-color: $orange;
+	h3 {
+		margin-top: 125px;
+	}
+}
+
+.tile-more-impact {
+	height:290px;
+	background-color: $light-blue;
+	margin-left:0;
+
+	background-image: url('../images/home/more-impact.jpg');
+	background-repeat: no-repeat;
+	background-position: center right; 
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	h3 {
+		margin-top: 125px;
+	}
+	.well {
+		color: $white;
+		background-color: rgba($dark-blue, 0.5);
+		border:none;
+	}
+}
+
+.tile-portfactscarousel {
+	background-color:#c2d1d4;
+
+	.carousel-indicators {
+		position: static;
+		margin: 0 auto 10px auto;
+		list-style: none;
+		width: 50px;
+	}
+
+	.carousel .item img {
+		margin: 0 auto;
+	}
+
+	.carousel-control {
+		background-color: tint($dark-blue, 20%);
+		position: absolute;
+		top:50%;
+	}
+}
+
+.tile-sustainability {
+	height:290px;
+	text-align:center;
+
+	background-color: $gray;
+	background: url('../images/home/sustainability.jpg') no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/sustainability.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/sustainability.jpg', sizingMethod='scale')";
+	*/
+
+	h3 {
+		margin-top: 125px;
+
+	}
+}
+
+.tile-shep {
+	height:290px;
+	text-align:center;
+	background-color: $orange;
+	margin-left:0;
+	padding:0 5px;
+
+	h3 {
+		line-height: 32px;
+		margin-top: 105px;
+	}
+}
+
+.tile-press-releases {
+	
+	height:290px;
+	line-height:290px;
+	text-align:center;
+	background-color: $dark-blue;
+	margin-left:0;
+
+	h3 {
+		margin-top: 125px;
+	}
+}

@@ -1,0 +1,45 @@
+.big-header {
+	margin-top: 9px;
+}
+
+.big-header-2 {
+	margin-top: 9px;
+	margin-bottom: 28px;
+}
+
+.horizontal-divider {
+	margin-bottom:30px;
+	height:6px;
+	background-color: $blue;
+}
+
+.footer {
+	padding:44px 0;
+	background-color: $dark-blue;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+	font-size: 0.9em;
+	color: $gray;
+
+	strong {
+		text-transform: uppercase;
+	}
+
+	ul { 
+		margin-left: 0;
+		list-style-type: none;
+	}
+
+	a {
+		color: $gray;
+	}
+
+	a:hover {
+		color: $white;
+	}
+
+	.copyright {
+		margin-top: 15px;
+	}
+}
