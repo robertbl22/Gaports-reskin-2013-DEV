@@ -1,5 +1,6 @@
-$iconSpritePath: "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+$iconSpritePath: "../images/glyphicons-halflings.png" !default;
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png" !default;
+$FontAwesomePath: "/bower_components/font-awesome/font" !default;
 
 $dark-blue: #00274c;
 $blue: #007db1; /* #006990; */
@@ -8,3 +9,4 @@ $light-blue: #88cbde;
 $orange: #f7971e;
 $gray: #96a0a9;
 $light-gray: #ccd2d7;
+$gpa-banner-bg-blue: #074469;

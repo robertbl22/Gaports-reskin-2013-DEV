@@ -325,7 +325,7 @@ module.exports = function (grunt) {
         'concat',
         'uglify',
         'copy',
-        'rev',
+        //'rev', //RWB: Remove file name versioning
         'usemin'
     ]);
 

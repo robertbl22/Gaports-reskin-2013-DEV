@@ -23,9 +23,9 @@
 
 .tile-more-impact {
 	height:290px;
-	background-color: $light-blue;
 	margin-left:0;
 
+	background-color: $light-blue;
 	background-image: url('../images/home/more-impact.jpg');
 	background-repeat: no-repeat;
 	background-position: center right; 
@@ -67,28 +67,26 @@
 }
 
 .tile-sustainability {
-	height:290px;
+	height:210px;
 	text-align:center;
-
+	
 	background-color: $gray;
-	background: url('../images/home/sustainability.jpg') no-repeat center center; 
+	background-image: url('../images/home/sustainability.jpg');
+	background-repeat: no-repeat;
+	background-position: center right; 
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	/*
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/sustainability.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home/sustainability.jpg', sizingMethod='scale')";
-	*/
 
 	h3 {
-		margin-top: 125px;
-
+		margin-top: 80px;
 	}
 }
 
 .tile-shep {
-	height:290px;
+	height:210px;
 	text-align:center;
 	background-color: $orange;
 	margin-left:0;
@@ -96,19 +94,32 @@
 
 	h3 {
 		line-height: 32px;
-		margin-top: 105px;
+		margin-top: 50px;
 	}
 }
 
 .tile-press-releases {
 	
-	height:290px;
-	line-height:290px;
+	height:210px;
 	text-align:center;
-	background-color: $dark-blue;
+	background-color: $blue;
 	margin-left:0;
 
 	h3 {
-		margin-top: 125px;
+	}
+
+	h5 {
+		line-height: normal;
+		margin: 20px;
+		text-align: left;
+
+		.icon-rss {
+			color: $dark-blue;
+		}
+	}
+
+	.more-link {
+		display: block;
+		text-align: right;
 	}
 }

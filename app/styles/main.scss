@@ -1,17 +1,21 @@
-
-@import "variables";
-
 /*********************************/
-/* Framework and Fonts */
-
+/* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
-@import 'sass-bootstrap/lib/bootstrap';
-@import 'sass-bootstrap/lib/responsive';
+@import "font-awesome/scss/font-awesome";
 @import "gpa-round-icons";
 
 /*********************************/
-/* Design */
+/* Variables */
+@import "variables";
 
+/*********************************/
+/* Framework */
+@import "sass-bootstrap/lib/bootstrap";
+@import "sass-bootstrap/lib/responsive";
+
+/*********************************/
+/* Design */
+@import "diagnostic-panel";
 @import "bootstrap-overrides";
 @import "html";
 @import "layout";
