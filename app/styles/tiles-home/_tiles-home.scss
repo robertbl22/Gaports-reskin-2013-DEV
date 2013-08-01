@@ -1,5 +1,13 @@
 .rslides {
 	margin: 0 auto;
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		background-color: $white;
+	}
 }
 
 .big-photo img {
