@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+jQuery(document).ready(function(){$(".rslides").responsiveSlides({speed:2e3,timeout:1e4,maxwidth:1920})});
