@@ -1,3 +1,26 @@
+.rslides {
+	margin: 0 auto;
+}
+
+.big-photo img {
+	width:100%;
+}
+
+.big-header {
+	margin-top: 9px;
+}
+
+.big-header-2 {
+	margin-top: 9px;
+	margin-bottom: 28px;
+}
+
+.horizontal-divider {
+	margin-bottom:30px;
+	height:6px;
+	background-color: $blue;
+}
+
 .tile-portofsavannah {
 	height:65px;
 	background-color: $dark-blue;
@@ -53,16 +76,21 @@
 		margin: 0 auto 10px auto;
 		list-style: none;
 		width: 50px;
+		cursor: pointer;
 	}
 
-	.carousel .item img {
-		margin: 0 auto;
+	.carousel-inner .item {
+		img {
+			margin: 0 auto;
+		}
 	}
 
 	.carousel-control {
 		background-color: tint($dark-blue, 20%);
 		position: absolute;
 		top:50%;
+
+		@include transition(opacity .2s ease);
 	}
 }
 
@@ -87,39 +115,48 @@
 
 .tile-shep {
 	height:210px;
-	text-align:center;
+	/* text-align:center; */
 	background-color: $orange;
 	margin-left:0;
-	padding:0 5px;
+	/* padding:0 5px; */
+
+	table {
+		height: 210px;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	td {
+		text-align: left;
+		vertical-align: middle;
+	}
 
 	h3 {
 		line-height: 32px;
-		margin-top: 50px;
+		/* margin-top: 40px; */
 	}
 }
 
 .tile-press-releases {
 	
 	height:210px;
-	text-align:center;
+	/* text-align:center; */
 	background-color: $blue;
 	margin-left:0;
 
-	h3 {
+	table {
+		height: 210px;
+		width: 80%;
+		margin: 0 auto;
 	}
 
-	h5 {
-		line-height: normal;
-		margin: 20px;
+	td {
 		text-align: left;
-
-		.icon-rss {
-			color: $dark-blue;
-		}
+		vertical-align: middle;
 	}
 
-	.more-link {
-		display: block;
-		text-align: right;
+	h3 {
+		line-height: 32px;
+		/* margin-top: 50px; */
 	}
 }

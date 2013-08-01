@@ -6,6 +6,7 @@
 /* Framework */
 @import "sass-bootstrap/lib/bootstrap";
 @import "sass-bootstrap/lib/responsive";
+@import "../scripts/vendor/responsiveslides.css";
 
 /*********************************/
 /* Fonts */
@@ -14,8 +15,65 @@
 @import "gpa-round-icons"; 
 
 /*********************************/
-/* Design */
+/* Responsive Design */
+
+/* Default */
 @import "diagnostic-panel";
-@import "html";
-@import "layout";
-@import "tiles-home";
+@import "html/html";
+@import "gpa-banner/gpa-banner";
+@import "tiles-home/tiles-home";
+@import "navbar/navbar";
+@import "footer/footer";
+
+@media (min-width: 1700px){
+	/* @import "xxx-1700-up"; */
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	/* @import "xxx-1200-up"; */
+	@import "html/html-1200-up";
+	@import "gpa-banner/gpa-banner-1200-up";
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+	/* @import "xxx-980-1199"; */
+	@import "gpa-banner/gpa-banner-980-1199";
+}
+
+@media (max-width: 979px) {
+	/* @import "xxx-979-down"; */
+	@import "tiles-home/tiles-home-979-down";
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	/* @import "xxx-768-979"; */
+	@import "html/html-768-979";
+	@import "navbar/navbar-search-dropdown-768-979";
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	/* @import "xxx-767-down"; */
+	@import "html/html-768-979";
+	@import "tiles-home/tiles-home-767-down";
+	@import "footer/footer-767-down";
+	@import "gpa-banner/gpa-banner-mobile";
+}
+
+@media (max-width: 580px) {
+	/* @import "xxx-580-down"; */
+	@import "html/html-580-down";
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	/* @import "xxx-480-down"; */
+	@import "html/html-480-down";
+	@import "tiles-home/tiles-home-480-down";
+}
+
+@media (max-width: 320px)  {
+	/* @import "xxx-320-down"; */
+}
