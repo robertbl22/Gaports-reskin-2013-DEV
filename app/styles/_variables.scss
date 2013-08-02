@@ -1,7 +1,10 @@
+/* Fonts */
 $iconSpritePath: "../images/glyphicons-halflings.png" !default;
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png" !default;
-$FontAwesomePath: "/styles/fonts" !default;
+$FontAwesomePath: "../styles/fonts" !default;
+$gpaBaseFontFamily: 'Open Sans', sans-serif !default;
 
+/* Colors */
 $dark-blue: #00274c;
 $blue: #007db1; /* #006990; */
 $bright-blue: #04a7ea;

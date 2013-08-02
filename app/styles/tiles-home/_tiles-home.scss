@@ -3,7 +3,7 @@ ul.rslides {
 	list-style-type: none;
 
 	li {
-		background-color: $white;
+		width: 100%; /* Required for IE8 */
 	}
 }
 

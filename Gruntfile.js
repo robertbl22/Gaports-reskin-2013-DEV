@@ -265,7 +265,10 @@ module.exports = function (grunt) {
                         '*.{ico,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/*'
+                        'styles/fonts/*',
+                        'scripts/gpa-round-icons-lte-ie7.js', //RWB: old IE conditional script
+                        'scripts/vendor/es5-shim.min.js', //RWB: old IE conditional script
+                        'scripts/vendor/respond.min.js' //RWB: old IE conditional script
                     ]
                 }, {
                     expand: true,
@@ -273,6 +276,14 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>/images',
                     src: [
                         'generated/*'
+                    ]
+                }, {
+                    // RWB: Added this section for IE7 support
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/bower_components/font-awesome/css',
+                    dest: '<%= yeoman.dist %>/styles',
+                    src: [
+                        'font-awesome-ie7.min.css'
                     ]
                 }]
             }
