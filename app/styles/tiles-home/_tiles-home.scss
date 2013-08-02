@@ -7,11 +7,11 @@ ul.rslides {
 	}
 }
 
-.big-photo img {
+.hero-photo img {
 	width:100%;
 }
 
-.big-header {
+.hero-headline {
 	margin-top: 9px;
 }
 
@@ -24,6 +24,7 @@ ul.rslides {
 	margin-bottom:30px;
 	height:6px;
 	background-color: $blue;
+	float: none;
 }
 
 .tile-portofsavannah {
