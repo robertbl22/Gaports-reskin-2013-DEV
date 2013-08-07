@@ -5,7 +5,11 @@
     "sass-bootstrap": "~2.3.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.9.1",
-    "font-awesome": "~3.2.1"
+    "font-awesome": "~3.2.1",
+    "sass-bootstrap-3": "https://github.com/jlong/sass-twitter-bootstrap/archive/3.0.0-wip.zip"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "sass-bootstrap": "~3.0.0"
+  }
 }

@@ -4,8 +4,8 @@
 
 /*********************************/
 /* Framework */
-@import "sass-bootstrap/lib/bootstrap";
-@import "sass-bootstrap/lib/responsive";
+@import "sass-bootstrap-3/lib/bootstrap";
+/* @import "sass-bootstrap/lib/responsive"; */
 @import "../scripts/vendor/responsiveslides.css";
 
 /*********************************/
@@ -76,4 +76,8 @@
 
 @media (max-width: 320px)  {
 	/* @import "xxx-320-down"; */
+}
+
+.lt-ie8 {
+	@import "ie7";
 }

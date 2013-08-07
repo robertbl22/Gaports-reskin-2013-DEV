@@ -2,14 +2,20 @@
 $iconSpritePath: "../images/glyphicons-halflings.png" !default;
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png" !default;
 $FontAwesomePath: "../styles/fonts" !default;
-$gpaBaseFontFamily: 'Open Sans', sans-serif !default;
+$gpa-font-family-sans-serif: 'Open Sans', sans-serif !default;
 
 /* Colors */
-$dark-blue: #00274c;
-$blue: #007db1; /* #006990; */
-$bright-blue: #04a7ea;
-$light-blue: #88cbde;
-$orange: #f7971e;
-$gray: #96a0a9;
-$light-gray: #ccd2d7;
+$gpa-dark-blue: #00274c;
+$gpa-blue: #007db1; /* #006990; */
+$gpa-bright-blue: #04a7ea;
+$gpa-light-blue: #88cbde;
+$gpa-orange: #f7971e;
+$gpa-gray: #96a0a9;
+$gpa-light-gray: #ccd2d7;
 $gpa-banner-bg-blue: #074469;
+
+/* Accent Colors */
+$gpa-dark-blue-accent: darken($gpa-dark-blue, 6%);
+$gpa-blue-accent: darken($gpa-blue, 6%);
+$gpa-orange-accent: darken($gpa-orange, 10%);
+$gpa-light-blue-accent: darken($gpa-dark-blue, 10%);

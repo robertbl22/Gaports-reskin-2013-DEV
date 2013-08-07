@@ -1,5 +1,41 @@
+.tile {
+	color: $white;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	h1, h2, h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h1, h2, h3, h4, h5 {
+		font-weight:300;
+		color: $white;
+	}
+
+	.tile-table {
+		display: table;
+		width: 100%;
+		height: inherit;
+	}
+	.tile-table-cell {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		@include transition(background-color 0.3s ease);
+	}
+	.tile-table-cell:hover {
+		background-image: url('../images/icn-more.png');
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+}
+
 ul.rslides {
 	margin: 0 auto;
+	padding: 0;
 	list-style-type: none;
 
 	li {
@@ -13,10 +49,12 @@ ul.rslides {
 }
 
 .hero-headline {
+	padding-left: 0;
 	margin-top: 9px;
 }
 
 .big-header-2 {
+	padding-left: 0;
 	margin-top: 9px;
 	margin-bottom: 28px;
 }
@@ -24,146 +62,130 @@ ul.rslides {
 .horizontal-divider {
 	margin-bottom:30px;
 	height:6px;
-	background-color: $blue;
+	background-color: $gpa-blue;
 	float: none;
 }
 
 .tile-portofsavannah {
 	height:65px;
-	background-color: $dark-blue;
-	color:white;
-	text-align:center;
+	background-color: $gpa-dark-blue;
+	.tile-table-cell { height:65px; }
+	.tile-table-cell:hover {
+		background-color: $gpa-dark-blue-accent;
+	}
 }
 
 .tile-portofbrunswick {
 	height:65px;
-	background-color: $blue;
-	color:white;
-	text-align:center;
+	background-color: $gpa-blue;
+	.tile-table-cell { height:65px; }
+	.tile-table-cell:hover {
+		background-color: $gpa-blue-accent;
+	}
 }
 
 .tile-videos {
 	height:290px;
-	text-align:center;
-	background-color: $orange;
-	h3 {
-		margin-top: 125px;
+	background-color: $gpa-orange;
+	.tile-table-cell  { height:290px; }
+	.tile-table-cell:hover {
+		background-color: $gpa-orange-accent;
 	}
 }
 
 .tile-more-impact {
 	height:290px;
-	margin-left:0;
 
-	background-color: $light-blue;
+	background-color: $gpa-light-blue;
 	background-image: url('../images/home/more-impact.jpg');
 	background-repeat: no-repeat;
 	background-position: center right; 
+	@include background-size(cover);
+	-ms-behavior: url('scripts/vendor/backgroundsize.min.htc');
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	h3 {
-		margin-top: 125px;
+	.tile-table-cell  { 
+		background-color: rgba($gpa-orange-accent, 0.0);
+		height:290px; 
+		text-align: left;
+		padding-left: 20px;
 	}
-	.well {
-		color: $white;
-		background-color: rgba($dark-blue, 0.5);
-		border:none;
+	.tile-table-cell:hover {
+		background-color: rgba($gpa-dark-blue, 0.2);
 	}
 }
 
 .tile-portfactscarousel {
 	background-color:#c2d1d4;
+	padding: 0;
 
 	.carousel-indicators {
-		position: static;
-		margin: 0 auto 10px auto;
-		list-style: none;
-		width: 50px;
-		cursor: pointer;
+		bottom: 0;
 	}
 
 	.carousel-inner .item {
-		img {
-			margin: 0 auto;
-		}
+		text-align: center;
+		padding-bottom: 20px;
 	}
 
 	.carousel-control {
-		background-color: tint($dark-blue, 20%);
-		position: absolute;
-		top:50%;
+		font-size: 100px;
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		width: 5%;
+	}
 
-		@include transition(opacity .2s ease);
+	.carousel-control:hover {
+		background-color: $gpa-blue;
 	}
 }
 
 .tile-sustainability {
 	height:210px;
-	text-align:center;
 	
-	background-color: $gray;
+	background-color: $gpa-gray;
 	background-image: url('../images/home/sustainability.jpg');
 	background-repeat: no-repeat;
-	background-position: center right; 
+	background-position: center center;
+	@include background-size(cover);
+	-ms-behavior: url('scripts/vendor/backgroundsize.min.htc');
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	h3 {
-		margin-top: 80px;
+	.tile-table-cell  { 
+		background-color: rgba($gpa-orange-accent, 0.0);
+		height:210px; 
+	}
+	.tile-table-cell:hover {
+		background-color: rgba($gpa-orange-accent, 0.3);
 	}
 }
 
 .tile-shep {
 	height:210px;
-	/* text-align:center; */
-	background-color: $orange;
-	margin-left:0;
-	/* padding:0 5px; */
-
-	table {
-		height: 210px;
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	td {
-		text-align: left;
-		vertical-align: middle;
-	}
+	background-color: $gpa-orange;
 
 	h3 {
 		line-height: 32px;
-		/* margin-top: 40px; */
+	}
+	.tile-table-cell { 
+		height:210px; 
+		text-align: left;
+		padding-left: 20px;
+	}
+	.tile-table-cell:hover {
+		background-color: $gpa-orange-accent;
 	}
 }
 
 .tile-press-releases {
-	
 	height:210px;
-	/* text-align:center; */
-	background-color: $blue;
-	margin-left:0;
-
-	table {
-		height: 210px;
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	td {
-		text-align: left;
-		vertical-align: middle;
-	}
+	background-color: $gpa-blue;
 
 	h3 {
 		line-height: 32px;
-		/* margin-top: 50px; */
+	}
+	h3:hover {background-color: $gpa-blue;}
+	h4:hover {background-color: $gpa-blue;}
+	.tile-table-cell { height:210px; }
+	.tile-table-cell:hover {
+		background-color: $gpa-blue-accent;
 	}
 }

@@ -1,11 +1,11 @@
 .footer {
 	padding:44px 0;
-	background-color: $dark-blue;
+	background-color: $gpa-dark-blue;
 
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
 	font-size: 0.9em;
-	color: $gray;
+	color: $gpa-gray;
 
 	strong {
 		text-transform: uppercase;
@@ -13,11 +13,12 @@
 
 	ul { 
 		margin-left: 0;
+		padding-left: 0;
 		list-style-type: none;
 	}
 
 	a {
-		color: $gray;
+		color: $gpa-gray;
 	}
 
 	a:hover {

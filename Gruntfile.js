@@ -267,8 +267,7 @@ module.exports = function (grunt) {
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/*',
                         'scripts/gpa-round-icons-lte-ie7.js', //RWB: old IE conditional script
-                        'scripts/vendor/es5-shim.min.js', //RWB: old IE conditional script
-                        'scripts/vendor/respond.min.js' //RWB: old IE conditional script
+                        'scripts/vendor/*', //RWB
                     ]
                 }, {
                     expand: true,

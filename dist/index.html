@@ -11,15 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
+
     <script src="scripts/vendor/modernizr.js"></script>
-    <!--[if IE 7]>
+
+    <!--[if lt IE 8]>
     <link href="styles/font-awesome-ie7.min.css" rel="stylesheet">
+    <script src="scripts/gpa-round-icons-lte-ie7.js"></script>
     <![endif]-->
-    <!--[if lte IE 8]>
+
+    <!--[if lt IE 9]>
     <script src="scripts/vendor/respond.min.js"></script>
     <script src="scripts/vendor/es5-shim.min.js"></script>
     <script> document.isIE8orLess = true; </script>
     <![endif]-->
+
 </head>  
 <body>
 
@@ -33,69 +38,80 @@
     <!-- *********************************** -->
     <!-- NAVBAR -->
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active nav-home"><a href="#"><i class="icon-home"></i></a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Port of Savannah</a>
-                        </li>
-                        <li>
-                            <a href="#">Port of Brunswick</a> 
-                        </li>
-                        <li>
-                            <a href="#">Media</a>
-                        </li>
-                        <li class="dropdown hidden-phone">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                <i class="icon-search"></i> <b class="caret"></b>
-                            </a>
-                            <div class="navbar-search-dropdown dropdown-menu">
-                                <form class="navbar-search">
-                                    <input type="text" placeholder="Search">
-                                </form>
-                            </div>
-                        </li>
-                        <li class="visible-phone">
+        <div class="container">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand visible-sm" href="#"><img src="images/gpa-banner-mobile.png" alt="Georgia Ports Authority"></a>
+
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active nav-home"><a href="#"><i class="icon-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Port of Savannah</a>
+                    </li>
+                    <li>
+                        <a href="#">Port of Brunswick</a> 
+                    </li>
+                    <li>
+                        <a href="#">Media</a>
+                    </li>
+                    <li class="dropdown hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-search"></i> <b class="caret"></b>
+                        </a>
+                        <div class="dropdown-menu navbar-search-dropdown">
                             <form class="navbar-search">
-                                <input type="text" class="search-query" placeholder="Search">
+                                <input type="text" placeholder="Search">
                             </form>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li class="visible-sm">
+                        <form class="navbar-search">
+                            <input type="text" class="search-query" placeholder="Search">
+                        </form>
+                    </li>
+                </ul>
             </div>
+
         </div>
     </div>
     <!-- // END: NAVBAR -->
 
     <!-- *********************************** -->
     <!-- GPA BANNER -->
-    <div class="container">
+    <div class="container gpa-banner hidden-sm">
         <div class="row">
-            <div class="offset9 span3 gpa-banner hidden-phone">
-                <img src="images/gpa-banner.png" alt="Georgia Ports Authority" class="pull-right">
+            <div class="col-sm-3">
+                <img src="images/gpa-banner.png" alt="Georgia Ports Authority">
             </div>
         </div>
     </div>
+    <!-- <div class="container gpa-banner">
+        <div class="row">
+            <div class="col-sm-9">&nbsp;</div>
+            <div class="col-sm-3 hidden-sm">
+                <img src="images/gpa-banner.png" alt="Georgia Ports Authority" />
+            </div>
+        </div>
+    </div> -->
     <!-- // END: GPA BANNER -->
 
     <!-- *********************************** -->
     <!-- MOBILE BANNER -->
-    <div class="container">
-        <div class="gpa-banner-mobile visible-phone">
-            <img src="images/gpa-banner-mobile.png" alt="Georgia Ports Authority">
+    <!-- <div class="container">
+        <div class="gpa-banner-mobile visible-sm">
+            <img src="images/gpa-banner-mobile.png" alt="Georgia Ports Authority" />
         </div>
-    </div>
+    </div> -->
     <!-- // END: MOBILE BANNER -->
 
     <!-- *********************************** -->
@@ -113,7 +129,7 @@
         <!-- *********************************** -->
         <!-- HERO HEADLINE -->
         <div class="row">
-            <div class="span12 hero-headline">
+            <div class="col-sm-12 hero-headline">
                 <ul class="rslides">
                     <li><h1>More Services Than Any Other East Or&nbsp;Gulf Coast&nbsp;Port.</h1></li>
                     <li><h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1></li>
@@ -122,45 +138,66 @@
             </div>
         </div>
         <div class="row">
-            <div class="span9 horizontal-divider"></div>
+            <div class="col-sm-9 horizontal-divider"></div>
         </div>
         <!-- *********************************** -->
         <!-- TWO PORTS -->
         <div class="row">
-            <div class="span12 tile-portofsavannah">
-                <h3>
-                    <a href="#">Discover the Port of Savannah</a> <i class="icon-angle-right"></i>
-                </h3>
+            <div class="col-sm-12 tile tile-portofsavannah">
+                <div class="tile-table">
+                    <a href="#" class="tile-table-cell">
+                        <h3>
+                            Discover the Port of Savannah <i class="icon-angle-right"></i>
+                        </h3>
+                    </a>   
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="span12 tile-portofbrunswick" style="">
-                <h3>
-                    <a href="#">Discover the Port of Brunswick</a> <i class="icon-angle-right"></i>
-                </h3>
+            <div class="col-sm-12 tile tile-portofbrunswick">
+                <div class="tile-table">
+                    <a href="#" class="tile-table-cell">
+                        <h3>
+                            Discover the Port of Brunswick <i class="icon-angle-right"></i>
+                        </h3>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- *********************************** -->
         <!-- VIDEOS, MORE IMPACT -->
         <div class="row">
-            <div class="span2 tile-videos">
-                <h3>
-                    <a href="#">Videos</a> <i class="icon-youtube-play"></i>
-                </h3>
+            <div class="col-sm-2 tile tile-videos">
+                <div class="tile-table">
+                    <a href="#" class="tile-table-cell">
+                        <h3>
+                            Videos <i class="icon-youtube-play"></i>
+                        </h3>
+                    </a>
+                </div>
             </div>
-            <div class="span7 tile-more-impact">
-                <div class="span3">
-                    <h3>
-                        <a href="#">More Impact</a> <i class="icon-angle-right"></i>
-                    </h3>
+            <div class="col-sm-7 tile tile-more-impact">
+                <div class="tile-table">
+                    <a href="#" class="tile-table-cell">
+                        <h3>
+                            More Impact <i class="icon-angle-right"></i>
+                        </h3>
+                    </a>
                 </div>
             </div>
         </div>
         <!-- *********************************** -->
         <!-- CAROUSEL -->
         <div class="row">
-            <div class="span12 tile-portfactscarousel">
+            <div class="col-sm-12 tile tile-portfactscarousel">
                 <div id="PortFactsCarousel" class="carousel slide">
+
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#PortFactsCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#PortFactsCarousel" data-slide-to="1"></li>
+                        <li data-target="#PortFactsCarousel" data-slide-to="2"></li>
+                    </ol>
 
                     <!-- Carousel items -->
                     <div class="carousel-inner">
@@ -179,51 +216,51 @@
                     <a class="carousel-control left" href="#PortFactsCarousel" data-slide="prev">&lsaquo;</a>
                     <a class="carousel-control right" href="#PortFactsCarousel" data-slide="next">&rsaquo;</a>
 
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#PortFactsCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#PortFactsCarousel" data-slide-to="1"></li>
-                        <li data-target="#PortFactsCarousel" data-slide-to="2"></li>
-                    </ol>
-
                 </div>
             </div>
         </div>
         <!-- ************************************ -->
         <!-- SUSTAINABILITY, SHEP, PRESS RELEASES -->
         <div class="row">
-            <div class="span4 tile-sustainability">
-                <h3><a href="#">Sustainability</a> <i class="icon-angle-right"></i></h3>
+            <div class="col-sm-4 tile tile-sustainability">
+                <div class="tile-table">
+                    <a href="#" class="tile-table-cell">
+                        <h3>Sustainability <i class="icon-angle-right"></i></h3>
+                    </a>
+                </div>
             </div>
-            <div class="span3 tile-shep">
-                <table>
-                    <tr>
-                        <td>
-                            <h3><a href="#">Savannah Harbor Deepening <span style="white-space:nowrap">Project <i class="icon-angle-right"></i></span></a></h3>
-                        </td>
-                    </tr>
-                </table>
+            <div class="col-sm-3 tile tile-shep">
+                <div class="tile-table">
+                    <a href="#" class="tile-table-cell">
+                        <h3>
+                            Savannah Harbor Deepening <span style="white-space:nowrap">Project <i class="icon-angle-right"></i></span>
+                        </h3>
+                    </a>
+                </div>
             </div>
-            <div class="span4 tile-press-releases">
-                <table>
-                    <tr>
-                        <td>
-                            <h3><a href="#">Press <span style="white-space:nowrap">Releases <i class="icon-angle-right"></i></span></a></h3>
-                            <h4><i class="icon-rss"></i>&nbsp;&nbsp;<a href="#">GPA achieves growth across all major indices</a></h4>
-                        </td>
-                    </tr>
-                </table>
+            <div class="col-sm-4 tile tile-press-releases">
+                <div class="tile-table">
+                    <div class="tile-table-cell">
+                        <h3>
+                            <a href="#Press+Releases">Press <span style="white-space:nowrap">Releases <i class="icon-angle-right"></i></span></a>
+                        </h3>
+                        <h4>
+                            <a href="#ArticleLink"><i class="icon-rss"></i>&nbsp;&nbsp;GPA achieves growth across all major indices</a>
+                        </h4>
+                    </div>
+                </div>                       
             </div>
         </div>
         <!-- ************************************ -->
         <!-- BIG HEADLINE -->
         <div class="row">
-            <div class="span7 big-header-2">
+            <div class="col-sm-7 big-header-2">
                 <h2>4th Busiest Container&nbsp;Port in&nbsp;the United&nbsp;States.</h2>
             </div>
         </div>
         <div class="row">
-            <div class="span7 horizontal-divider"></div>
+            <div class="col-sm-7 horizontal-divider"></div>
+            <div class="clearfix">&nbsp;</div>
         </div>
     </div>     
     <!-- *********************************** -->
@@ -231,7 +268,7 @@
     <div class="container-fluid footer">
         <div class="container">
             <div class="row">
-                <div class="span2">
+                <div class="col-sm-2">
                     <strong><a href="#">ABOUT</a></strong>
                     <ul>
                         <li class="li"><a href="#">Overview</a></li>
@@ -250,7 +287,7 @@
                         <li class="li"><a href="#">Mayors Point</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <strong>DEPARTMENTS</strong>
                     <ul>
                         <li class="li"><a href="#">Tariffs</a></li>
@@ -264,7 +301,7 @@
                         <li class="li"><a href="#">Customer Service</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <strong>CARGO SOLUTIONS</strong>
                     <ul>
                         <li class="li"><a href="#">Ro/Ro</a></li>
@@ -278,7 +315,7 @@
                         <li class="li"><a href="#">Port of Columbus</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <strong><a href="#">MEDIA</a></strong>
                     <ul>
                         <li class="li"><a href="#">Press Releases</a></li>
@@ -292,7 +329,7 @@
                         <li class="li"><a href="#">Media Requests</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <strong>CONTACT</strong>
                     <ul>
                         <li class="li"><a href="#">Chief Commercial Officer</a></li>
@@ -302,7 +339,7 @@
                         <li class="li"><a href="#">Corporate Communications</a></li>
                     </ul>
                 </div>
-                <div class="span2">
+                <div class="col-sm-2">
                     <strong>TOOLS</strong>
                     <ul>
                         <li class="li"><a href="#">Webaccess</a></li>
@@ -311,14 +348,15 @@
                     </ul>
                 </div>
             </div>
+            <div class="clearfix">&nbsp;</div>
             <div class="row copyright">
-                <div class="span4">
+                <div class="col-sm-4">
                     Copyright 2009-2013 by Georgia Ports Authority
                 </div>
-                <div class="span5 center">
+                <div class="col-sm-5 center">
                     <a href="#">Site Map</a> | <a href="#">Privacy Statement</a> | <a href="#">Terms&nbsp;&amp;&nbsp;Conditions</a>&nbsp;|&nbsp;<a href="#">Login</a>
                 </div>
-                <div class="span3">
+                <div class="col-sm-3">
                     Website by <a href="#">Realm Advertising</a>
                 </div>
             </div>
@@ -328,8 +366,6 @@
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
-
-<!--[if lte IE 7]><script src="scripts/gpa-round-icons-lte-ie7.js"></script><![endif]-->
 
 <script>
 var _gaq=[['_setAccount','UA-5738497-2'],['_trackPageview']];
