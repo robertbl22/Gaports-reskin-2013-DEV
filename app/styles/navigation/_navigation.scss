@@ -1,0 +1,61 @@
+
+/* Home Button */
+.navbar-inverse .nav .nav-home > a {
+	border-radius: 16px;
+	padding: 4px 8px;
+	margin-top: 9px; // Navbar is 50px high, this circle is 32px high
+	margin-right: 7px;
+	border:solid 1px $gpa-orange;
+	background-color: $gpa-orange;
+	color: $gpa-dark-blue;
+}
+
+.navbar-inverse .nav .nav-home > a:hover {
+	background-color: $gpa-orange;
+	border:solid 1px $white;
+}
+
+.navbar-inverse .nav .nav-home.active > a, 
+.navbar-inverse .nav .nav-home.active > a:hover {
+	background-color: $gpa-orange;
+	border:solid 1px $white;
+	color: $white;
+}
+
+/* Search */
+.navbar-search-dropdown {
+	padding: 10px;
+}
+
+.breadcrumb {
+	padding: 0;
+}
+
+/* Clear the top fixed navbar */
+/* Should be 50px margin, but for some reason there is a 1px gap, so using 49px */
+.top-of-page {
+	margin-top: 49px;
+}
+
+.sidenav {
+	background-color: lighten($gpa-light-gray, 12%);
+
+	.active {
+		background-color: $gpa-blue;
+		font-weight: 500;
+		color: $white;
+
+		a {
+			color: $white;
+		}
+	}
+
+	li > a {
+		padding:5px 15px;
+	}
+
+	li > a:hover {
+		background-color: lighten($gpa-light-gray, 8%);
+	}
+
+}

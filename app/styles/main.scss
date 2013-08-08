@@ -21,9 +21,12 @@
 @import "diagnostic-panel";
 @import "html/html";
 @import "gpa-banner/gpa-banner";
-@import "tiles-home/tiles-home";
-@import "navbar/navbar";
+/* @import "tiles-home/tiles-home"; */
+@import "tiles-white-paper/tiles-white-paper";
+@import "navigation/navigation";
 @import "footer/footer";
+
+@import "tiles-home/tiles-home-default";
 
 @media (min-width: 1700px){
 	/* @import "xxx-1700-up"; */
@@ -46,11 +49,17 @@
 	@import "tiles-home/tiles-home-979-down";
 }
 
+@media (min-width: 768px) {
+	/* @import "xxx-768-up"; */
+	@import "tiles-home/tiles-home-768-up";
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	/* @import "xxx-768-979"; */
 	@import "html/html-768-979";
-	@import "navbar/navbar-search-dropdown-768-979";
+	@import "navigation/navigation-768-979";
+	@import "tiles-white-paper/tiles-white-paper-768-979";
 }
 
 /* Landscape phone to portrait tablet */
@@ -59,7 +68,7 @@
 	@import "html/html-768-979";
 	@import "tiles-home/tiles-home-767-down";
 	@import "footer/footer-767-down";
-	@import "gpa-banner/gpa-banner-mobile";
+	@import "navigation/navigation-767-down"; 
 }
 
 @media (max-width: 580px) {
@@ -71,7 +80,6 @@
 @media (max-width: 480px) {
 	/* @import "xxx-480-down"; */
 	@import "html/html-480-down";
-	@import "tiles-home/tiles-home-480-down";
 }
 
 @media (max-width: 320px)  {

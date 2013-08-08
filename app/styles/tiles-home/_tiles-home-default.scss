@@ -1,6 +1,7 @@
-/* .tile {
+.tile {
 	color: $white;
 	padding: 0;
+	min-height:65px;
 
 	a {
 		text-decoration: none;
@@ -22,9 +23,9 @@
 	}
 	.tile-table-cell {
 		display: table-cell;
+		min-height:65px;
 		vertical-align: middle;
 		text-align: center;
-		//@include transition();
 		background-position: right -64px;
 		@include transition(background-color 0.5s ease, background-position 0.1s ease);
 	}
@@ -69,7 +70,6 @@ ul.rslides {
 }
 
 .tile-portofsavannah {
-	height:65px;
 	background-color: $gpa-dark-blue;
 	.tile-table-cell { height:65px; }
 	.tile-table-cell:hover {
@@ -78,7 +78,6 @@ ul.rslides {
 }
 
 .tile-portofbrunswick {
-	height:65px;
 	background-color: $gpa-blue;
 	.tile-table-cell { height:65px; }
 	.tile-table-cell:hover {
@@ -87,16 +86,13 @@ ul.rslides {
 }
 
 .tile-videos {
-	height:290px;
 	background-color: $gpa-orange;
-	.tile-table-cell  { height:290px; }
 	.tile-table-cell:hover {
 		background-color: $gpa-orange-accent;
 	}
 }
 
 .tile-more-impact {
-	height:290px;
 
 	background-color: $gpa-light-blue;
 	background-image: url('../images/home/more-impact.jpg');
@@ -107,7 +103,6 @@ ul.rslides {
 
 	.tile-table-cell  { 
 		background-color: rgba($gpa-orange-accent, 0.0);
-		height:290px; 
 		text-align: left;
 		padding-left: 20px;
 	}
@@ -142,7 +137,6 @@ ul.rslides {
 }
 
 .tile-sustainability {
-	height:210px;
 	
 	background-color: $gpa-gray;
 	background-image: url('../images/home/sustainability.jpg');
@@ -153,7 +147,6 @@ ul.rslides {
 
 	.tile-table-cell  { 
 		background-color: rgba($gpa-orange-accent, 0.0);
-		height:210px; 
 	}
 	.tile-table-cell:hover {
 		background-color: rgba($gpa-orange-accent, 0.3);
@@ -161,14 +154,12 @@ ul.rslides {
 }
 
 .tile-shep {
-	height:210px;
 	background-color: $gpa-orange;
 
 	h3 {
 		line-height: 32px;
 	}
 	.tile-table-cell { 
-		height:210px; 
 		text-align: left;
 		padding-left: 20px;
 	}
@@ -178,7 +169,6 @@ ul.rslides {
 }
 
 .tile-press-releases {
-	height:210px;
 	background-color: $gpa-blue;
 
 	h3 {
@@ -186,8 +176,7 @@ ul.rslides {
 	}
 	h3:hover {background-color: $gpa-blue;}
 	h4:hover {background-color: $gpa-blue;}
-	.tile-table-cell { height:210px; }
 	.tile-table-cell:hover {
 		background-color: $gpa-blue-accent;
 	}
-} */
+}
