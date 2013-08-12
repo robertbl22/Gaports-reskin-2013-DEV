@@ -49,22 +49,3 @@
 .leftpane .icon-jump {
 	background-image: url($icon-jump-small);
 }
-
-/* ************************ */
-/* TILEBUTTON TYPES      */
-
-.tilebutton-blue {
-	background-color: $gpa-blue;
-
-	.tilebutton-table-cell:hover {
-		background-color: $gpa-blue-accent;
-	}
-}
-
-.tilebutton-gray {
-	background-color: $gpa-gray;
-
-	.tilebutton-table-cell:hover {
-		background-color: $gpa-gray-accent;
-	}
-}

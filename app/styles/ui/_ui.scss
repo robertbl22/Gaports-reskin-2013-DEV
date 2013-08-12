@@ -1,0 +1,45 @@
+@import "breadcrumb/breadcrumb-default";
+@import "carousel/carousel-default";
+@import "footer/footer-default";
+@import "jumbotron/jumbotron-default";
+@import "navbar/navbar-default";
+@import "sidenav/sidenav-default"; 
+@import "tilebutton/tilebutton";
+
+/*********************************/
+/* Responsive Diagnostic Panel */
+@import "diagnostic-panel/diagnostic-panel";
+
+.lt-ie8 {
+	@import "carousel/carousel-default__ie7";
+	@import "footer/footer-default__ie7"; 
+}
+
+@media (min-width: 480px) {
+	/* @import "xxx-480-up"; */
+}
+
+@media (min-width: 768px) {
+	/* @import "xxx-768-up"; */
+	@import "footer/footer-768-up";
+	@import "jumbotron/jumbotron-768-up";
+	@import "navbar/navbar-768-up";
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	/* @import "xxx-768-979"; */
+	@import "navbar/navbar-768-979";
+}
+
+@media (min-width: 980px) {
+	/* @import "xxx-980-up"; */
+	@import "carousel/carousel-980-up";
+}
+
+@media (min-width: 1200px) {
+	/* @import "xxx-1200-up"; */
+}
+
+@media (min-width: 1700px){
+	/* @import "xxx-1700-up"; */
+}

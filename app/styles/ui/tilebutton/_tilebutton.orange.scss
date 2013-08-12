@@ -1,0 +1,7 @@
+.tilebutton.orange {
+	background-color: $gpa-orange;
+	
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-orange-accent;
+	}
+}

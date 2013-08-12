@@ -6,7 +6,7 @@ $row5-height: 210px;
 
 /************************/
 /* ROW 3 */
-.tilebutton-videos {
+.tilebutton.videos {
 	height:$row3-height;
 	min-width: 180px;
 	.tilebutton-table-cell { 
@@ -14,7 +14,7 @@ $row5-height: 210px;
 	}
 }
 
-.tilebutton-more-impact {
+.tilebutton.more-impact {
 	height:$row3-height;
 	.tilebutton-table-cell  { 
 		height:$row3-height; 
@@ -25,22 +25,22 @@ $row5-height: 210px;
 
 /************************/
 /* ROW 4 */
-.tilebutton-portfactscarousel {
-	background-color:#c2d1d4;
+.tilebutton.portfactscarousel {
+	background-color:$gpa-pale-blue;
 	padding: 0;
 	height: auto;
 }
 
 /************************/
 /* ROW 5 */
-.tilebutton-sustainability {
+.tilebutton.sustainability {
 	height:$row5-height;
 	.tilebutton-table-cell  { 
 		height:$row5-height; 
 	}
 }
 
-.tilebutton-shep {
+.tilebutton.shep {
 	height:$row5-height;
 	.tilebutton-table-cell { 
 		height:$row5-height; 
@@ -49,7 +49,7 @@ $row5-height: 210px;
 	}
 }
 
-.tilebutton-press-releases {
+.tilebutton.press-releases {
 	height:$row5-height;
 	.tilebutton-table-cell { 
 		height:$row5-height; 

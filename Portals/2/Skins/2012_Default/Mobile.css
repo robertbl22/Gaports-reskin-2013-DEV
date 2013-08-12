@@ -1,0 +1,17 @@
+/* CSS Document */
+
+#Body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:1em;
+	color:#000000;
+	background-color:#FFF;
+}
+
+table, tr, td {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+
+.body-container {
+	padding:20px;
+}

@@ -14,18 +14,18 @@
 
     <script src="scripts/vendor/modernizr.js"></script>
 
-<!--[if lt IE 8]>
-<link href="styles/font-awesome-ie7.min.css" rel="stylesheet">
-<script src="scripts/gpa-round-icons-lte-ie7.js"></script>
-<![endif]-->
+    <!--[if lt IE 8]>
+    <link href="styles/font-awesome-ie7.min.css" rel="stylesheet">
+    <script src="scripts/gpa-round-icons-lte-ie7.js"></script>
+    <![endif]-->
 
-<!--[if lt IE 9]>
-<script src="scripts/vendor/respond.min.js"></script>
-<script src="scripts/vendor/es5-shim.min.js"></script>
-<script> document.isIE8orLess = true; </script>
-<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="scripts/vendor/respond.min.js"></script>
+    <script src="scripts/vendor/es5-shim.min.js"></script>
+    <script> document.isIE8orLess = true; </script>
+    <![endif]-->
 
-</head>  
+</head>
 <body>
 
     <!-- *********************************** -->
@@ -82,14 +82,24 @@
                         </a>
                         <div class="dropdown-menu navbar-search-dropdown">
                             <form class="navbar-search">
-                                <input type="text" placeholder="Search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Go!</button>
+                                    </span>
+                                </div>
                             </form>
                         </div>
                     </li>
                     <!-- Mobile Search -->
                     <li class="visible-sm">
                         <form class="navbar-search">
-                            <input type="text" class="search-query" placeholder="Search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Go!</button>
+                                </span>
+                            </div>
                         </form>
                     </li>
                 </ul>
@@ -138,7 +148,7 @@
         <!-- *********************************** -->
         <!-- TWO PORTS -->
         <div class="row">
-            <div class="col-sm-12 tilebutton tilebutton-portofsavannah">
+            <div class="col-sm-12 tilebutton dark-blue portofsavannah">
                 <div class="tilebutton-table">
                     <a href="#" class="tilebutton-table-cell icon-jump">
                         <h3>
@@ -149,7 +159,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 tilebutton tilebutton-portofbrunswick">
+            <div class="col-sm-12 tilebutton blue portofbrunswick">
                 <div class="tilebutton-table">
                     <a href="#" class="tilebutton-table-cell icon-jump">
                         <h3>
@@ -162,7 +172,7 @@
         <!-- *********************************** -->
         <!-- VIDEOS, MORE IMPACT -->
         <div class="row">
-            <div class="col-sm-2 tilebutton tilebutton-videos">
+            <div class="col-sm-2 tilebutton orange videos">
                 <div class="tilebutton-table">
                     <a href="#" class="tilebutton-table-cell icon-jump">
                         <h3>
@@ -171,7 +181,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-7 tilebutton tilebutton-more-impact">
+            <div class="col-sm-7 tilebutton more-impact">
                 <div class="tilebutton-table">
                     <a href="#" class="tilebutton-table-cell icon-jump">
                         <h3>
@@ -184,7 +194,7 @@
         <!-- *********************************** -->
         <!-- CAROUSEL -->
         <div class="row hidden-sm">
-            <div class="col-sm-12 tilebutton tilebutton-portfactscarousel">
+            <div class="col-sm-12 tilebutton portfactscarousel">
                 <div id="PortFactsCarousel" class="carousel slide">
 
                     <!-- Carousel indicators -->
@@ -211,13 +221,13 @@
                     <a class="carousel-control left" href="#PortFactsCarousel" data-slide="prev">&lsaquo;</a>
                     <a class="carousel-control right" href="#PortFactsCarousel" data-slide="next">&rsaquo;</a>
 
-                </div>
+                </div> 
             </div>
         </div>
         <!-- ************************************ -->
         <!-- SUSTAINABILITY, SHEP, PRESS RELEASES -->
         <div class="row">
-            <div class="col-sm-3 col-sm-push-4 tilebutton tilebutton-shep">   
+            <div class="col-sm-3 col-sm-push-4 tilebutton orange shep">   
                 <div class="tilebutton-table">
                     <a href="#" class="tilebutton-table-cell icon-jump">
                         <h3>
@@ -226,14 +236,14 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-4 col-sm-pull-3 tilebutton tilebutton-sustainability">
+            <div class="col-sm-4 col-sm-pull-3 tilebutton sustainability">
                 <div class="tilebutton-table">
                     <a href="#" class="tilebutton-table-cell icon-jump">
                         <h3>Sustainability <i class="icon-angle-right"></i></h3>
                     </a>
                 </div>
             </div>
-            <div class="col-sm-4 tilebutton tilebutton-press-releases">
+            <div class="col-sm-4 tilebutton blue press-releases">
                 <div class="tilebutton-table">
                     <div class="tilebutton-table-cell icon-jump">
                         <h3>

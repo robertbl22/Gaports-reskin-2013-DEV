@@ -1,11 +1,11 @@
-.tilebutton-videos {
+.tilebutton.videos {
 	h3 {
 		margin:0;
 		line-height: $row3-height;
 	}
 }
 
-.tilebutton-more-impact {
+.tilebutton.more-impact {
 	h3 {
 		margin-top:0;
 		margin-bottom: 0;
@@ -13,15 +13,11 @@
 	}
 }
 
-
-
-
-
-.tilebutton-sustainability {
+.tilebutton.sustainability {
 	position: static;
 }
 
-.tilebutton-shep {
+.tilebutton.shep {
 	position: static;
 
 	h3 {
@@ -29,7 +25,7 @@
 	}
 }
 
-.tilebutton-press-releases {
+.tilebutton.press-releases {
 	h3 {
 		margin-top: 40px;
 	}
