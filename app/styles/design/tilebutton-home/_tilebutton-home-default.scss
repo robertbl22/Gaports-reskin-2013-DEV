@@ -1,0 +1,92 @@
+/************************/
+/* Home page variables */
+$photo-base-height: 200px;
+
+
+/************************/
+/* ROW 1 */
+.tilebutton-portofsavannah {
+	margin-top: 10px;
+	background-color: $gpa-dark-blue;
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-dark-blue-accent;
+	}
+}
+
+/************************/
+/* ROW 2 */
+.tilebutton-portofbrunswick {
+	background-color: $gpa-blue;
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-blue-accent;
+	}
+}
+
+/************************/
+/* ROW 3 */
+.tilebutton-videos {
+	background-color: $gpa-orange;
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-orange-accent;
+	}
+}
+
+.tilebutton-more-impact {
+	height: $photo-base-height;
+	background-color: $gpa-light-blue;
+	@include background-photo('../images/home/more-impact.jpg', center, right);
+
+	.tilebutton-table-cell  { 
+		height: $photo-base-height;
+		background-color: rgba($gpa-orange-accent, 0.0);
+		text-align: left;
+		padding-left: 20px;
+	}
+	.tilebutton-table-cell:hover {
+		background-color: rgba($gpa-dark-blue, 0.2);
+	}
+}
+
+
+/************************/
+/* ROW 4 */
+/* (PORT FACTS CAROUSEL) */
+
+/************************/
+/* ROW 5 */
+.tilebutton-sustainability {
+	height: $photo-base-height;
+	background-color: $gpa-gray;
+	@include background-photo('../images/home/sustainability.jpg', center, center);
+
+	.tilebutton-table-cell  { 
+		height: $photo-base-height;
+		background-color: rgba($gpa-orange-accent, 0.0);
+	}
+	.tilebutton-table-cell:hover {
+		background-color: rgba($gpa-orange-accent, 0.3);
+	}
+}
+
+.tilebutton-shep {
+	background-color: $gpa-orange;
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-orange-accent;
+	}
+}
+
+.tilebutton-press-releases {
+	height: auto;
+	background-color: $gpa-blue;
+
+	h3:hover {background-color: $gpa-blue;}
+	h4:hover {background-color: $gpa-blue;}
+	.tilebutton-table-cell { 
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-blue-accent;
+	}
+}

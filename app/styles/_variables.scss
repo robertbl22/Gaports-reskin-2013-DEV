@@ -1,24 +1,50 @@
 /* Fonts */
-$iconSpritePath: "../images/glyphicons-halflings.png" !default;
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png" !default;
-$FontAwesomePath: "../styles/fonts" !default;
+$iconSpritePath: 		"../images/glyphicons-halflings.png" !default;
+$iconWhiteSpritePath: 	"../images/glyphicons-halflings-white.png" !default;
+$FontAwesomePath: 		"../styles/fonts" !default;
 $gpa-font-family-sans-serif: 'Open Sans', sans-serif;
 
 /* Colors */
-$gpa-dark-blue: #00274c;
-$gpa-blue: #007db1;
-$gpa-bright-blue: #04a7ea;
-$gpa-light-blue: #88cbde;
-$gpa-orange: #f7971e;
-$gpa-dark-gray: #425968;   
-$gpa-gray: #96a0a9; 
-$gpa-light-gray: #ccd2d7;
+$gpa-dark-blue: 	#00274c;
+$gpa-blue: 			#007db1;
+$gpa-bright-blue: 	#04a7ea;
+$gpa-light-blue: 	#88cbde;
+$gpa-orange: 		#f7971e;
+$gpa-dark-gray: 	#425968;   
+$gpa-gray: 			#96a0a9; 
+$gpa-light-gray: 	#ccd2d7;
 $gpa-banner-bg-blue: #074469;
 
 /* Accent Colors */
-$gpa-dark-blue-accent: darken($gpa-dark-blue, 6%);
-$gpa-blue-accent: darken($gpa-blue, 10%);
-$gpa-orange-accent: darken($gpa-orange, 14%);
+$gpa-dark-blue-accent: 	darken($gpa-dark-blue, 6%);
+$gpa-blue-accent: 		darken($gpa-blue, 10%);
+$gpa-orange-accent: 	darken($gpa-orange, 14%);
 $gpa-light-blue-accent: darken($gpa-dark-blue, 14%);
-$gpa-gray-accent: darken($gpa-gray, 14%);
-$gpa-dark-gray-accent: darken($gpa-dark-gray, 10%);
+$gpa-gray-accent: 		darken($gpa-gray, 14%);
+$gpa-dark-gray-accent: 	darken($gpa-dark-gray, 10%);
+
+/* Jump icons */
+$icon-jump-small: 	'../images/icon-jump-24px.png';
+$icon-jump-medium: 	'../images/icon-jump-28px.png';
+$icon-jump-large: 	'../images/icon-jump-32px.png';
+$icon-jump-xlarge: 	'../images/icon-jump-36px.png';
+
+/* More icons */
+$icon-more-small: 	'../images/icon-more-24px.png';
+$icon-more-medium: 	'../images/icon-more-28px.png';
+$icon-more-large: 	'../images/icon-more-32px.png';
+$icon-more-xlarge: 	'../images/icon-more-36px.png';
+
+/* Layout */
+$titlebutton-height-base: 65px;
+
+/* *********************************** */
+/* SASS MIXINs */
+
+@mixin background-photo($imgUrl, $hPosition, $vPosition) {
+	background-image: url($imgUrl);
+	background-repeat: no-repeat;
+	background-position: $vPosition $hPosition; 
+	@include background-size(cover);
+	-ms-behavior: url('scripts/vendor/backgroundsize.min.htc');
+}

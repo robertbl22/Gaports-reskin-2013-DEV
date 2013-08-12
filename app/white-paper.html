@@ -33,7 +33,13 @@
     <!-- *********************************** -->
     <!-- DIAGNOSTIC PANEL -->
     <div class="responsive-diagnostic-panel">
-        <span class="badge div1200px">1200px</span><span class="badge div980px">980px</span><span class="badge div768px">768px</span><span class="badge div767px">767px</span><span class="badge div580px">580px</span><span class="badge div480px">480px</span><span class="badge div320px">320px</span>
+        <span class="breakpoint div320px">320 &ndash;</span>
+        <span class="breakpoint div480px">480 &ndash;</span>
+        <span class="breakpoint div580px">580 &ndash;</span>
+        <span class="breakpoint div768px">768 &ndash;</span>
+        <span class="breakpoint div980px">980 &ndash;</span>
+        <span class="breakpoint div1200px">1200 &ndash;</span>
+        <span class="breakpoint div1700px">1700</span>
     </div>
     <!-- //END: DIAGNOSTIC PANEL -->
 
@@ -134,18 +140,20 @@
 
                 <!-- *********************************** -->
                 <!-- LEFT NAVIGATION -->
-                <div class="tile tile-instarate">
-                    <div class="tile-table">
-                        <a href="#" class="tile-table-cell">
-                            <h3 class="nobreak">GPA Insta-Rate <i class="icon-angle-right"></i></h3> 
+                <div class="tilebutton tilebutton-blue tooltipped" data-toggle="tooltip" title="Find your tariff more quickly">
+                    <div class="tilebutton-table">   
+                        <a href="#" class="tilebutton-table-cell icon-jump">
+                            <h3 class="nobreak">
+                                GPA Insta-Rate <i class="icon-angle-right"></i>
+                            </h3> 
                         </a>
                     </div>
                 </div>
 
                 <div class="accordion" id="accordion1">
-                    <div class="tile tile-contacts accordion-heading">
-                        <div class="tile-table">
-                            <a class="tile-table-cell accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" >
+                    <div class="tilebutton tilebutton-gray accordion-heading tooltipped" data-toggle="tooltip" title="Click to expand contacts">
+                        <div class="tilebutton-table">
+                            <a class="tilebutton-table-cell accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" >
                                 <h3 class="nobreak">Contacts <i class="icon-angle-down"></i></h3>
                             </a>
                         </div>
@@ -263,7 +271,7 @@
 
     <!-- *********************************** -->
     <!-- FOOTER -->
-    <div class="container-fluid footer">
+    <footer class="container-fluid footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-lg-2">
@@ -359,7 +367,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>

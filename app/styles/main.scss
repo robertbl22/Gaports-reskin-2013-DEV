@@ -5,87 +5,108 @@
 /*********************************/
 /* Framework */
 @import "sass-bootstrap-3/lib/bootstrap";
-/* @import "sass-bootstrap/lib/responsive"; */
-@import "../scripts/vendor/responsiveslides.css";
+@import "../scripts/vendor/responsiveslides.css";  
 
 /*********************************/
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 @import "font-awesome/scss/font-awesome";
-@import "gpa-round-icons";
+/* @import "gpa-round-icons"; */ 
 
 /*********************************/
-/* Responsive Design */
+/* Responsive Design             */
+/* Uncomment to enable           */
+@import "ui/diagnostic-panel/diagnostic-panel";
 
-/* Default */
-@import "diagnostic-panel";
-@import "html/html";
-@import "gpa-banner/gpa-banner";
-/* @import "tiles-home/tiles-home"; */
-@import "tiles-white-paper/tiles-white-paper";
-@import "navigation/navigation";
-@import "footer/footer";
 
-@import "tiles-home/tiles-home-default";
 
-@media (min-width: 1700px){
-	/* @import "xxx-1700-up"; */
+/*********************************/
+/* MOBILE DEFAULTS */
+
+/* UI Components */
+@import "ui/navbar/navbar-default";
+@import "ui/sidenav/sidenav-default";
+@import "ui/breadcrumb/breadcrumb-default";
+@import "ui/jumbotron/jumbotron-default";
+@import "ui/tilebutton/tilebutton-default";
+@import "ui/footer/footer-default";
+@import "ui/carousel/carousel-default";
+.lt-ie8 {
+	@import "ui/carousel/carousel-default__ie7";
+	@import "ui/footer/footer-default__ie7";
+	@import "ui/tilebutton/tilebutton-default__ie7";
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
-	/* @import "xxx-1200-up"; */
-	@import "html/html-1200-up";
-	@import "gpa-banner/gpa-banner-1200-up";
+/* Design and Layout */
+@import "design/typography/typography-default";
+@import "design/horizontal-divider/horizontal-divider-default";
+@import "design/gpa-banner/gpa-banner-default";
+@import "design/tilebutton-home/tilebutton-home-default";
+.lt-ie8 {
+	@import "design/tilebutton-home/tilebutton-home-default__ie7"; 
 }
 
-@media (min-width: 980px) and (max-width: 1199px) {
-	/* @import "xxx-980-1199"; */
-	@import "gpa-banner/gpa-banner-980-1199";
-}
 
-@media (max-width: 979px) {
-	/* @import "xxx-979-down"; */
-	@import "tiles-home/tiles-home-979-down";
+@media (min-width: 480px) {
+	/* @import "xxx-480-up"; */
+	@import "design/typography/typography-480-up";
 }
 
 @media (min-width: 768px) {
 	/* @import "xxx-768-up"; */
-	@import "tiles-home/tiles-home-768-up";
+	
+	/* UI Components */
+	@import "ui/navbar/navbar-768-up";
+	@import "ui/footer/footer-768-up";
+	@import "ui/jumbotron/jumbotron-768-up";
+	@import "ui/tilebutton/tilebutton-768-up";
+
+	/* Design and Layout */
+	@import "design/typography/typography-768-up";
+	@import "design/tilebutton-home/tilebutton-home-768-up";
+	.lt-ie8 {
+		@import "design/tilebutton-home/tilebutton-home-768-up__ie7";
+	}
 }
 
-/* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	/* @import "xxx-768-979"; */
-	@import "html/html-768-979";
-	@import "navigation/navigation-768-979";
-	@import "tiles-white-paper/tiles-white-paper-768-979";
+	
+	/* UI Components */
+
+	/* Design and Layout */
+	@import "ui/navbar/navbar-768-979";
+	@import "ui/tilebutton/tilebutton-768-979";
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-	/* @import "xxx-767-down"; */
-	@import "html/html-768-979";
-	@import "tiles-home/tiles-home-767-down";
-	@import "footer/footer-767-down";
-	@import "navigation/navigation-767-down"; 
+@media (min-width: 980px) {
+	/* @import "xxx-980-up"; */
+
+	/* UI Components */
+	@import "ui/tilebutton/tilebutton-980-up";
+	@import "ui/carousel/carousel-980-up";
+
+	/* Design and Layout */
+	@import "design/typography/typography-980-up"; 
+	@import "design/gpa-banner/gpa-banner-980-up";
 }
 
-@media (max-width: 580px) {
-	/* @import "xxx-580-down"; */
-	@import "html/html-580-down";
+@media (min-width: 1200px) {
+	/* @import "xxx-1200-up"; */
+
+	/* UI Components */
+	@import "ui/tilebutton/tilebutton-1200-up";
+
+	/* Design and Layout */
+	@import "design/typography/typography-1200-up";
+	@import "design/gpa-banner/gpa-banner-1200-up";
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-	/* @import "xxx-480-down"; */
-	@import "html/html-480-down";
-}
+@media (min-width: 1700px){
+	/* @import "xxx-1700-up"; */
 
-@media (max-width: 320px)  {
-	/* @import "xxx-320-down"; */
-}
+	/* Design and Layout */
+	@import "design/gpa-banner/gpa-banner-1700-up"; 
 
-.lt-ie8 {
-	@import "ie7";
+	/* UI Components */
 }

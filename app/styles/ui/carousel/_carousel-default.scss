@@ -1,0 +1,26 @@
+.carousel {
+
+	a.carousel-control {
+		@include opacity(0); 
+	}
+	a.carousel-control:hover {
+		@include opacity(50); 
+	}
+	.carousel-indicators {
+		bottom: 0;
+	}
+	.carousel-inner .item {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.carousel-control {
+		font-size: 100px;
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		width: 5%;
+		@include transition(background-color 0.3s ease);
+	}
+	.carousel-control:hover {
+		background-color: $gpa-blue;
+	}
+}

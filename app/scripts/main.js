@@ -11,4 +11,6 @@ jQuery(document).ready(function () {
 		auto: hasPseudoClasses
 	});
 
+	$('.tooltipped').tooltip({ 'delay': { show: 1000, hide: 0 } });
+
 });

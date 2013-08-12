@@ -1,0 +1,70 @@
+/* ************************ */
+/* TILEBUTTON BASE      */
+
+.tilebutton {
+	color: $white;
+	padding: 0;
+	height: $titlebutton-height-base;
+
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	h1, h2, h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h1, h2, h3, h4, h5 {
+		font-weight:300;
+		color: $white;         
+	}
+	.tilebutton-table {
+		display: table;
+		width: 100%;
+		height: inherit;
+	}
+	.tilebutton-table-cell {
+		display: table-cell;
+		height: $titlebutton-height-base;
+		padding: 3px;
+		vertical-align: middle;
+		text-align: center;
+	}
+}
+
+/* ************************ */
+/* ICON JUMP INDICATOR      */
+
+.icon-jump {
+	background-image: url($icon-jump-small);
+	background-repeat: no-repeat;
+	background-position: right -64px;
+	@include transition(background-color 0.5s ease, background-position 0.2s ease 0.3s);
+}
+.icon-jump:hover {
+	background-position: right 0;
+}
+
+/* Always use smallest icon in the leftpane */
+.leftpane .icon-jump {
+	background-image: url($icon-jump-small);
+}
+
+/* ************************ */
+/* TILEBUTTON TYPES      */
+
+.tilebutton-blue {
+	background-color: $gpa-blue;
+
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-blue-accent;
+	}
+}
+
+.tilebutton-gray {
+	background-color: $gpa-gray;
+
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-gray-accent;
+	}
+}

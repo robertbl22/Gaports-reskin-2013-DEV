@@ -1,0 +1,22 @@
+.sidenav {
+	background-color: lighten($gpa-light-gray, 12%);
+
+	.active {
+		background-color: $gpa-blue;
+		font-weight: 500;
+		color: $white;
+
+		a {
+			color: $white;
+		}
+	}
+
+	li > a {
+		padding:5px 15px;
+	}
+
+	li > a:hover {
+		background-color: lighten($gpa-light-gray, 8%);
+	}
+
+}

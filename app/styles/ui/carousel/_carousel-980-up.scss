@@ -1,0 +1,9 @@
+.carousel {
+	
+	a.carousel-control {
+		@include opacity(1); 
+	}
+	a.carousel-control:hover {
+		@include opacity(1); 
+	}
+}

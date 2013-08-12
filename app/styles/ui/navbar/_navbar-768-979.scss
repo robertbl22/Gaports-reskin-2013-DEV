@@ -1,0 +1,13 @@
+/* Reverse the search dropdown to avoid collision with the GPA banner */
+.navbar-search-dropdown {
+	left: auto;
+	right: 0px;
+}
+.navbar-search-dropdown::before {
+	left: auto !important;
+	right: 9px;
+}
+.navbar-search-dropdown::after {
+	left: auto !important;
+	right: 10px;
+} 
