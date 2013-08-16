@@ -2,6 +2,12 @@
 .top-of-page {
 	margin-top: 59px;
 }
+@media print {
+	.top-of-page {
+		margin-top: 0;
+	}
+}
+
 
 /* Home Button */
 .navbar-inverse .nav .nav-home > a {

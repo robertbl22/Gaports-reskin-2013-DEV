@@ -1,0 +1,25 @@
+/* *****************************************************/
+/* FOOTER **********************************************/
+/* *****************************************************/
+#FooterBanner {
+	background-image:url("../img/footer-banner-sm.png");
+	width:980px;
+	margin-top:15px;
+	height:51px;
+	background-position:right top;
+	background-color:#f6961d;
+	border-bottom:solid 1px white;
+	background-repeat:no-repeat;
+}
+#FooterContainer {
+	padding:20px;
+	text-align:center;
+}
+#FooterContainer div.smallFooter, #FooterContainer div.smallFooter a {
+	font-size: 10px;
+	color:#66605a;
+	text-shadow: 1px 1px 0 #FFF;
+}
+#FooterContainer div.smallFooter a:hover {
+	color:red;
+}

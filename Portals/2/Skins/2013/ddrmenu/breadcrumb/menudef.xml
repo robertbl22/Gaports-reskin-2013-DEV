@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+	<template>Breadcrumb.xslt</template>
+	<defaultTemplateArguments>
+		<templateArgument name="CSSClass" value="breadcrumb" />
+	</defaultTemplateArguments>
+</manifest>

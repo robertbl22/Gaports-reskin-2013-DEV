@@ -1,22 +1,86 @@
+
+$sidenav-indent: 12px;
+$sidenav-childindicator-width: 11px;
+
 .sidenav {
 	background-color: lighten($gpa-light-gray, 12%);
-
-	.active {
-		background-color: $gpa-blue;
-		font-weight: 500;
-		color: $white;
-
-		a {
-			color: $white;
-		}
-	}
+	margin-bottom: 30px;
+	padding-bottom: 10px;
 
 	li > a {
-		padding:5px 15px;
+		color: darken($gpa-blue, 8%);
+		padding: 5px $sidenav-indent;
 	}
-
 	li > a:hover {
-		background-color: lighten($gpa-light-gray, 8%);
+		background-color: lighten($gpa-light-gray, 7%);
+		color: darken($gpa-blue, 8%);
+		border-right: none;
 	}
+}
 
+.sidenav .root > a {
+	background-color: $gpa-blue;
+	color: $white;
+}
+.sidenav .root > a:hover, 
+.sidenav .root.disabled > a:hover {
+	background-color: $gpa-blue;
+	color: $gpa-pale-blue;
+}
+
+.sidenav .root.disabled > a {
+	color: $gpa-pale-blue;
+}
+
+.sidenav .active > a {
+	background-color: lighten($gpa-light-gray, 7%);
+}
+
+.sidenav .breadcrumbitem > a {
+	font-weight: bold;
+	border-right: solid 1px $gpa-orange;
+}
+
+.sidenav .breadcrumbitem > .nav li a {
+	padding-left: $sidenav-indent * 2;
+	background-position: ($sidenav-indent * 2 - $sidenav-childindicator-width) 10px;
+}
+.sidenav .breadcrumbitem > .nav .nav li a {
+	padding-left: $sidenav-indent * 3;
+	background-position: ($sidenav-indent * 3 - $sidenav-childindicator-width) 10px;
+}
+.sidenav .breadcrumbitem > .nav .nav .nav li a {
+	padding-left: $sidenav-indent * 4;
+	background-position: ($sidenav-indent * 4 - $sidenav-childindicator-width) 10px;
+}
+.sidenav .breadcrumbitem > .nav .nav .nav .nav li a {
+	padding-left: $sidenav-indent * 5;
+	background-position: ($sidenav-indent * 5 - $sidenav-childindicator-width) 10px;
+}
+.sidenav .breadcrumbitem > .nav .nav .nav .nav .nav li a {
+	padding-left: $sidenav-indent * 6;
+	background-position: ($sidenav-indent * 6 - $sidenav-childindicator-width) 10px;
+}
+
+/* One time reduction in menu link size for 
+grandchildren and beyond */
+.sidenav > .breadcrumbitem > .nav {
+	margin-bottom: 5px;
+}
+.sidenav > .breadcrumbitem > .nav li a {
+	font-size: 0.9em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-position-y: 6px;
+}
+
+.sidenav .disabled {}
+
+.sidenav .haschildren > a {
+	background-image: url('../images/icon-nav-plus.png');
+	background-repeat: no-repeat;
+	background-position: ($sidenav-indent - $sidenav-childindicator-width) 10px;
+}
+.sidenav .haschildren.breadcrumbitem > a {
+	background-image: url('../images/icon-nav-minus.png');
 }

@@ -1,0 +1,98 @@
+/* *****************************************************/
+/* HEADER (LAYOUT) *************************************/
+/* *****************************************************/
+#HeaderContainer {
+	height:148px;
+	border-left:solid 1px #0b6b9b;
+	border-right:solid 1px #0b6b9b;
+	background-image:url("../banners/Default.jpg");
+	background-repeat:no-repeat;
+	background-color:#FFF;
+}
+#GlobalNav {
+	padding:3px 30px 3px 0px;
+	text-align:right;
+	background-image:url("../img/toolbar-sprite.png");
+	background-position:0 -156px;
+	background-repeat:repeat-x;
+}
+#GlobalNav a {
+	text-shadow: 1px 1px 0 #FFF;
+}
+#GlobalNav span.selected {
+	font-weight:bold;
+	color:#666666;
+	text-shadow: 1px 1px 0 #E0E0E0;
+}
+#NavToolsContainer {
+	border-top:solid 1px #FFF;
+	border-left:solid 1px #0b6b9b;
+	border-right:solid 1px #0b6b9b;
+}
+#NavToolsContainer #MenuSearchRow {
+	width:979px;
+	height:29px;
+	border-right:solid 1px #08567C;
+	background-image:url("../img/toolbar-sprite.png");
+	background-position:0 -127px;
+	background-repeat:repeat-x;
+}
+#NavToolsContainer #Menu {
+	width:722px;
+	height:29px;
+	float:left;
+}
+#NavToolsContainer #Search {
+	height:22px;
+	padding-top:7px;
+	color:#FFFFFF;
+	margin-right:10px;
+	text-align:right;
+}
+#NavToolsContainer #Search span {
+}
+#NavToolsContainer #Search input {
+	height:12px;
+	margin-right:0;
+	border:solid 1px #CCC;
+	/* Rounded corners */
+	border-radius: 6px; /* CSS3 */
+	-moz-border-radius: 6px; /* Firefox */
+	-webkit-border-radius: 6px; /* Safari, Chrome */
+}
+#NavToolsContainer #Search a.searchText {
+	color:#FFF;
+}
+#NavToolsContainer #Breadcrumb {
+	/*clear:both;*/
+	height:20px;
+	line-height:20px;
+	padding-left:20px;
+	background-color:#FFF;
+	border-bottom:solid 1px #cdced0;
+	*background-image:url("../img/toolbar-sprite.png"); /* IE6 gradient fix */
+	background-position:0 -20px;
+	background-repeat:repeat-x;
+}
+#NavToolsContainer #Breadcrumb .label {
+	color:#7f7871;
+	text-transform:uppercase;
+	padding-right:6px;
+	font-size:10px;
+}
+#NavToolsContainer #Breadcrumb a.SkinObject {
+	color:#7f7871;
+	font-weight:normal;
+}
+#NavToolsContainer #Breadcrumb a.SkinObject:hover {
+	color:red;
+	text-decoration:underline;
+}
+#NavToolsContainer #Breadcrumb span.separator {
+	display:inline-block;
+	width:6px;
+	margin:0 6px;
+	background-image:url("../img/toolbar-sprite.png");
+	background-position:0 0;
+	background-repeat:no-repeat;
+}

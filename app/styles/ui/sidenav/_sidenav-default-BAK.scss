@@ -1,0 +1,46 @@
+.sidenav {
+	background-color: lighten($gpa-light-gray, 12%);
+
+	li > a {
+		padding:5px 15px;
+		color: darken($gpa-blue, 8%);
+	}
+
+	li > a:hover {
+		background-color: lighten($gpa-light-gray, 8%);
+		color: darken($gpa-blue, 8%);
+	}
+
+	.root, .root.disabled {
+		background-color: $gpa-blue;
+		color: $white;
+		a {
+			color: $white;
+		}
+	}
+
+	.active {
+		font-weight: bold;
+		li { font-weight: 300; }
+	}
+
+	.haschildren > a {
+		background-image: url('../images/icon-nav-right.png');
+		background-repeat: no-repeat;
+		background-position: 2px 8px;
+		background-size: 11px 11px;
+	}
+
+	.active.haschildren > a {
+		background-image: url('../images/icon-nav-down.png');
+	}
+
+	.active.haschildren li {
+		font-size: 0.9em;
+	}
+
+	.active.haschildren > ul {
+		margin-left: 10px;
+	}
+
+}

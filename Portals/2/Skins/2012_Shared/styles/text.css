@@ -1,0 +1,101 @@
+/* *****************************************************/
+/* CSS RESET *******************************************/
+/* *****************************************************/
+html {
+	height:100%;
+}
+a {
+	outline:0;
+	border:0;
+}
+p, ul, ol {
+	margin:0;
+	padding:0 0 1em 0;
+}
+table, tr, td {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+/* *****************************************************/
+/* DNN OVERRIDES ***************************************/
+/* *****************************************************/
+#Body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	margin:0px;
+	background-image:url("../img/background.png");
+	background-repeat:repeat-x;
+	background-color:#c3c3c3;
+}
+#Form {
+	height:100%;
+}
+.DNNEmptyPane {
+	display:none;
+}
+#PageContainer {
+	width:982px;
+	margin:0 auto;
+}
+.Normal {
+	line-height:1.6em;
+}
+.ContentPane ul, .ContentPane ol {
+	padding-left:3em;
+	margin:auto auto 1em auto;
+}
+
+/* *****************************************************/
+/* HEAD TEXT *******************************************/
+/* *****************************************************/
+
+h1, h2, h3, h4, h5, h6, .Head, .contentHeader, .page-title {
+	font-family:'Open Sans', sans-serif;
+	color: #85161b;
+	font-weight:600;
+	/*line-height:0.9em;*/
+}
+h1, .Head, .contentHeader {
+	display:block;
+	font-size:18px;
+	line-height:18px;
+}
+.ContentPane h1, .contentHeader {
+	padding-bottom:0.5em;
+}
+h2, .page-title {
+	color: #7f7871;
+	font-size:10pt;
+	letter-spacing:3px;
+	text-transform:uppercase;
+}
+h3, .SubHead {
+	color:#036;
+	line-height:1.4em;
+}
+.SectionTitlePane h1 {
+	padding:0;
+	font-size:20pt;
+	margin:62px 0 0 0;
+	text-shadow:1px 1px 2px #8F8F8F;
+	/*filter: dropshadow(color=#8f8f8f, offx=1, offy=1);*/
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(color=#8F8F8F, offX=1, offY=1);*/
+}
+.SectionTitlePane .section-head-2line h1 {
+	margin:8px 0 0 0;
+	letter-spacing:-1pt;
+}
+.SectionTitlePane .section-head-2line h2 {
+	margin-left:5px;
+}
+.SectionTitlePane .section-head-2line h3 {
+	color:#7f7871;
+	font-weight:normal;
+	font-size:10pt;
+	padding:0;
+	margin:48px 0 0 5px;
+	letter-spacing:5px;
+	text-transform:uppercase;
+}

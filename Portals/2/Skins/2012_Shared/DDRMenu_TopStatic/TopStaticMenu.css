@@ -1,0 +1,63 @@
+#DDRMenu_TopStatic {
+/*height:29px;*/
+}
+/* Reset CSS */
+#DDRMenu_TopStatic .topLevel li {
+	margin:0;
+	list-style-type:none;/*position:relative;*/
+}
+#DDRMenu_TopStatic .topLevel li a {
+	text-decoration:none;
+	letter-spacing:.35px; /* Fix for IE kerning */
+}
+/* Normal State */
+#DDRMenu_TopStatic .topLevel li {
+	height:28px;
+	padding-bottom:1px;
+	line-height:28px;
+	float:left;
+	display:inline-block;
+	border-left:solid 1px #2989D8;
+	border-right:solid 1px #08567c;
+	/*background: linear-gradient(top, #0b6b9b 0%, #2989d8 100%);*/ /* W3C */
+	/*background-image:url("topmenu-background.png");*/
+	/*background-position:top;*/
+	background-image:url("../img/toolbar-sprite.png");
+	background-position:0 -69px;
+	background-repeat:repeat-x;
+}
+#DDRMenu_TopStatic .topLevel li a div {
+	color:#fff;
+	font-weight:bold;
+	text-shadow: 1px 1px 0 #08567c;
+	padding-right:10px;
+	padding-left:10px;
+}
+#DDRMenu_TopStatic .topLevel li.first a div {
+	padding-left:20px;
+}
+#DDRMenu_TopStatic .topLevel li.breadcrumb a div {
+	/*background-image:url("icn_corner_white_top_right.gif");*/
+	/*background-position:top right;*/
+	background-image:url("../img/toolbar-sprite.png");
+	background-position:right -40px;
+	background-repeat:no-repeat;
+}
+/* Hover State */
+#DDRMenu_TopStatic .topLevel li.hover {
+	/*background-image:url("topmenu-background.png");*/
+	/*background-position:0 -29px;*/
+	background-image:url("../img/toolbar-sprite.png");
+	background-position:0 -98px;
+	background-repeat:repeat-x;
+	/*background: linear-gradient(top, #0b6b9b 0%, #2989d8 31%);*/ /* W3C */
+}
+#DDRMenu_TopStatic .topLevel li.hover a div {
+	/*color:#ffffaa;*/
+	text-decoration:underline;
+}
+/* Mouse Click State */
+#DDRMenu_TopStatic .topLevel li.active {
+	padding-top:1px;
+	padding-bottom:0;
+}

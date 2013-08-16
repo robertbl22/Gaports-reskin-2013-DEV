@@ -2,6 +2,11 @@
 @import "horizontal-divider/horizontal-divider-default";
 @import "gpa-banner/gpa-banner-default";
 
+.nogutter {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 @media (min-width: 480px) {
 	/* @import "xxx-480-up"; */
 	@import "typography/typography-480-up";
@@ -14,12 +19,14 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
 	/* @import "xxx-768-979"; */
+	.contentpane, .leftpane { min-height: 350px; }
 }
 
 @media (min-width: 980px) {
 	/* @import "xxx-980-up"; */
 	@import "typography/typography-980-up"; 
 	@import "gpa-banner/gpa-banner-980-up";
+	.contentpane, .leftpane { min-height: 400px; }
 }
 
 @media (min-width: 1200px) {

@@ -284,6 +284,22 @@ module.exports = function (grunt) {
                     src: [
                         'font-awesome-ie7.min.css'
                     ]
+                }, {
+                    // RWB: Added this for DotNetNuke skin development
+                    expand: true,
+                    cwd: '<%= yeoman.dist %>/styles',
+                    dest: '<%= yeoman.dist %>/../Portals/2/Skins/2013/styles',
+                    src: [
+                        'main.css'
+                    ]
+                }, {
+                    // RWB: Added this for DotNetNuke skin development
+                    expand: true,
+                    cwd: '<%= yeoman.dist %>/images',
+                    dest: '<%= yeoman.dist %>/../Portals/2/Skins/2013/images',
+                    src: [
+                        '*'
+                    ]
                 }]
             }
         },

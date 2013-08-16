@@ -1,0 +1,111 @@
+/* *****************************************************/
+/* CONTENT *********************************************/
+/* *****************************************************/
+#ContentContainer {
+	width:980px;
+	background-color:#FFFFFF;
+	border-left:1px #0b6b9b solid;
+	border-right:1px #0b6b9b solid;
+	border-bottom:1px #0b6b9b solid;
+	box-shadow: 0 0 8px rgba(11,107,155,0.5);/* Opera 10.5+, future browsers and IE6+ using IE-CSS3 */
+}
+
+/* *****************************************************/
+/* CONTENT -- SECTION HEADER ***************************/
+/* *****************************************************/
+#SectionHeaderContainer {
+	/*height:163px;*/
+}
+.SectionTitlePane {
+	float:left;
+	width:472px;
+	height:143px;
+	padding-left:40px;
+	text-align:left;
+	/* Gradient */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 25%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(25%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 25%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 25%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 25%); /* IE10+ */
+background: linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 25%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.SectionPhotoPane1 {
+	float:right;
+	left:473px;
+	width:270px;
+	height:143px;
+	border-left:1px solid #FFF;
+	border-top:1px solid #FFF;
+}
+.SectionPhotoPane1 .dnnmedia_wrapper, .SectionPhotoPane1 .DNNModuleContent,
+.SectionPhotoPane1 .dnnmedia_wrapper, .SectionPhotoPane1 .DNNModuleContent div {
+	width:270px;
+	height:143px;
+	overflow:hidden;
+}
+.SectionPhotoPane2 {
+	float:right;
+	left:744px;
+	width:196px;
+	height:143px;
+	border-top:1px solid #FFF;
+	border-left:1px solid #FFF;
+}
+.SectionPhotoPane2 .dnnmedia_wrapper, .SectionPhotoPane2 .DNNModuleContent,
+.SectionPhotoPane2 .dnnmedia_wrapper, .SectionPhotoPane2 .DNNModuleContent div {
+	width:196px;
+	height:143px;
+	overflow:hidden;
+}
+
+/* *****************************************************/
+/* CONTENT -- COLUMNS **********************************/
+/* *****************************************************/
+#ColumnsContainer {
+	display:inline-block;
+	width:980px;
+}
+#LeftColumn {
+	width:190px;
+	float:left;
+}
+.LeftPicPane {
+	margin:0;
+}
+.LeftPicPane .dnnmedia_wrapper, .LeftPicPane .DNNModuleContent {
+	margin:0;
+	width:190px;
+	height:133px;
+	background-color:#EDEFF2;
+	overflow:hidden;
+}
+#LeftMenu {
+	padding-top:9px;
+	padding-bottom:20px;
+	background-color:#edeff2;
+	border-bottom:solid 1px #caced1;
+	border-top:solid 1px #FFF;
+}
+.LeftPane {
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-left:20px;
+}
+.LeftPane .DnnModule {
+	margin-bottom:20px;
+}
+#RightColumns {
+}
+.ContentPane {
+}
+.RightPane {
+}
+.RightPane .DnnModule {
+	margin-bottom:20px;
+}
+.RightPane .dnnmedia_wrapper, .RightPane .DNNModuleContent {
+	width:200px;
+	overflow:hidden;
+}

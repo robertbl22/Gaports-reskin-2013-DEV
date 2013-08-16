@@ -1,0 +1,86 @@
+/* *****************************************************/
+/* SITE SECTIONS ***************************************/
+/* *****************************************************/
+
+/* Top level sections */
+body.SalesandMarketing #HeaderContainer {
+	background-image:url("../banners/SalesandMarketing.jpg");
+}
+body.SalesandMarketing.MarketingBusinessDevelopment.GPABytheNumbers #HeaderContainer {
+	background-image:url("../banners/GPABytheNumbers.jpg");
+}
+body.SalesandMarketing.MarketingBusinessDevelopment.NEWServices #HeaderContainer {
+	background-image:url("../banners/GPABytheNumbers.jpg");
+}
+body.Facilities #HeaderContainer {
+	background-image:url("../banners/Facilities-GardenCityTerminal.jpg");
+}
+body.Facilities.Breakbulk #HeaderContainer {
+	background-image:url("../banners/Breakbulk.jpg");
+}
+body.Logistics #HeaderContainer {
+	background-image:url("../banners/Logistics.jpg");
+}
+body.Logistics.SavannahHighwayMileage #HeaderContainer {
+	background-image:url("../banners/SalesandMarketing.jpg");
+}
+body.Logistics.BrunswickHighwayMileage #HeaderContainer {
+	background-image:url("../banners/Facilities-ColonelsIslandTerminalRoRo.jpg");
+}
+body.Logistics.BrunswickInterstateRail #HeaderContainer {
+	background-image:url("../banners/Facilities-ColonelsIslandTerminalRoRo.jpg");
+}
+body.CustomerServices #HeaderContainer {
+	background-image:url("../banners/CustomerServices.jpg");
+}
+body.LearnMore #HeaderContainer { /* aka 'Ports Guide' */
+	background-image:url("../banners/LearnMore.jpg");
+}
+
+
+/* Facility terminals */
+/* Colonels Island Terminal Agribulk */
+body.Facilities.ColonelsIslandTerminalAgribulk #HeaderContainer {
+	background-image:url("../banners/Facilities-ColonelsIslandTerminalAgribulk.jpg");
+}
+body.Facilities.ColonelsIslandTerminalAgribulk .SectionTitlePane h1 {
+	color:#76BC42;
+}
+/* Colonels Island Terminal RoRo */
+body.Facilities.ColonelsIslandTerminalRoRo #HeaderContainer {
+	background-image:url("../banners/Facilities-ColonelsIslandTerminalRoRo.jpg");
+}
+body.Facilities.ColonelsIslandTerminalRoRo .SectionTitlePane h1 {
+	color:#76BC42;
+}
+/* Garden City Terminal */
+body.Facilities.GardenCityTerminal #HeaderContainer {
+	background-image:url("../banners/Facilities-GardenCityTerminal.jpg");
+}
+/* Marine Port Terminals */
+body.Facilities.MarinePortTerminals #HeaderContainer {
+	background-image:url("../banners/Facilities-MarinePortTerminals.jpg");
+}
+/* Mayors Point Terminal */
+body.Facilities.MayorsPointTerminal #HeaderContainer {
+	background-image:url("../banners/Facilities-MayorsPointTerminal.jpg");
+}
+body.Facilities.MayorsPointTerminal .SectionTitlePane h1 {
+	color:#FDB913;
+}
+/* Ocean Terminal */
+body.Facilities.OceanTerminal #HeaderContainer {
+	background-image:url("../banners/Facilities-OceanTerminal.jpg");
+}
+body.Facilities.OceanTerminal .SectionTitlePane h1 {
+	color:#006699;
+}
+/* Port Columbus */
+body.Facilities.PortColumbus #HeaderContainer {
+	background-image:url("../banners/Facilities-GardenCityTerminal.jpg");
+}
+/* Port Bainbridge */
+body.Facilities.PortBainbridge #HeaderContainer {
+	background-image:url("../banners/Facilities-GardenCityTerminal.jpg");
+}
+
