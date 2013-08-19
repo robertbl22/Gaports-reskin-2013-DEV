@@ -29,23 +29,27 @@
 		padding: 3px;
 		vertical-align: middle;
 		text-align: center;
+
+		a.link:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
 /* ************************ */
 /* ICON JUMP INDICATOR      */
 
-.icon-jump {
+.gpa-icon-jump {
 	background-image: url($icon-jump-small);
 	background-repeat: no-repeat;
 	background-position: right -64px;
 	@include transition(background-color 0.5s ease, background-position 0.2s ease 0.3s);
 }
-.icon-jump:hover {
+.gpa-icon-jump:hover {
 	background-position: right 0;
 }
 
 /* Always use smallest icon in the leftpane */
-.leftpane .icon-jump {
+.leftpane .gpa-icon-jump {
 	background-image: url($icon-jump-small);
 }

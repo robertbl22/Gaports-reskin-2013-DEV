@@ -3,6 +3,6 @@ node_modules
 .sass-cache
 app/bower_components
 dist
-.LCK
+*.LCK
 _notes
 dwsync.xml

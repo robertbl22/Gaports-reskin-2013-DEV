@@ -103,58 +103,59 @@
 </div>
 <!-- // END: GPA BANNER --> 
 
-<!-- InstanceBeginEditable name="Jumbotron" --> 
+<!-- InstanceBeginEditable name="Jumbotron" -->
 
 <!-- *********************************** --> 
 <!-- HERO PHOTO -->
 <div class="hero-photo top-of-page">
 	<ul class="rslides">
-		<li><img class="active" src="http://placehold.it/1920x800/007db1&text=Slide+1" alt="Slide 1" /></li>
-		<li><img src="http://placehold.it/1920x800/007db1&text=Slide+2" alt="Slide 2"></li>
-		<li><img src="http://placehold.it/1920x800&text=Slide+3" alt="Slide 3"></li>
+		<li><img src="http://placehold.it/1920x800/007db1&text=Slide+1" alt="Slide 1"></li>
 	</ul>
 </div>
 <!-- // END: HERO PHOTO --> 
 
 <!-- InstanceEndEditable -->
-<div class="container top-of-page"><!-- InstanceBeginEditable name="Container" --> 
-	<!-- *********************************** --> 
-	<!-- HERO HEADLINE -->
+<div class="container top-of-page"><!-- InstanceBeginEditable name="Container" --><!-- *********************************** -->
+	
+	<!-- PAGE HEADER -->
 	<div class="row">
-		<div class="col-sm-12 hero-headline">
-			<ul class="rslides">
-				<li>
-					<h1>Lorem consectetur dolor sit amet, sit amet elit diam.</h1>
-				</li>
-				<li>
-					<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-				</li>
-				<li>
-					<h1>Vivamus luctus vehicula erat, sit amet interdum diam.</h1>
-				</li>
-			</ul>
+		<div class="col-sm-12">
+			<h1><%= PortalSettings.ActiveTab.TabName %></h1>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-9 nogutter">
-			<hr/>
-		</div>
+		<div class="col-sm-8"><hr/></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
 			<dnn:MENU MenuStyle="ddrmenu/breadcrumb" runat="server" includehidden="false"></dnn:MENU>
 		</div>
 	</div>
-	<!-- *********************************** -->
-	<!-- CONTENT ROWS LAYOUT -->
-	<div id="ContentPane" runat="server"></div>
-	
+	<!-- // END: PAGE HEADER -->
+
 	<div class="row">
-		<div class="col-sm-7 nogutter">
-			<hr/>
+		<div class="col-sm-3 leftpane">
+
+			<!-- *********************************** -->
+			<!-- LEFT NAVIGATION -->
+			<div id="LeftPane" runat="server"></div>
+			<dnn:MENU MenuStyle="ddrmenu/sidenav" runat="server" nodeselector="*" includehidden="false"></dnn:MENU>
+			<div id="LeftPane2" runat="server"></div>
+			<!-- // END: LEFT NAVIGATION -->
+
 		</div>
-		<div class="clearfix">&nbsp;</div>
+
+
+		<!-- *********************************** -->
+		<!-- CONTENT -->
+		<div class="col-sm-8 col-lg-offset-1">
+			<div id="ContentPane" runat="server" class="contentpane"></div>
+			<hr style="margin:45px 0"/>
+		</div>
+		<!-- // END: CONTENT -->
+
 	</div>
+	
 	<!-- InstanceEndEditable --></div>
 
 <!-- *********************************** --> 

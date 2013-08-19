@@ -103,7 +103,7 @@
 </div>
 <!-- // END: GPA BANNER --> 
 
-<!-- InstanceBeginEditable name="Jumbotron" --> 
+<!-- InstanceBeginEditable name="Jumbotron" -->
 
 <!-- *********************************** --> 
 <!-- HERO PHOTO -->
@@ -117,14 +117,14 @@
 <!-- // END: HERO PHOTO --> 
 
 <!-- InstanceEndEditable -->
-<div class="container top-of-page"><!-- InstanceBeginEditable name="Container" --> 
-	<!-- *********************************** --> 
+<div class="container top-of-page"><!-- InstanceBeginEditable name="Container" --><!-- *********************************** -->
+		<!-- *********************************** --> 
 	<!-- HERO HEADLINE -->
 	<div class="row">
 		<div class="col-sm-12 hero-headline">
 			<ul class="rslides">
 				<li>
-					<h1>Lorem consectetur dolor sit amet, sit amet elit diam.</h1>
+					<h1>Vivamus luctus vehicula erat, consectetur adipiscing elit</h1>
 				</li>
 				<li>
 					<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
@@ -135,26 +135,38 @@
 			</ul>
 		</div>
 	</div>
+	<!-- PAGE HEADER -->
 	<div class="row">
-		<div class="col-sm-9 nogutter">
-			<hr/>
-		</div>
+		<div class="col-sm-8"><hr/></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
 			<dnn:MENU MenuStyle="ddrmenu/breadcrumb" runat="server" includehidden="false"></dnn:MENU>
 		</div>
 	</div>
-	<!-- *********************************** -->
-	<!-- CONTENT ROWS LAYOUT -->
-	<div id="ContentPane" runat="server"></div>
-	
+	<!-- // END: PAGE HEADER -->
+
 	<div class="row">
-		<div class="col-sm-7 nogutter">
-			<hr/>
+		<div class="col-sm-3 leftpane">
+
+			<!-- *********************************** -->
+			<!-- LEFT NAVIGATION -->
+			<div id="LeftPane" runat="server"></div>
+			<!-- // END: LEFT NAVIGATION -->
+
 		</div>
-		<div class="clearfix">&nbsp;</div>
+
+
+		<!-- *********************************** -->
+		<!-- CONTENT -->
+		<div class="col-sm-8 col-lg-offset-1">
+			<div id="ContentPane" runat="server" class="contentpane"></div>
+			<hr style="margin:45px 0"/>
+		</div>
+		<!-- // END: CONTENT -->
+
 	</div>
+	
 	<!-- InstanceEndEditable --></div>
 
 <!-- *********************************** --> 
