@@ -1,3 +1,4 @@
+$mobile-nav-height: 60px;
 
 .top-of-page {
 	margin-top: 59px;
@@ -8,46 +9,26 @@
 	}
 }
 
-
-/* Home Button */
-.navbar-inverse .nav .nav-home > a {
-	border-radius: 16px;
-	padding: 4px 8px;
-	margin-top: 9px; // Navbar is 50px high, this circle is 32px high
-	margin-right: 7px;
-	border:solid 1px $gpa-orange;
-	background-color: $gpa-orange;
-	color: $gpa-dark-blue;
-	@include transition(color 0.3s ease, border-color 0.3s ease);
-}
-
-.navbar-inverse .nav .nav-home > a:hover {
-	background-color: $gpa-orange;
-	border:solid 1px $white;
-}
-
-.navbar-inverse .nav .nav-home.active > a, 
-.navbar-inverse .nav .nav-home.active > a:hover {
-	background-color: $gpa-orange;
-	border:solid 1px $white;
-	color: $white;
-}
-
 .navbar-inverse {
 	padding-left: 0;
 	padding-right: 0;
 
-	.navbar-brand {
-		height: 60px;
-		max-width: 100%;
-		background-color: $gpa-banner-bg-blue; 
-		background-image: url('../images/gpa-banner-mobile.png');
-		background-position: top left;
-		background-repeat: no-repeat;
-	}
+	.navbar-header {
+		min-height: $mobile-nav-height;
 
-	.navbar-brand:hover {
-		background-color: $gpa-banner-bg-blue;
+		.navbar-brand {
+			height: $mobile-nav-height;
+			width: 100%;
+			background-color: $gpa-banner-bg-blue; 
+			background-image: url('../images/gpa-banner-mobile.png');
+			background-position: top left;
+			background-repeat: no-repeat;
+			position: absolute;
+			z-index: -1;
+		}	
+		.navbar-brand:hover {
+			background-color: $gpa-banner-bg-blue;
+		}
 	}
 
 	.nav-collapse {
@@ -56,12 +37,38 @@
 		background-color: $gpa-dark-blue;
 	}
 
+	ul.nav {
+		.nav-home > a {
+			border-radius: 16px;
+			padding: 4px 8px;
+			margin-top: 9px; // Navbar is 50px high, this circle is 32px high
+			margin-right: 7px;
+			border:solid 1px $gpa-orange;
+			background-color: $gpa-orange;
+			color: $gpa-dark-blue;
+			@include transition(color 0.3s ease, border-color 0.3s ease);
+		}
+		.nav-home > a:hover {
+			background-color: $gpa-orange;
+			border:solid 1px $white;
+		}
+		.nav-home.active > a, 
+		.nav-home.active > a:hover {
+			background-color: $gpa-orange;
+			border:solid 1px $white;
+			color: $white;
+		}
+		.nav-home-xs {
+			margin-top: 24px;
+		}
+	}
+
 }
 
 /* Search */
 .navbar-search-dropdown {
 	padding: 10px;
-	
+
 	.form-control { width: 150px; }
 }
 

@@ -1,3 +1,5 @@
+@import "compass/css3/background-size";
+
 /* Fonts */
 $iconSpritePath: 		"../images/glyphicons-halflings.png" !default;
 $iconWhiteSpritePath: 	"../images/glyphicons-halflings-white.png" !default;
@@ -36,9 +38,6 @@ $icon-more-medium: 	'../images/icon-more-28px.png';
 $icon-more-large: 	'../images/icon-more-32px.png';
 $icon-more-xlarge: 	'../images/icon-more-36px.png';
 
-/* Layout */
-$titlebutton-height-base: 65px;
-
 /* *********************************** */
 /* SASS MIXINs */
 
@@ -47,5 +46,9 @@ $titlebutton-height-base: 65px;
 	background-repeat: no-repeat;
 	background-position: $vPosition $hPosition; 
 	@include background-size(cover);
+
+	/* IE8 background-size polyfill */
+	/* https://github.com/louisremi/background-size-polyfill */
+	/* The url is relative to the document, not to the css file! */
 	-ms-behavior: url('scripts/vendor/backgroundsize.min.htc');
 }

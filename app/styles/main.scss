@@ -4,7 +4,7 @@
 
 /*********************************/
 /* Framework */
-@import "sass-bootstrap-3/lib/bootstrap";
+@import "sass-bootstrap/lib/bootstrap";
 @import "../scripts/vendor/responsiveslides.css";  
 
 /*********************************/
@@ -17,4 +17,4 @@
 /* DESIGN */
 @import "ui/ui";
 @import "design/design";     
-@import "pages/pages"; 
+@import "pages/pages";  
