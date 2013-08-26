@@ -71,18 +71,7 @@
 				<!-- Desktop Home Link -->
 				<li class="nav-home active hidden-xs"><a href="/home.aspx"><i class="icon-home"></i></a>
 				</li>
-				<li>
-					<a href="/about.aspx">About</a>
-				</li>
-				<li>
-					<a href="/portofsavannah.aspx">Port of Savannah</a>
-				</li>
-				<li>
-					<a href="/portofbrunswick.aspx">Port of Brunswick</a> 
-				</li>
-				<li>
-					<a href="/media.aspx">Media</a>
-				</li>
+				<dnn:MENU id="dnnMenu MenuStyle="ddrmenu/topnav" runat="server" nodeselector="RootOnly" includehidden="false"></dnn:MENU>
 
 				<!-- DESKTOP SEARCH (Dropdown) -->
 				<li class="dropdown hidden-xs">
