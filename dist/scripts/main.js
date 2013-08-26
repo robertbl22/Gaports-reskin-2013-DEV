@@ -1,1 +1,0 @@
-jQuery(document).ready(function(){var a=Modernizr.generatedcontent;$(".rslides").responsiveSlides({speed:2e3,timeout:1e4,maxwidth:1920,auto:a}),$(".tooltipped").tooltip({delay:{show:1e3,hide:0}})});

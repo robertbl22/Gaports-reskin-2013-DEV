@@ -306,7 +306,7 @@ module.exports = function (grunt) {
                     cwd: '<%= yeoman.dist %>/images',
                     dest: '<%= yeoman.dist %>/../Portals/2/Skins/2013/images',
                     src: [
-                        '*'
+                        '**'
                     ]
                 }]
             }
