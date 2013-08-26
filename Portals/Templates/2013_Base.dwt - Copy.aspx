@@ -37,89 +37,59 @@
 <!-- PortalCss: 35 -->
 <dnn:DnnCssInclude runat="server" Priority="36" FilePath="styles/main.css" PathNameAlias="SkinPath" />
 
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
-
-<!-- TemplateParam name="MobileHomeCssClass" type="text" value="nav-home visible-sm" -->
-<!-- TemplateParam name="HomeCssClass" type="text" value="nav-home hidden-sm" -->
-<!-- TemplateParam name="TopOfContentClass" type="text" value="container" -->
-
-
 <!-- *********************************** -->
 <!-- NAVBAR -->
-<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
-	<div class="container">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<!-- TemplateParam name="MobileHomeCssClass" type="text" value="nav-home visible-sm" -->
+<!-- TemplateParam name="HomeCssClass" type="text" value="nav-home hidden-sm" -->
+<!-- TemplateParam name="AboutCssClass" type="text" value="" -->
+<!-- TemplateParam name="PortofSavannahCssClass" type="text" value="" -->
+<!-- TemplateParam name="PortofBrunswickCssClass" type="text" value="" -->
+<!-- TemplateParam name="MediaCssClass" type="text" value="" -->
+<!-- TemplateParam name="TopOfContentClass" type="text" value="container" -->
+ 
 
-		<!-- MOBILE NAVBAR -->
-		<div class="navbar-header visible-xs">
-			<!-- MOBILE NAV BUTTON -->
-			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<!-- MOBILE GPA BANNER -->
-			<a href="/home.aspx" class="navbar-brand"></a>
-		</div>
 
-		<!-- DESKTOP NAVBAR -->
-		<nav class="collapse navbar-collapse navbar-responsive-collapse" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container"> 
+		
+		<!-- MOBILE NAV BUTTON -->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+		
+		<!-- MOBILE BANNER -->
+		<div class="navbar-brand visible-sm"></div>
+		
+		<!-- NAVBAR -->
+		<div class="nav-collapse collapse navbar-responsive-collapse">
 			<ul class="nav navbar-nav">
-				<!-- Mobile Home Link -->
-				<li class="nav-home nav-home-xs active visible-xs"><a href="/home.aspx"><i class="icon-home"></i> Home</a>
-				</li>
-				<!-- Desktop Home Link -->
-				<li class="nav-home active hidden-xs"><a href="/home.aspx"><i class="icon-home"></i></a>
-				</li>
-				<li>
-					<a href="/about.aspx">About</a>
-				</li>
-				<li>
-					<a href="/portofsavannah.aspx">Port of Savannah</a>
-				</li>
-				<li>
-					<a href="/portofbrunswick.aspx">Port of Brunswick</a> 
-				</li>
-				<li>
-					<a href="/media.aspx">Media</a>
-				</li>
-
-				<!-- DESKTOP SEARCH (Dropdown) -->
-				<li class="dropdown hidden-xs">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<i class="icon-search"></i> <b class="caret"></b>
-					</a>
+				<li class="@@(_document['MobileHomeCssClass'])@@"><a href="/default.aspx"><i class="icon-home"></i> Home</a></li>
+				<li class="@@(_document['HomeCssClass'])@@"><a href="/default.aspx"><i class="icon-home"></i></a></li>
+				<li class="@@(_document['AboutCssClass'])@@"><a href="/about.aspx">About</a></li>
+				<li class="@@(_document['PortofSavannahCssClass'])@@"><a href="/portofsavannah.aspx">Port of Savannah</a></li>
+				<li class="@@(_document['PortofBrunswickCssClass'])@@"><a href="/portofbrunswick.aspx">Port of Brunswick</a></li>
+				<li class="@@(_document['MediaCssClass'])@@"><a href="/media.aspx">Media</a></li>
+				<!-- Search Dropdown -->
+				<li class="dropdown hidden-sm"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i><b class="caret"></b></a>
 					<div class="dropdown-menu navbar-search-dropdown">
-						<dnn:SEARCH id="dnnSEARCH" runat="server" 
-							Submit="Go!" 
-							showWeb="False" 
-							showSite="False" 
-							EnableTheming="False" 
-							class="form-control" />
+						<dnn:SEARCH id="dnnSEARCH" runat="server" Submit="Go!" showWeb="False" showSite="False" EnableTheming="False" class="form-control" />
 					</div>
 				</li>
-				<!-- // END: DESKTOP SEARCH (Dropdown) -->
-
+				<!-- Mobile Search -->
+				<li class="visible-sm">
+					<div class="navbar-search">
+						<div class="input-group">
+							<dnn:SEARCH id="dnnSEARCHmobile" runat="server" Submit="Search" showWeb="False" showSite="False" UseDropDownList="true" EnableTheming="true" class="form-control" placeholder="Search" />
+							<span class="input-group-btn">
+							<button class="btn btn-default" type="button">Go!</button>
+							</span></div>
+					</div>
+				</li>
 			</ul>
-
-			<!-- MOBILE SEARCH -->
-			<div class="navbar-form navbar-left visible-xs" role="search">
-					<dnn:SEARCH id="dnnSEARCHmobile" runat="server" 
-						Submit="Go!" 
-						showWeb="False" 
-						showSite="False" 
-						EnableTheming="False" 
-						class="form-control" />
-			</div>
-			<!-- // END: MOBILE SEARCH -->
-
-		</nav>
-		<!-- // END: DESKTOP NAVBAR -->
-
+		</div>
 	</div>
-</header>
-<!-- // END: NAVBAR -->
-
+</div>
+<!-- // END: NAVBAR --> 
 
 
 <!-- DOTNETNUKE CONTROL PANEL -->
@@ -130,16 +100,14 @@
 <!-- // END: DOTNETNUKE CONTROL PANEL -->
 
 
-<!-- *********************************** -->
-<!-- GPA DESKTOP BANNER -->
-<div class="container gpa-banner hidden-xs">
+<!-- *********************************** --> 
+<!-- GPA BANNER -->
+<div class="container gpa-banner hidden-sm">
 	<div class="row">
-		<div class="col-sm-3">
-			<img src="<%=skinpath%>images/gpa-banner.png" alt="Georgia Ports Authority" />
-		</div>
+		<div class="col-sm-3"><img src="<%=skinpath%>images/gpa-banner.png" alt="Georgia Ports Authority"></div>
 	</div>
 </div>
-<!-- // END: GPA DESKTOP BANNER -->
+<!-- // END: GPA BANNER --> 
 
 
 <!-- TemplateBeginEditable name="Jumbotron" --><!-- TemplateEndEditable -->

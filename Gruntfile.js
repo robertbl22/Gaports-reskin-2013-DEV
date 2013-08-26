@@ -295,6 +295,14 @@ module.exports = function (grunt) {
                 }, {
                     // RWB: Added this for DotNetNuke skin development
                     expand: true,
+                    cwd: '<%= yeoman.dist %>/scripts',
+                    dest: '<%= yeoman.dist %>/../Portals/2/Skins/2013/scripts',
+                    src: [
+                        '*'
+                    ]
+                }, {
+                    // RWB: Added this for DotNetNuke skin development
+                    expand: true,
                     cwd: '<%= yeoman.dist %>/images',
                     dest: '<%= yeoman.dist %>/../Portals/2/Skins/2013/images',
                     src: [

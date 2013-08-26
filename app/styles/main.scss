@@ -1,11 +1,11 @@
 /*********************************/
 /* Variables */
-@import "variables"; 
+@import "variables";
 
 /*********************************/
 /* Framework */
-@import "sass-bootstrap-3/lib/bootstrap";  
-@import "../scripts/vendor/responsiveslides.css";  
+@import "sass-bootstrap/lib/bootstrap";
+@import "../scripts/vendor/responsiveslides.css";
 
 /*********************************/
 /* Fonts */
@@ -16,5 +16,5 @@
 /*********************************/
 /* DESIGN */
 @import "ui/ui";
-@import "design/design";     
-@import "pages/pages";  
+@import "design/design";
+@import "pages/pages";

@@ -9,7 +9,7 @@
 			<li class="li"><a href="/About/GPABytheNumbers.aspx">GPA By the Numbers</a></li>
 			<li class="li"><a href="/About/AdministrativeOffices.aspx">Administrative Offices</a></li>
 			<li class="li"><a href="/About/SavannahHarborDeepeningExpansion.aspx">Savannah Harbor Deepening Expansion</a></li>
-			<li class="li"><a href="/About/Sustainability">Sustainability</a></li>
+			<li class="li"><a href="/About/Sustainability">Sustainability <i class="icon-external-link"></i></a></li>
 		</ul>
 		<strong><a href="/PortofSavannah.aspx">Port of Savannah</a></strong>
 		<ul>
@@ -88,6 +88,7 @@
 			<li class="li"><a href="/Tools/Webaccess.aspx">Webaccess</a></li>
 			<li class="li"><a href="/Tools/GlobalCarrierServices.aspx">Global Carrier Services</a></li>
 			<li class="li"><a href="/Tools/GeorgiaCommercialCorridors.aspx">Georgia Commercial Corridors</a></li>
+			<li class="li"><a href="/Departments/Tariffs/GPAInstaRate.aspx">GPA Insta-Rate</a></li>
 		</ul>
 	</div>
 </div>

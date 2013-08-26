@@ -4,20 +4,29 @@ $photo-base-height: 200px;
 
 
 /************************/
-/* ROW 1 */
-.tilebutton.portofsavannah {
+/* ROW 1: TWO PORTS */
+.home-row-1 {
 	margin-top: 10px;
 }
+.tilebutton.home-portofsavannah {
+	.tilebutton-table-cell  { 
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.tilebutton.home-portofbrunswick {
+	.tilebutton-table-cell  { 
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
 
 /************************/
-/* ROW 2 */
-.tilebutton.portofbrunswick {}
+/* ROW 2: VIDEOS, MORE IMPACT */
+.tilebutton.home-videos {}
 
-/************************/
-/* ROW 3 */
-.tilebutton.videos {}
-
-.tilebutton.more-impact {
+.tilebutton.home-more-impact {
 	height: $photo-base-height;
 	background-color: $gpa-light-blue;
 	@include background-photo('../images/home/more-impact.jpg', center, right);
@@ -35,29 +44,28 @@ $photo-base-height: 200px;
 
 
 /************************/
-/* ROW 4 */
-/* (PORT FACTS CAROUSEL) */
+/* ROW 3: CAROUSEL */
 
 
-/************************/
-/* ROW 5 */
-.tilebutton.sustainability {
+/***********************************************/
+/* ROW 4: SUSTAINABILITY, SHEP, PRESS RELEASES */
+.tilebutton.home-sustainability {
 	height: $photo-base-height;
-	//background-color: $gpa-gray;
+	background-color: $gpa-gray;
 	@include background-photo('../images/home/sustainability.jpg', center, center);
 
 	.tilebutton-table-cell  { 
 		height: $photo-base-height;
-		//background-color: rgba($gpa-orange-accent, 0.0);
+		// background-color: rgba($gpa-orange-accent, 0.0);
 	}
 	.tilebutton-table-cell:hover {
 		background-color: rgba($gpa-orange-accent, 0.3);
 	}
 }
 
-.tilebutton.shep {}
+.tilebutton.home-shep {}
 
-.tilebutton.press-releases {
+.tilebutton.home-press-releases {
 	height: auto;
 
 	h3:hover {background-color: $gpa-blue;}

@@ -37,129 +37,164 @@
 <!-- PortalCss: 35 -->
 <dnn:DnnCssInclude runat="server" Priority="36" FilePath="styles/main.css" PathNameAlias="SkinPath" />
 
-<!-- *********************************** -->
-<!-- NAVBAR -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
+
 <!-- InstanceParam name="MobileHomeCssClass" type="text" value="nav-home visible-sm" -->
 <!-- InstanceParam name="HomeCssClass" type="text" value="nav-home hidden-sm" -->
-<!-- InstanceParam name="AboutCssClass" type="text" value="" -->
-<!-- InstanceParam name="PortofSavannahCssClass" type="text" value="" -->
-<!-- InstanceParam name="PortofBrunswickCssClass" type="text" value="" -->
-<!-- InstanceParam name="MediaCssClass" type="text" value="" --> 
+<!-- InstanceParam name="TopOfContentClass" type="text" value="container" -->
 
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container"> 
-		
-		<!-- MOBILE NAV BUTTON -->
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-		
-		<!-- MOBILE BANNER -->
-		<div class="navbar-brand visible-sm"></div>
-		
-		<!-- NAVBAR -->
-		<div class="nav-collapse collapse navbar-responsive-collapse">
-			<ul class="nav navbar-nav">
-				<li class="nav-home visible-sm"><a href="/default.aspx"><i class="icon-home"></i> Home</a></li>
-				<li class="nav-home hidden-sm"><a href="/default.aspx"><i class="icon-home"></i></a></li>
-				<li class=""><a href="/about.aspx">About</a></li>
-				<li class=""><a href="/portofsavannah.aspx">Port of Savannah</a></li>
-				<li class=""><a href="/portofbrunswick.aspx">Port of Brunswick</a></li>
-				<li class=""><a href="/media.aspx">Media</a></li>
-				<!-- Search Dropdown -->
-				<li class="dropdown hidden-sm"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search"></i><b class="caret"></b></a>
-					<div class="dropdown-menu navbar-search-dropdown">
-						<dnn:SEARCH id="dnnSEARCH" runat="server" Submit="Go!" showWeb="False" showSite="False" EnableTheming="False" class="form-control" />
-					</div>
-				</li>
-				<!-- Mobile Search -->
-				<li class="visible-sm">
-					<div class="navbar-search">
-						<div class="input-group">
-							<dnn:SEARCH id="dnnSEARCHmobile" runat="server" Submit="Search" showWeb="False" showSite="False" UseDropDownList="true" EnableTheming="true" class="form-control" placeholder="Search" />
-							<span class="input-group-btn">
-							<button class="btn btn-default" type="button">Go!</button>
-							</span></div>
-					</div>
-				</li>
-			</ul>
+<!-- *********************************** -->
+<!-- NAVBAR -->
+<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+	<div class="container">
+
+		<!-- MOBILE NAVBAR -->
+		<div class="navbar-header visible-xs">
+			<!-- MOBILE NAV BUTTON -->
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- MOBILE GPA BANNER -->
+			<a href="/home.aspx" class="navbar-brand"></a>
 		</div>
+
+		<!-- DESKTOP NAVBAR -->
+		<nav class="collapse navbar-collapse navbar-responsive-collapse" role="navigation">
+			<ul class="nav navbar-nav">
+				<!-- Mobile Home Link -->
+				<li class="nav-home nav-home-xs active visible-xs"><a href="/home.aspx"><i class="icon-home"></i> Home</a>
+				</li>
+				<!-- Desktop Home Link -->
+				<li class="nav-home active hidden-xs"><a href="/home.aspx"><i class="icon-home"></i></a>
+				</li>
+				<li>
+					<a href="/about.aspx">About</a>
+				</li>
+				<li>
+					<a href="/portofsavannah.aspx">Port of Savannah</a>
+				</li>
+				<li>
+					<a href="/portofbrunswick.aspx">Port of Brunswick</a> 
+				</li>
+				<li>
+					<a href="/media.aspx">Media</a>
+				</li>
+
+				<!-- DESKTOP SEARCH (Dropdown) -->
+				<li class="dropdown hidden-xs">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-search"></i> <b class="caret"></b>
+					</a>
+					<div class="dropdown-menu navbar-search-dropdown">
+						<dnn:SEARCH id="dnnSEARCH" runat="server" 
+							Submit="Go!" 
+							showWeb="False" 
+							showSite="False" 
+							EnableTheming="False" 
+							class="form-control" />
+					</div>
+				</li>
+				<!-- // END: DESKTOP SEARCH (Dropdown) -->
+
+			</ul>
+
+			<!-- MOBILE SEARCH -->
+			<div class="navbar-form navbar-left visible-xs" role="search">
+					<dnn:SEARCH id="dnnSEARCHmobile" runat="server" 
+						Submit="Go!" 
+						showWeb="False" 
+						showSite="False" 
+						EnableTheming="False" 
+						class="form-control" />
+			</div>
+			<!-- // END: MOBILE SEARCH -->
+
+		</nav>
+		<!-- // END: DESKTOP NAVBAR -->
+
 	</div>
-</div>
+</header>
+<!-- // END: NAVBAR -->
+
+
+
 <!-- DOTNETNUKE CONTROL PANEL -->
 <style>
 #dnnCPWrap { top: 50px; }
 </style>
 <dnn:CONTROLPANEL runat="server" id="cp"  IsDockable="True" />
-<!-- // END: NAVBAR --> 
+<!-- // END: DOTNETNUKE CONTROL PANEL -->
 
-<!-- *********************************** --> 
-<!-- GPA BANNER -->
-<div class="container gpa-banner hidden-sm">
+
+<!-- *********************************** -->
+<!-- GPA DESKTOP BANNER -->
+<div class="container gpa-banner hidden-xs">
 	<div class="row">
-		<div class="col-sm-3"><img src="<%=skinpath%>images/gpa-banner.png" alt="Georgia Ports Authority"></div>
+		<div class="col-sm-3">
+			<img src="<%=skinpath%>images/gpa-banner.png" alt="Georgia Ports Authority" />
+		</div>
 	</div>
 </div>
-<!-- // END: GPA BANNER --> 
+<!-- // END: GPA DESKTOP BANNER -->
 
-<!-- InstanceBeginEditable name="Jumbotron" --> 
+
+<!-- InstanceBeginEditable name="Jumbotron" -->
 
 <!-- *********************************** --> 
 <!-- HERO PHOTO -->
-<div class="hero-photo top-of-page">
-	<ul class="rslides">
-		<li><img class="active" src="http://placehold.it/1920x800/007db1&text=Slide+1" alt="Slide 1" /></li>
-		<li><img src="http://placehold.it/1920x800/007db1&text=Slide+2" alt="Slide 2"></li>
-		<li><img src="http://placehold.it/1920x800&text=Slide+3" alt="Slide 3"></li>
-	</ul>
+<div class="top-of-page" id="Jumbotron" runat="server">
 </div>
 <!-- // END: HERO PHOTO --> 
 
 <!-- InstanceEndEditable -->
-<div class="container top-of-page"><!-- InstanceBeginEditable name="Container" --> 
-	<!-- *********************************** --> 
+<div class="container"><!-- InstanceBeginEditable name="Container" --><!-- *********************************** -->
+		<!-- *********************************** --> 
 	<!-- HERO HEADLINE -->
 	<div class="row">
-		<div class="col-sm-12 hero-headline">
-			<ul class="rslides">
-				<li>
-					<h1>Lorem consectetur dolor sit amet, sit amet elit diam.</h1>
-				</li>
-				<li>
-					<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-				</li>
-				<li>
-					<h1>Vivamus luctus vehicula erat, sit amet interdum diam.</h1>
-				</li>
-			</ul>
+		<div class="col-sm-12" id="JumbotronHeadline" runat="server">
 		</div>
 	</div>
+	<!-- PAGE HEADER -->
 	<div class="row">
-		<div class="col-sm-9 nogutter">
-			<hr/>
-		</div>
+		<div class="col-sm-8"><hr/></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
 			<dnn:MENU MenuStyle="ddrmenu/breadcrumb" runat="server" includehidden="false"></dnn:MENU>
 		</div>
 	</div>
-	<!-- *********************************** -->
-	<!-- CONTENT ROWS LAYOUT -->
-	<div id="ContentPane" runat="server"></div>
-	
+	<!-- // END: PAGE HEADER -->
+
 	<div class="row">
-		<div class="col-sm-7 nogutter">
-			<hr/>
+		<div class="col-sm-3 leftpane">
+
+			<!-- *********************************** -->
+			<!-- LEFT NAVIGATION -->
+			<div id="LeftPane" runat="server"></div>
+			<!-- // END: LEFT NAVIGATION -->
+
 		</div>
-		<div class="clearfix">&nbsp;</div>
+
+
+		<!-- *********************************** -->
+		<!-- CONTENT -->
+		<div class="col-sm-8 col-lg-offset-1">
+			<div id="ContentPane" runat="server" class="contentpane"></div>
+			<hr style="margin:45px 0"/>
+		</div>
+		<!-- // END: CONTENT -->
+
 	</div>
+	
 	<!-- InstanceEndEditable --></div>
+
 
 <!-- *********************************** --> 
 <!-- FOOTER -->
-
 <footer class="container-fluid footer">
 	<div class="container">
 		<dnn:FOOTER id="dnnFOOTER" runat="server" />
@@ -172,6 +207,7 @@
 		</div>
 	</div>
 </footer>
+<!-- // END: FOOTER -->
 
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
