@@ -1,0 +1,43 @@
+@import "portofbrunswick.default";
+.lt-ie8 {
+	@import "portofbrunswick.default__ie7"; 
+}
+@media (min-width: 320px) {
+	/* @import "xxx-480-up"; */
+	@import "portofbrunswick-320-up";
+	.lt-ie8 {
+		@import "portofbrunswick-320-up__ie7";
+	}
+}
+
+@media (min-width: 480px) {
+	/* @import "xxx-480-up"; */
+	@import "portofbrunswick-480-up";
+	.lt-ie8 {
+		@import "portofbrunswick-480-up__ie7";
+	}
+}
+
+@media (min-width: 768px) {
+	/* @import "xxx-768-up"; */
+	@import "portofbrunswick-768-up";
+	.lt-ie8 {
+		@import "portofbrunswick-768-up__ie7";
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	/* @import "xxx-768-979"; */
+}
+
+@media (min-width: 980px) {
+	/* @import "xxx-980-up"; */
+}
+
+@media (min-width: 1200px) {
+	/* @import "xxx-1200-up"; */
+}
+
+@media (min-width: 1700px){
+	/* @import "xxx-1700-up"; */
+}

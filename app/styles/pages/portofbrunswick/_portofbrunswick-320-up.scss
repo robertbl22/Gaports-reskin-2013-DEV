@@ -1,0 +1,77 @@
+/************************/
+/* Home page variables */
+
+$row3-height: 290px;
+$row5-height: 210px;
+/************************/
+/* ROW 1 */
+
+/************************/
+/* ROW 2 */
+
+.tilebutton.pob-contactus { 
+
+	.tilebutton-table-cell  { 
+
+	}
+
+} 
+.tilebutton.pob-video { 
+	height: 258px;
+
+	.tilebutton-table-cell  { 
+
+	}
+	.video-player {
+		min-height: 258px;
+	}
+
+} 
+.tilebutton.pob-dload { 
+
+
+	.tilebutton-table-cell  { 
+	}
+
+} 
+/************************/
+/* ROW 3: Press Release Headline */
+
+
+/************************/
+/* ROW 4 */
+.tilebutton.pob-busyPort {
+	background-position: left center;
+	.tilebutton-table-cell  { 
+		h3 {width: 50%;}
+	}
+}
+
+.tilebutton.pob-shed {
+	.tilebutton-table-cell  { 
+
+	}
+}
+
+/************************/
+/* ROW 5 */
+
+.tilebutton.pob-agriProd {
+	.tilebutton-table-cell  { 
+		
+	}
+}
+
+.tilebutton.pob-pollutionFree {
+
+	.tilebutton-table-cell  { 
+		h3{width: 40%;}
+	}
+}
+/************************/
+/* ROW 6: Exporter Chart */
+
+.pob-exportList {
+
+	.export-label{width: inherit;	}
+}

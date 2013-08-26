@@ -1,0 +1,52 @@
+/************************/
+/* Home page variables */
+$row3-height: 290px;
+$row5-height: 210px;
+
+
+/************************/
+/* ROW 3 */
+
+
+.media-videoThumbs {
+	.media-thumbs {
+		padding-top: 20px;
+		.mobile_thumb{
+			width: 100%;
+		}
+
+	}
+	
+}
+
+
+
+/************************/
+/* ROW 4 */
+.newsRotator {
+	padding-bottom: 10px; 
+	.media-newsImage{	
+
+		.mobile_thumb {
+
+			width: 100%;
+			max-height: 180px;
+			padding-bottom: 10px; 
+
+		}
+	}
+}
+
+/************************/
+/* ROW 5 */
+
+.media-newsThumb {
+	.media-thumbs {
+		padding-top: 20px;
+		.mobile_thumb{
+			width: 100%;
+		}
+
+	}
+	
+}

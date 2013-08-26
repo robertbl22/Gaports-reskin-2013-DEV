@@ -1,0 +1,138 @@
+/************************/
+/* Home page variables */
+$photo-base-height: 200px;
+
+/************************/
+/* ROW 1 */
+
+
+/************************/
+/* ROW 2 */
+
+.tilebutton.pos-contactus {} 
+
+.tilebutton.pos-video { 
+	height: $photo-base-height;
+
+	.tilebutton-table-cell  { 
+		text-align: left;
+		padding: 0px;
+	}
+
+	.video-player {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		min-height: $photo-base-height;
+	}
+} 
+
+.tilebutton.pos-shep { 
+
+	.tilebutton-table-cell  { 
+		text-align: left;
+		padding-left: 40px;
+	}
+} 
+
+
+/************************/
+/* ROW 3: Press Release Headline */
+
+/************************/
+/* ROW 4 */
+
+.tilebutton.pos-containerized {
+	height: auto;
+	
+	.tilebutton-table-cell  { 
+		text-align: left;
+		padding-left: 20px;
+		height: auto;
+
+
+	}
+	h3 {
+			padding: 5px 0px !important;
+		}
+}
+
+.tilebutton.pos-gaports {
+	height: $photo-base-height;
+	background-color: $gpa-light-blue;
+	@include background-photo('../images/pos/coast_port.jpg', center, right);
+
+	.tilebutton-table-cell  { 
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+/************************/
+/* ROW 5 */
+
+.tilebutton.pos-warehouse {
+
+	.tilebutton-table-cell  { 
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+.tilebutton.pos-less-diesel {
+	height: $photo-base-height;
+	background-color: $gpa-light-blue;
+	@include background-photo('../images/pos/sustainability_ertg.jpg', center, right);
+
+	.tilebutton-table-cell  { 
+		text-align: left;
+		padding-left: 20px;
+		h3{
+			color:#000 !important;
+		}
+	}
+}
+
+
+/************************/
+/* ROW 6: Exporter Chart */
+.pos-exportList {
+
+	.export-label{width: 11.66667%;	}
+	.progress {
+
+			background-color: #fff;
+
+			-webkit-box-shadow: none;
+			box-shadow: none; 
+				/************************/
+				/* Progress Bars */
+
+				.progress-bar{
+					.soft-right {padding-right: 10px;}
+
+					&.dark-blue { background-color: $gpa-dark-blue;
+						&:hover{
+							background-color: $gpa-dark-blue-accent;
+						}
+					}
+					&.orange { background-color: $gpa-orange;
+						&:hover{
+							background-color: $gpa-orange-accent;
+						}
+					}
+				}
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+

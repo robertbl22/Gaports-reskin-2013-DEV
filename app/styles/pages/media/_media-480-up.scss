@@ -1,0 +1,57 @@
+/************************/
+/* Home page variables */
+$row3-height: 290px;
+$row5-height: 210px;
+
+
+/************************/
+/* ROW 3 */
+.tilebutton.videos {
+	height:$row3-height;
+	min-width: 180px;
+	.tilebutton-table-cell { 
+		height:$row3-height; 
+	}
+}
+
+.tilebutton.more-impact {
+	height:$row3-height;
+	.tilebutton-table-cell  { 
+		height:$row3-height; 
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+/************************/
+/* ROW 4 */
+.tilebutton.portfactscarousel {
+	background-color:$gpa-pale-blue;
+	padding: 0;
+	height: auto;
+}
+
+/************************/
+/* ROW 5 */
+.tilebutton.sustainability {
+	height:$row5-height;
+	.tilebutton-table-cell  { 
+		height:$row5-height; 
+	}
+}
+
+.tilebutton.shep {
+	height:$row5-height;
+	.tilebutton-table-cell { 
+		height:$row5-height; 
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+.tilebutton.press-releases {
+	height:$row5-height;
+	.tilebutton-table-cell { 
+		height:$row5-height; 
+	}
+}

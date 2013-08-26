@@ -1,0 +1,87 @@
+/************************/
+/* Home page variables */
+$row3-height: 290px;
+$row5-height: 210px;
+
+/************************/
+/* ROW 1 */
+
+/************************/
+/* ROW 2 */
+
+.tilebutton.pob-contactus { 
+	height: $row5-height;
+
+	.tilebutton-table-cell  { 
+		height: $row5-height;
+		text-align: left;
+		padding-left: 20px;
+	}
+
+} 
+.tilebutton.pob-video { 
+	height: $row5-height;
+
+	.tilebutton-table-cell  { 
+		height: $row5-height;
+	}
+	.video-player {
+		min-height: $row5-height;
+
+	}
+
+} 
+.tilebutton.pob-dload { 
+	height: $row5-height;
+
+	.tilebutton-table-cell  { 
+		height: $row5-height;
+	}
+
+} 
+/************************/
+/* ROW 3: Press Release Headline */
+
+
+/************************/
+/* ROW 4 */
+.tilebutton.pob-busyPort {
+	.tilebutton-table-cell  { 
+		h3{width: 40%;}
+	}
+}
+
+.tilebutton.pob-shed {
+	height: $photo-base-height;
+	
+	.tilebutton-table-cell  { 
+		
+	}
+}
+
+/************************/
+/* ROW 5 */
+
+.tilebutton.pob-agriProd {
+		height: $photo-base-height;
+	.tilebutton-table-cell  { 
+		
+	}
+}
+
+.tilebutton.pob-pollutionFree {
+	
+	.tilebutton-table-cell  { 
+		h3{width: 45%;}
+
+	}
+}
+/************************/
+/* ROW 6: Exporter Chart */
+
+/************************/
+/* ROW 7: Exporter List */
+.pob-exportList {
+
+	.export-label{width: 14.66667%;	}
+}
