@@ -8,4 +8,4 @@
 		</a>
 	</div>
 </div>
-<div id="ContentPane" runat="server" style="display:none;" />
+<div id="ContentPane" runat="server" />

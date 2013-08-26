@@ -12,12 +12,28 @@ $photo-base-height: 200px;
 	.tilebutton-table-cell  { 
 		padding-top: 20px;
 		padding-bottom: 20px;
+
+		.innerbutton {
+			padding-top: 2px;		
+			padding-bottom: 2px;	
+		}
+		.innerbutton:hover {
+			background-color: $gpa-dark-blue;
+		}
 	}
 }
 .tilebutton.home-portofbrunswick {
 	.tilebutton-table-cell  { 
 		padding-top: 20px;
 		padding-bottom: 20px;
+
+		.innerbutton {
+			padding-top: 2px;		
+			padding-bottom: 2px;		
+		}
+		.innerbutton:hover {
+			background-color: $gpa-blue;
+		}
 	}
 }
 
@@ -34,8 +50,8 @@ $photo-base-height: 200px;
 	.tilebutton-table-cell  { 
 		height: $photo-base-height;
 		//background-color: rgba($gpa-orange-accent, 0.0);
-		text-align: left;
-		padding-left: 20px;
+		/* text-align: left; */
+		/* padding-left: 20px; */
 	}
 	.tilebutton-table-cell:hover {
 		background-color: rgba($gpa-dark-blue, 0.2);
@@ -68,11 +84,5 @@ $photo-base-height: 200px;
 .tilebutton.home-press-releases {
 	height: auto;
 
-	h3:hover {background-color: $gpa-blue;}
-	h4:hover {background-color: $gpa-blue;}
-	.tilebutton-table-cell { 
-		height: auto;
-		//padding-top: 10px;
-		//padding-bottom: 10px;
-	}
+	.innerbutton:hover {background-color: $gpa-blue;}
 }
