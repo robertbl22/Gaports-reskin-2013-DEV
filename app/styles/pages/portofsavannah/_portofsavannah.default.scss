@@ -4,6 +4,44 @@ $photo-base-height: 200px;
 
 /************************/
 /* ROW 1 */
+.home-row-1{
+
+	.home-portofsavannah {
+		.tilebutton-table-cell {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.innerbutton{
+
+				padding: 2px 20px;	}
+
+				&:hover {
+					background-color: #00274c;
+				}
+			}
+
+		} 
+
+	} 
+
+	.home-portofsavannah {
+		.tilebutton-table-cell {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.innerbutton{
+
+				padding: 2px 20px;	}
+
+				&:hover {
+
+					background-color: #007db1;
+
+				}
+			}
+
+		} 
+
+	} 
+}
 
 
 /************************/
@@ -53,8 +91,8 @@ $photo-base-height: 200px;
 
 	}
 	h3 {
-			padding: 5px 0px !important;
-		}
+		padding: 5px 0px !important;
+	}
 }
 
 .tilebutton.pos-gaports {
@@ -101,10 +139,10 @@ $photo-base-height: 200px;
 	.export-label{width: 11.66667%;	}
 	.progress {
 
-			background-color: #fff;
+		background-color: #fff;
 
-			-webkit-box-shadow: none;
-			box-shadow: none; 
+		-webkit-box-shadow: none;
+		box-shadow: none; 
 				/************************/
 				/* Progress Bars */
 
@@ -122,8 +160,8 @@ $photo-base-height: 200px;
 						}
 					}
 				}
+			}
 		}
-}
 
 
 

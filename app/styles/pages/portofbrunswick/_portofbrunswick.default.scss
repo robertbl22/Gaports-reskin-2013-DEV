@@ -4,7 +4,46 @@ $photo-base-height: 200px;
 
 /************************/
 /* ROW 1: TWO PORTS */
+/************************/
+/* ROW 1 */
+.home-row-1{
 
+	.home-portofsavannah {
+		.tilebutton-table-cell {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.innerbutton{
+
+				padding: 2px 20px;	}
+
+				&:hover {
+					background-color: #00274c;
+				}
+			}
+
+		} 
+
+	} 
+
+	.home-portofsavannah {
+		.tilebutton-table-cell {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.innerbutton{
+
+				padding: 2px 20px;	}
+
+				&:hover {
+
+					background-color: #007db1;
+
+				}
+			}
+
+		} 
+
+	} 
+}
 
 /************************/
 /* ROW 2: Contact Us, VIDEOS, Download */
@@ -32,7 +71,7 @@ $photo-base-height: 200px;
 .tilebutton.pob-dload { 
 
 	.tilebutton-table-cell  { 
-		text-align: center;
+		
 		padding-left: 0px;
 	}
 } 
