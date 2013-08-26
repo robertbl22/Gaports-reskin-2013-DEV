@@ -3,36 +3,35 @@
 	<xsl:output method="html"/>
 	
 	<xsl:template match="/*">
-		<xsl:apply-templates select="root" />
+		<xsl:apply-templates select="root/node[@enabled=1]" />
 	</xsl:template>
 	
-	<!-- TEMPLATE: Menu container -->
-	<xsl:template match="root">
-		<xsl:apply-templates select="node" />
-	</xsl:template>
-	
-	<!-- TEMPLATE: Format link title -->
-	<xsl:template match="node">
-		<li>
-			<xsl:if test="@enabled = 1">
-				<xsl:if test="@selected = 1">
-					<xsl:attribute name="class">active</xsl:attribute>
-				</xsl:if>
+	<!-- TEMPLATE: Home page -->
+	<xsl:template match="node[@text='Home']">
+		<!-- Mobile Home Link -->
+		<li class="nav-home nav-home-xs visible-xs">
+			<xsl:if test="@selected = 1">
+				<xsl:attribute name="class">nav-home nav-home-xs visible-xs active</xsl:attribute>
 			</xsl:if>
-			
-			<xsl:choose>
-				<xsl:when test="@enabled = 1 and @selected != 1">
-					<a href="{@url}">
-						<xsl:value-of select="@text" />
-					</a>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="@text" />
-				</xsl:otherwise>
-			</xsl:choose>
-			
+			<a href="/home.aspx"><i class="icon-home"></i>Home</a>
+		</li>
+		<!-- Desktop Home Link -->
+		<li class="nav-home hidden-xs">
+			<xsl:if test="@selected = 1">
+				<xsl:attribute name="class">nav-home hidden-xs active</xsl:attribute>
+			</xsl:if>
+			<a href="/home.aspx"><i class="icon-home"></i></a>
 		</li>
 	</xsl:template>
 	
+	<!-- TEMPLATE: Root pages -->
+	<xsl:template match="node">
+		<li>
+			<xsl:if test="@selected = 1 or @breadcrumb = 1">
+				<xsl:attribute name="class">active</xsl:attribute>
+			</xsl:if>
+			<a href="{@url}"><xsl:value-of select="@text" /></a>
+		</li>
+	</xsl:template>
 	
 </xsl:stylesheet>
