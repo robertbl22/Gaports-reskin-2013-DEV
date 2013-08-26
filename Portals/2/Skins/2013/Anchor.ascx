@@ -65,13 +65,7 @@
 		<!-- DESKTOP NAVBAR -->
 		<nav class="collapse navbar-collapse navbar-responsive-collapse" role="navigation">
 			<ul class="nav navbar-nav">
-				<!-- Mobile Home Link -->
-				<li class="nav-home nav-home-xs active visible-xs"><a href="/home.aspx"><i class="icon-home"></i> Home</a>
-				</li>
-				<!-- Desktop Home Link -->
-				<li class="nav-home active hidden-xs"><a href="/home.aspx"><i class="icon-home"></i></a>
-				</li>
-				<dnn:MENU id="dnnMenu MenuStyle="ddrmenu/topnav" runat="server" nodeselector="RootOnly" includehidden="false"></dnn:MENU>
+				<dnn:MENU MenuStyle="ddrmenu/topnav" runat="server" nodeselector="RootOnly" includehidden="false"></dnn:MENU>
 
 				<!-- DESKTOP SEARCH (Dropdown) -->
 				<li class="dropdown hidden-xs">
