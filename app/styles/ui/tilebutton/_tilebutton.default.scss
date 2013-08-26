@@ -1,6 +1,6 @@
 /* ************************ */
 /* TILEBUTTON BASE      */
-$tilebutton-height-base: 65px;
+$tilebutton-height-base: 60px;
 
 .tilebutton {
 	color: $white;
@@ -27,11 +27,18 @@ $tilebutton-height-base: 65px;
 	.tilebutton-table-cell {
 		display: table-cell;
 		height: $tilebutton-height-base;
-		padding: 3px 12px 3px 12px;
 		vertical-align: middle;
 
 		a.link:hover {
 			text-decoration: underline;
+		}
+	}
+	a.tilebutton-table-cell {
+		padding: 0 20px 0 20px;
+	}
+	div.tilebutton-table-cell {
+		.innerbutton {
+			padding: 0 20px 0 20px;
 		}
 	}
 	.tilebutton-content {
@@ -43,6 +50,14 @@ $tilebutton-height-base: 65px;
 		i {
 			display: inline !important;
 			float: none !important;
+		}
+	}
+}
+
+.leftpane {
+	.tilebutton {
+		.tilebutton-table-cell {
+			padding: 3px 12px 3px 12px;
 		}
 	}
 }
