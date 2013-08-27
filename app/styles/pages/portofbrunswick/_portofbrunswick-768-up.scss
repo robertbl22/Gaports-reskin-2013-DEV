@@ -8,14 +8,19 @@ $row5-height: 210px;
 
 /************************/
 /* ROW 2 */
+.col-sm-2 {
+width: 19.66667%;
+}
 
 .tilebutton.pob-contactus { 
 	height: $row5-height;
 
+
+
 	.tilebutton-table-cell  { 
 		height: $row5-height;
 		text-align: left;
-		padding-left: 20px;
+		padding-left: 10px;
 		h3 {font-size: 24px;
 			text-align: center;}
 		}
@@ -38,8 +43,8 @@ $row5-height: 210px;
 
 		.tilebutton-table-cell  { 
 			height: $row5-height;
-			
-			h3 {font-size: 24px;
+
+			h3 {font-size: 18px;
 				text-align: center;}
 			}
 
