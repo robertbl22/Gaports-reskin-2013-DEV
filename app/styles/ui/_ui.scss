@@ -1,5 +1,5 @@
 @import "breadcrumb/breadcrumb-default";
-@import "carousel/carousel-default";
+@import "carousel/carousel";
 @import "footer/footer-default";
 @import "jumbotron/jumbotron-default";
 @import "navbar/navbar-default";
@@ -11,7 +11,6 @@
 @import "diagnostic-panel/diagnostic-panel";
 
 .lt-ie8 {
-	@import "carousel/carousel-default__ie7";
 	@import "footer/footer-default__ie7"; 
 }
 
@@ -33,7 +32,6 @@
 
 @media (min-width: 980px) {
 	/* @import "xxx-980-up"; */
-	@import "carousel/carousel-980-up";
 }
 
 @media (min-width: 1200px) {
