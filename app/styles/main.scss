@@ -12,7 +12,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 @import "font-awesome/scss/font-awesome";
 /* @import "gpa-round-icons"; */
- 
+
+/*********************************/
+/* UTILITY */
+@media (max-width: 479px) {
+	.hidden-below-480 {
+		display: none;
+	}
+}
+
+
 /*********************************/
 /* DESIGN */
 @import "ui/ui";
