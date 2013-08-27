@@ -97,12 +97,18 @@ $photo-base-height: 200px;
 
 .tilebutton.pos-gaports {
 	height: $photo-base-height;
-	background-color: $gpa-light-blue;
+	background-color: #0A0608;
 	@include background-photo('../images/pos/coast_port.jpg', center, right);
 
 	.tilebutton-table-cell  { 
 		text-align: left;
 		padding-left: 20px;
+
+		&:hover{
+
+			background-color: transparentize(#00274C, 0.8);
+
+		}
 	}
 }
 
@@ -119,7 +125,7 @@ $photo-base-height: 200px;
 
 .tilebutton.pos-less-diesel {
 	height: $photo-base-height;
-	background-color: $gpa-light-blue;
+	background-color: #9299A0;
 	@include background-photo('../images/pos/sustainability_ertg.jpg', center, right);
 
 	.tilebutton-table-cell  { 
@@ -127,6 +133,12 @@ $photo-base-height: 200px;
 		padding-left: 20px;
 		h3{
 			color:#000 !important;
+		}
+
+		&:hover{
+
+			background-color: transparentize(#00274C, 0.8);
+
 		}
 	}
 }

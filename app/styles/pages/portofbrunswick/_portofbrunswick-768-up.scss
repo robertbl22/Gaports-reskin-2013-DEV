@@ -16,29 +16,34 @@ $row5-height: 210px;
 		height: $row5-height;
 		text-align: left;
 		padding-left: 20px;
-	}
+		h3 {font-size: 24px;
+			text-align: center;}
+		}
 
-} 
-.tilebutton.pob-video { 
-	height: $row5-height;
-
-	.tilebutton-table-cell  { 
+	} 
+	.tilebutton.pob-video { 
 		height: $row5-height;
-	}
-	.video-player {
-		min-height: $row5-height;
 
-	}
+		.tilebutton-table-cell  { 
+			height: $row5-height;
+		}
+		.video-player {
+			min-height: $row5-height;
 
-} 
-.tilebutton.pob-dload { 
-	height: $row5-height;
+		}
 
-	.tilebutton-table-cell  { 
+	} 
+	.tilebutton.pob-dload { 
 		height: $row5-height;
-	}
 
-} 
+		.tilebutton-table-cell  { 
+			height: $row5-height;
+			
+			h3 {font-size: 24px;
+				text-align: center;}
+			}
+
+		} 
 /************************/
 /* ROW 3: Press Release Headline */
 
@@ -63,7 +68,7 @@ $row5-height: 210px;
 /* ROW 5 */
 
 .tilebutton.pob-agriProd {
-		height: $photo-base-height;
+	height: $photo-base-height;
 	.tilebutton-table-cell  { 
 		
 	}
