@@ -19,13 +19,16 @@ $row5-height: 210px;
 } 
 .tilebutton.pob-video { 
 	height: 258px;
-
+@media (min-width: 481px) and (max-width: 580px){ height: 292px !important;}
+@media (min-width: 320px) and (max-width: 480px){ height: 285px;}
 	.tilebutton-table-cell  { 
-
+@media (min-width: 481px) and (max-width: 580px){ height: 292px !important;}
+@media (min-width: 320px) and (max-width: 480px){ height: 285px;}
 	}
 	.video-player {
 		min-height: 258px;
-	}
+@media (min-width: 481px) and (max-width: 580px){ min-height: 292px !important;}
+@media (min-width: 320px) and (max-width: 480px){ min-height: 285px;}	}
 
 } 
 .tilebutton.pob-dload { 

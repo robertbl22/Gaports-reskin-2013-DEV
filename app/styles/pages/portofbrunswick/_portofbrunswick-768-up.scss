@@ -1,7 +1,7 @@
 /************************/
 /* Home page variables */
 $row3-height: 290px;
-$row5-height: 210px;
+$row5-height: 302px;
 
 /************************/
 /* ROW 1 */
@@ -9,13 +9,13 @@ $row5-height: 210px;
 /************************/
 /* ROW 2 */
 .col-sm-2 {
-width: 19.66667%;
+	width: 19.66667%;
 }
 
 .tilebutton.pob-contactus { 
 	height: $row5-height;
-
-
+	@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 
 	.tilebutton-table-cell  { 
 		height: $row5-height;
@@ -23,27 +23,39 @@ width: 19.66667%;
 		padding-left: 10px;
 		h3 {font-size: 24px;
 			text-align: center;}
+			@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+
+
 		}
+
+
 
 	} 
 	.tilebutton.pob-video { 
 		height: $row5-height;
-
+		@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 		.tilebutton-table-cell  { 
 			height: $row5-height;
+			@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 		}
 		.video-player {
 			min-height: $row5-height;
-
+			@media (min-width: 1200px){ min-height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ min-height: 242px !important;}
 		}
 
 	} 
 	.tilebutton.pob-dload { 
 		height: $row5-height;
-
+		@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 		.tilebutton-table-cell  { 
 			height: $row5-height;
-
+			@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 			h3 {font-size: 18px;
 				text-align: center;}
 			}
