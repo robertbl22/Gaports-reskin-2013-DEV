@@ -1,7 +1,7 @@
 /************************/
 /* Home page variables */
 $row3-height: 290px;
-$row5-height: 210px;
+$row5-height: 302px;
 
 /************************/
 /* ROW 1 */
@@ -9,36 +9,48 @@ $row5-height: 210px;
 /************************/
 /* ROW 2 */
 .col-sm-2 {
-width: 19.66667%;
+	width: 19.66667%;
 }
 
 .tilebutton.pos-contactus { 
 	height: $row5-height;
-
+	@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 	.tilebutton-table-cell  { 
 		height: $row5-height;
 		text-align: left;
 		padding-left: 20px;
+		@media (min-width: 1200px){ height: 355px !important;}
+		@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 	}
 
 } 
 .tilebutton.pos-video { 
 	height: $row5-height;
+	@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 
 	.tilebutton-table-cell  { 
 		height: $row5-height;
+		@media (min-width: 1200px){ height: 355px !important;}
+		@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 	}
 	.video-player {
 		min-height: $row5-height;
-
+		@media (min-width: 1200px){ min-height: 355px !important;}
+		@media (min-width: 769px) and (max-width: 980px){ min-height: 242px !important;}
 	}
 
 } 
 .tilebutton.pos-shep { 
 	height: $row5-height;
+	@media (min-width: 1200px){ height: 355px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 
 	.tilebutton-table-cell  { 
 		height: $row5-height;
+		@media (min-width: 1200px){ height: 355px !important;}
+		@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 	}
 
 } 
@@ -58,7 +70,7 @@ width: 19.66667%;
 	height: $photo-base-height;
 
 	.tilebutton-table-cell  { 
-	
+		
 		
 	}
 }
