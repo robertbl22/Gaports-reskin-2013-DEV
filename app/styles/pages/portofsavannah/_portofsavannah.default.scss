@@ -1,47 +1,42 @@
 /************************/
-/* Home page variables */
+/* POS page variables */
 $photo-base-height: 200px;
 
 /************************/
-/* ROW 1 */
-.home-row-1{
-
-	.home-portofsavannah {
-		.tilebutton-table-cell {
-			padding-top: 20px;
-			padding-bottom: 20px;
-			.innerbutton{
-
-				padding: 2px 20px;	
-
-				&:hover {
-					background-color: #00274c;
-				}
-			}
-
-		} 
-
-	} 
-
-	.home-portofsavannah {
-		.tilebutton-table-cell {
-			padding-top: 20px;
-			padding-bottom: 20px;
-			.innerbutton{
-
-				padding: 2px 20px;	
-
-				&:hover {
-
-					background-color: #007db1;
-
-				}
-			}
-
-		} 
-	}
-
+/* ROW 1: TWO TERMINALS */
+.pos-row-1 {
+	background-color: $gpa-blue;
+	margin-top: 10px;
 }
+.tilebutton.pos-gardencity {
+	.tilebutton-table-cell  { 
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.innerbutton {
+			padding-top: 2px;		
+			padding-bottom: 2px;	
+		}
+		.innerbutton:hover {
+			background-color: $gpa-dark-blue;
+		}
+	}
+}
+.tilebutton.pos-oceanterminal {
+	.tilebutton-table-cell  { 
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.innerbutton {
+			padding-top: 2px;		
+			padding-bottom: 2px;		
+		}
+		.innerbutton:hover {
+			background-color: $gpa-blue;
+		}
+	}
+}
+	
 
 
 /************************/

@@ -1,48 +1,43 @@
 /************************/
-/* Home page variables */
+/* POB page variables */
 $photo-base-height: 200px;
 
+
 /************************/
-/* ROW 1: TWO PORTS */
-/************************/
-/* ROW 1 */
-.home-row-1{
-
-	.home-portofsavannah {
-		.tilebutton-table-cell {
-			padding-top: 20px;
-			padding-bottom: 20px;
-			.innerbutton{
-				padding: 2px 20px;	
-
-				&:hover {
-					background-color: #00274c;
-				}
-			}
-
-		} 
-
-	} 
-
-	.home-portofsavannah {
-		.tilebutton-table-cell {
-			padding-top: 20px;
-			padding-bottom: 20px;
-			.innerbutton{
-
-				padding: 2px 20px;	
-
-				&:hover {
-
-					background-color: #007db1;
-
-				}
-			}
-
-		} 
-
-	} 
+/* ROW 1: TWO TERMINALS */
+.pob-row-1 {
+	background-color: $gpa-blue;
+	margin-top: 10px;
 }
+.tilebutton.pob-colonelsisland {
+	.tilebutton-table-cell  { 
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.innerbutton {
+			padding-top: 2px;		
+			padding-bottom: 2px;	
+		}
+		.innerbutton:hover {
+			background-color: $gpa-dark-blue;
+		}
+	}
+}
+.tilebutton.pob-mayorspoint {
+	.tilebutton-table-cell  { 
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.innerbutton {
+			padding-top: 2px;		
+			padding-bottom: 2px;		
+		}
+		.innerbutton:hover {
+			background-color: $gpa-blue;
+		}
+	}
+}
+	
 
 /************************/
 /* ROW 2: Contact Us, VIDEOS, Download */
@@ -72,7 +67,7 @@ $photo-base-height: 200px;
 	.tilebutton-table-cell  { 
 		h3 { text-align: center;}
 		
-   }
+	}
 } 
 
 
@@ -92,9 +87,9 @@ $photo-base-height: 200px;
 
 	}
 
-		h3{
-			padding: 10px 0px;
-		}
+	h3{
+		padding: 10px 0px;
+	}
 }
 
 .tilebutton.pob-busyPort  {
@@ -136,7 +131,7 @@ $photo-base-height: 200px;
 }
 
 .tilebutton.pob-agriProd {
-		height: auto;
+	height: auto;
 	.tilebutton-table-cell  { 
 		text-align: left;
 		padding-left: 20px;
@@ -154,10 +149,10 @@ $photo-base-height: 200px;
 	.export-label{width: 11.66667%;	}
 	.progress {
 
-			background-color: #fff;
+		background-color: #fff;
 
-			-webkit-box-shadow: none;
-			box-shadow: none; 
+		-webkit-box-shadow: none;
+		box-shadow: none; 
 				/************************/
 				/* Progress Bars */
 
@@ -175,8 +170,8 @@ $photo-base-height: 200px;
 						}
 					}
 				}
+			}
 		}
-}
 
 /************************/
 /* ROW 7: Exporter Chart */
