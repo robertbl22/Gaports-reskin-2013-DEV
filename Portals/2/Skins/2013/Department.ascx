@@ -150,7 +150,7 @@
 			<!-- *********************************** -->
 			<!-- LEFT NAVIGATION -->
 			<div id="LeftPane" runat="server"></div>
-			<dnn:MENU MenuStyle="ddrmenu/sidenav" runat="server" nodeselector="*" includehidden="false"></dnn:MENU>
+			<dnn:MENU MenuStyle="ddrmenu/sidenav" runat="server" nodeselector="RootChildren" includehidden="false"></dnn:MENU>
 			<div id="LeftPane2" runat="server"></div>
 			<!-- // END: LEFT NAVIGATION -->
 
