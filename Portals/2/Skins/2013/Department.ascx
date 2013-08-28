@@ -130,7 +130,7 @@
 	
 	<!-- PAGE HEADER -->
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-sm-10">
 			<h1><%= Server.HtmlEncode(PortalSettings.ActiveTab.TabName) %></h1>
 		</div>
 	</div>
@@ -179,7 +179,7 @@
 			<div class="col-sm-4">
 				<dnn:COPYRIGHT runat="server" id="dnnCOPYRIGHT" />
 			</div>
-			<div class="col-sm-5 center"><a href="#">Site Map</a> | <a href="http://www.gaports.com/corporate/PrivacyStatement.aspx">Privacy Statement</a> | <a href="http://www.gaports.com/corporate/TermsandConditions.aspx">Terms&nbsp;&amp;&nbsp;Conditions</a> | <dnn:LOGIN runat="server" id="dnnLOGIN" /></div>
+			<div class="col-sm-5 center"><a href="/site/sitemap.aspx">Site Map</a> | <a href="/site/PrivacyStatement.aspx">Privacy Statement</a> | <a href="/site/TermsandConditions.aspx">Terms&nbsp;&amp;&nbsp;Conditions</a> | <dnn:LOGIN runat="server" id="dnnLOGIN" /></div>
 			<div class="col-sm-3">Website by <a href="http://www.realmadvertising.com">Realm Advertising</a></div>
 		</div>
 	</div>
