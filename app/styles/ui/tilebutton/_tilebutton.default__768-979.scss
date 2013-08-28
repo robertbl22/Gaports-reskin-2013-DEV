@@ -1,7 +1,8 @@
 .leftpane {
 	.tilebutton {
 		h3 {
-			font-size: $font-size-large;
+			//font-size: $font-size-large;
+			font-size: ceil($font-size-base * 1.14) !default;
 		}
 	}
 }
