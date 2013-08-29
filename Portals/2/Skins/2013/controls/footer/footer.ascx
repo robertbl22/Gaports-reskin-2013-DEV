@@ -42,7 +42,7 @@
 		<ul>
 			<li class="li"><a href="/PortofSavannah/GardenCityTerminal/Container.aspx">Container</a></li>
 			<li class="li"><a href="/PortofSavannah/GardenCityTerminal/Reefer.aspx">Reefer</a></li>
-			<li class="li"><a href="/PortofSavannah/GardenCityTerminal/StuffingStripping.aspx">Stuffing/Stripping</a></li>
+			<!-- li class="li"><a href="/PortofSavannah/GardenCityTerminal/StuffingStripping.aspx">Stuffing/Stripping</a></li -->
 			
 			<li class="li"><a href="/PortofBrunswick/ColonelsIslandTerminalRoRo/RoRo.aspx">Ro/Ro</a></li>
 			<!--                    /PortofSavannah/OceanTerminal/RoRo -->

@@ -2,7 +2,7 @@ node_modules
 .tmp
 .sass-cache
 app/bower_components
-dist
+dist/**
 *.LCK
 _notes
 dwsync.xml
