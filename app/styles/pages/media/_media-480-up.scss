@@ -13,7 +13,9 @@ $row5-height: 302px;
 		.media-video {
 
 			.video-player {
-				min-height: 450px;
+				min-height: 322px;
+				@media (min-width: 580px) and (max-width: 768px){ min-height: 430px !important;}
+
 			}
 
 		}

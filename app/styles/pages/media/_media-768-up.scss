@@ -1,7 +1,7 @@
 /************************/
 /* Home page variables */
 $row3-height: 290px;
-$row5-height: 302px;
+$row5-height: 470px;
 $m-thumb: 150px;
 
 .img-responsive {
@@ -24,8 +24,8 @@ width: 100%;
 				width: 100%;
 				height: auto;
 				min-height: $row5-height;
-				@media (min-width: 1200px){ min-height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ min-height: 242px !important;}
+				@media (min-width: 1200px){ min-height: 520px !important;}
+	@media (min-width: 769px) and (max-width: 980px){ min-height: 312px !important;}
 			}
 
 		}
