@@ -43,7 +43,7 @@
 
 <!-- InstanceParam name="MobileHomeCssClass" type="text" value="nav-home visible-sm" -->
 <!-- InstanceParam name="HomeCssClass" type="text" value="nav-home hidden-sm" -->
-<!-- InstanceParam name="TopOfContentClass" type="text" value="container" -->
+<!-- InstanceParam name="TopOfContentClass" type="text" value="container top-of-page" -->
 
 
 <!-- *********************************** -->
@@ -126,42 +126,48 @@
 <!-- // END: GPA DESKTOP BANNER -->
 
 
-<!-- InstanceBeginEditable name="Jumbotron" --> 
-
-<!-- *********************************** --> 
-<!-- HERO PHOTO -->
-<div class="top-of-page" id="Jumbotron" runat="server">
-</div>
-<!-- // END: HERO PHOTO --> 
-
-<!-- InstanceEndEditable -->
-<div class="container"><!-- InstanceBeginEditable name="Container" --> 
-	<!-- *********************************** --> 
-	<!-- HERO HEADLINE -->
+<!-- InstanceBeginEditable name="Jumbotron" --><!-- InstanceEndEditable -->
+<div class="container top-of-page"><!-- InstanceBeginEditable name="Container" --><!-- *********************************** -->
+	
+	<!-- PAGE HEADER -->
 	<div class="row">
-		<div class="col-sm-12" id="JumbotronHeadline" runat="server">
+		<div class="col-sm-10">
+			<h1><%= Server.HtmlEncode(PortalSettings.ActiveTab.TabName) %></h1>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-9 nogutter">
-			<hr/>
-		</div>
+		<div class="col-sm-3"><hr/></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
 			<dnn:MENU MenuStyle="ddrmenu/breadcrumb" runat="server" includehidden="false"></dnn:MENU>
 		</div>
 	</div>
-	<!-- *********************************** -->
-	<!-- CONTENT ROWS LAYOUT -->
-	<div id="ContentPane" runat="server"></div>
-	
+	<!-- // END: PAGE HEADER -->
+
 	<div class="row">
-		<div class="col-sm-7 nogutter">
-			<hr/>
+		<div class="col-sm-3 leftpane">
+
+			<!-- *********************************** -->
+			<!-- LEFT NAVIGATION -->
+			<div id="LeftPane" runat="server"></div>
+			<dnn:MENU MenuStyle="ddrmenu/sidenav" runat="server" nodeselector="*" includehidden="false"></dnn:MENU>
+			<div id="LeftPane2" runat="server"></div>
+			<!-- // END: LEFT NAVIGATION -->
+
 		</div>
-		<div class="clearfix">&nbsp;</div>
+
+
+		<!-- *********************************** -->
+		<!-- CONTENT -->
+		<div class="col-sm-8 col-lg-offset-1">
+			<div id="ContentPane" runat="server" class="contentpane"></div>
+			<hr style="margin:45px 0"/>
+		</div>
+		<!-- // END: CONTENT -->
+
 	</div>
+	
 	<!-- InstanceEndEditable --></div>
 
 

@@ -89,6 +89,7 @@
 			<li class="li"><a href="/Tools/GlobalCarrierServices.aspx">Global Carrier Services</a></li>
 			<li class="li"><a href="/Tools/GeorgiaCommercialCorridors.aspx">Georgia Commercial Corridors</a></li>
 			<li class="li"><a href="/Departments/Tariffs/GPAInstaRate.aspx">GPA Insta-Rate</a></li>
+			<li class="li"><a href="/moreimpact">More Impact <i class="icon-external-link"></i></a></li>
 		</ul>
 	</div>
 </div>
