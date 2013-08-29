@@ -1,57 +1,23 @@
 /************************/
 /* Home page variables */
 $row3-height: 290px;
-$row5-height: 210px;
+$row5-height: 302px;
 
 
 /************************/
-/* ROW 3 */
-.tilebutton.videos {
-	height:$row3-height;
-	min-width: 180px;
-	.tilebutton-table-cell { 
-		height:$row3-height; 
-	}
-}
+/* ROW 1 */
+.contentpane {
 
-.tilebutton.more-impact {
-	height:$row3-height;
-	.tilebutton-table-cell  { 
-		height:$row3-height; 
-		text-align: left;
-		padding-left: 20px;
-	}
-}
+	.media-feature {
 
-/************************/
-/* ROW 4 */
-.tilebutton.portfactscarousel {
-	background-color:$gpa-pale-blue;
-	padding: 0;
-	height: auto;
-}
+		.media-video {
 
-/************************/
-/* ROW 5 */
-.tilebutton.sustainability {
-	height:$row5-height;
-	.tilebutton-table-cell  { 
-		height:$row5-height; 
-	}
-}
+			.video-player {
+				min-height: 450px;
+			}
 
-.tilebutton.shep {
-	height:$row5-height;
-	.tilebutton-table-cell { 
-		height:$row5-height; 
-		text-align: left;
-		padding-left: 20px;
-	}
-}
+		}
 
-.tilebutton.press-releases {
-	height:$row5-height;
-	.tilebutton-table-cell { 
-		height:$row5-height; 
 	}
+
 }
