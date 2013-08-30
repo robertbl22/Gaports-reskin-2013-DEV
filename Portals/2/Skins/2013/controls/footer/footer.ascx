@@ -18,9 +18,9 @@
 		</ul>
 		<strong><a href="/PortofBrunswick.aspx">Port of Brunswick</a></strong>
 		<ul>
-			<li class="li"><a href="/PortofBrunswick/MayorsPointTerminal.aspx">Mayor’s Point Terminal</a></li>
-			<li class="li"><a href="/PortofBrunswick/ColonelsIslandTerminalAgriBulk.aspx">Colonel’s Island Terminal: Agri-Bulk</a></li>
-			<li class="li"><a href="/PortofBrunswick/ColonelsIslandTerminalRoRo.aspx">Colonel’s Island Terminal: Ro/Ro</a></li>
+			<li class="li"><a href="/PortofBrunswick/MayorsPointTerminal.aspx">Mayor&rsquo;s Point Terminal</a></li>
+			<li class="li"><a href="/PortofBrunswick/ColonelsIslandTerminalAgriBulk.aspx">Colonel&rsquo;s Island Terminal: Agri-Bulk</a></li>
+			<li class="li"><a href="/PortofBrunswick/ColonelsIslandTerminalRoRo.aspx">Colonel&rsquo;s Island Terminal: Ro/Ro</a></li>
 		</ul>
 	</div>
 	<div class="col-sm-3 col-lg-2"><strong>DEPARTMENTS</strong>
@@ -64,14 +64,12 @@
 	<div class="col-sm-3 col-lg-2"><strong><a href="/Media.aspx">MEDIA</a></strong>
 		<ul>
 			<li class="li"><a href="/Media/PressReleases.aspx">Press Releases</a></li>
-			<li class="li"><a href="/Media/Articles.aspx">Articles</a></li>
 			<li class="li"><a href="/Media/Photography.aspx">Photography</a></li>
 			<li class="li"><a href="/Media/Video.aspx">Video</a></li>
 			<li class="li"><a href="/Media/Documents.aspx">Documents</a></li>
 			<li class="li"><a href="/Media/Publications.aspx">Publications</a></li>
 			<li class="li"><a href="/Media/Events.aspx">Events</a></li>
 			<li class="li"><a href="/Media/PressKit.aspx">Press Kit</a></li>
-			<li class="li"><a href="/Media/MediaRequests.aspx">Media Requests</a></li>
 		</ul>
 	</div>
 	<div class="col-sm-3 col-lg-2"><strong>CONTACT</strong>
