@@ -1,0 +1,41 @@
+.words-companies h3 {
+	font-size: 24px;
+}
+
+.words-video {
+	height: 263px;
+	width: 470px;
+}
+
+figure.words-blockquote {
+
+	.icon-quote-left, .icon-quote-right {
+		font-size: 12px;
+	}
+
+	blockquote {
+		font-size: 21px;
+	}
+
+	figcaption {
+		font-size: 21px;
+
+		.dash {
+			margin-left: -16px;
+		}
+	}
+}
+
+.words-blockquote-2col {
+	display:table-row;
+	background-color: $gpa-orange;
+
+	.left {
+		width: 45%;
+		display:table-cell;
+	}
+	.right {
+		width: 55%;
+		display:table-cell;
+	}
+}

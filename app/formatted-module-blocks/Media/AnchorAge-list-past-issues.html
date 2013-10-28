@@ -1,0 +1,18 @@
+<p>&nbsp;</p>
+<div class="row">
+  <div class="col-xs-3">
+    <xmod:detailbutton text='<img class="img-thumbnail pull-right" src="{XMOD_UploadDirectory}AnchorAge/cover/thumbs/<xmod:field name="CoverImage"/>" alt="" />' class="CommandButton" />
+  </div>
+  <div class="col-xs-9">
+    <h5>
+      Issue: <xmod:field  name="IssueDescription" detaillink="False" usevalue="False" encodehtml="False" enablescripts="False" />
+    </h5>
+    <h3>
+      <xmod:field  name="CoverStoryTitle" detaillink="False" usevalue="False" encodehtml="False" enablescripts="False" />
+    </h3>
+    <p>
+      <xmod:detailbutton text="<i class='icon-circle-arrow-right'></i> View Issue Details" class="CommandButton" /><br/>
+      <a href="{XMOD_UploadDirectory}AnchorAge/pdf/<xmod:field name="IssueDocument"/>" class="CommandButton" target="_blank"><i class="icon-download"></i> Download This Issue</a>
+    </p>
+  </div>
+</div>

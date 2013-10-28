@@ -1,0 +1,11 @@
+$row6-height: 292px;
+
+.tilebutton.home-jobsvideo { 
+	height: $row6-height;
+	.tilebutton-table-cell  { 
+		height: $row6-height;
+	}
+	.video-player {
+		min-height: $row6-height;
+	}
+}

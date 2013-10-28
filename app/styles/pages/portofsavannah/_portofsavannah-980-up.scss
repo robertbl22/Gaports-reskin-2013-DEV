@@ -1,0 +1,39 @@
+$video-height: 302px;
+
+/************************/
+/* ROW 2 */
+.tilebutton.pos-contactus { 
+	height: $video-height;
+
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+} 
+
+.tilebutton.pos-video { 
+	height: $video-height;
+
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+	.video-player {
+		min-height: $video-height;
+	}
+
+} 
+
+.tilebutton.pos-shep { 
+	height: $video-height;
+
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+} 
+
+/************************/
+/* ROW 4 */
+.tilebutton.pos-gaports {
+	.tilebutton-table-cell  { 
+		h3{width: 50%;}
+	}
+}

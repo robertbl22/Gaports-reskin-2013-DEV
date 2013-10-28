@@ -1,0 +1,36 @@
+
+.words-header {
+	h1 {
+		font-size: 56px;
+		line-height: 68px;
+	}
+}
+
+.words-tagline h2 {
+	font-size: 41px;
+}
+
+.words-video {
+	height: 322px;
+	width: 572px;
+}
+
+figure.words-blockquote {
+	padding: 30px;
+
+	.icon-quote-left, .icon-quote-right {
+		font-size: 14px;
+	}
+
+	blockquote {
+		font-size: 24px;
+	}
+
+	figcaption {
+		font-size: 24px;
+
+		.dash {
+			margin-left: -20px;
+		}
+	}
+}

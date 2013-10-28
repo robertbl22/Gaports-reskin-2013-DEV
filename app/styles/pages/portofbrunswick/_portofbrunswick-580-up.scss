@@ -1,0 +1,13 @@
+$video-height: 348px;
+
+/************************/
+/* ROW 2 */
+.tilebutton.pob-video { 
+	height: $video-height;
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+	.video-player {
+		min-height: $video-height;
+	}
+} 

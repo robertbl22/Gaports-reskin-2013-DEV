@@ -1,0 +1,29 @@
+$row-height-1200: 355px;
+
+
+.tilebutton.pos-contactus { 
+	height: $row-height-1200;
+
+	.tilebutton-table-cell  { 
+		height: $row-height-1200;
+	}
+} 
+.tilebutton.pos-video { 
+	height: $row-height-1200;
+
+	.tilebutton-table-cell  { 
+		height: $row-height-1200;
+	}
+	.video-player {
+		min-height: $row-height-1200;
+	}
+
+} 
+.tilebutton.pos-shep { 
+	height: $row-height-1200;
+
+	.tilebutton-table-cell  { 
+		height: $row-height-1200;
+	}
+
+} 

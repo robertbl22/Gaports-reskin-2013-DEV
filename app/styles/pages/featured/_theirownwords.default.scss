@@ -1,0 +1,96 @@
+
+.words-header {
+	background-color: $gpa-orange; 
+	margin-left: -60px; 
+	padding-left: 60px;
+	margin-top: 25px;
+
+	.row {
+		background-color: $white;
+	}
+	.col-sm-6 {
+		background-color: $gpa-blue;
+	}
+	h1 {
+		color: $white;
+		text-transform: none;
+		letter-spacing: -1px;
+		font-size: 42px;
+		line-height: 52px;
+	}
+}
+
+.words-tagline h2 {
+	text-transform: none;
+	letter-spacing: -1px;
+}
+
+.words-companies h3 {
+	text-transform: capitalize;
+	font-style: italic;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.words-video {
+	height: 228px;
+	width: 100%;
+}
+
+figure.words-blockquote {
+	padding: 20px;
+
+	.icon-quote-left, .icon-quote-right {
+		font-size: 10px;
+	}
+
+	blockquote {
+		padding: 0;
+		margin: 0;
+		border-left: none;
+		font-weight: 300;
+		font-size: 18px;
+	}
+	figcaption {
+		font-size: 18px;
+		margin-left: 40px;
+		margin-top: 10px;
+		font-weight: 600;
+
+		.dash {
+			float: left;
+			margin-left: -12px;
+		}
+	}
+	&.blue { 
+		background-color: $gpa-blue; 
+		color: $white;
+	}
+	&.orange { 
+		background-color: $gpa-orange; 
+		color: $white;
+	}
+	&.gray { 
+		background-color: $gpa-gray; 
+		color: $white;
+	}
+	&.white { 
+		background-color: $white;
+	}
+}
+
+.words-blockquote-2col {
+	.left {
+	}
+	.right {
+	}
+}
+
+a.anchor{
+	display: block; 
+	position: relative; 
+	top: -50px; 
+	visibility: hidden;
+}
+
+

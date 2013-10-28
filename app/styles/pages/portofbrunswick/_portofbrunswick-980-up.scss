@@ -1,0 +1,32 @@
+$video-height: 302px;
+
+/************************/
+/* ROW 2 */
+.tilebutton.pob-contactus { 
+	height: $video-height;
+	
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+}
+
+.tilebutton.pob-video { 
+	height: $video-height;
+
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+	.video-player {
+		min-height: $video-height;
+	}
+
+} 
+
+.tilebutton.pob-dload { 
+	height: $video-height;
+	
+	.tilebutton-table-cell  { 
+		height: $video-height;
+		h3 { font-size: 24px; }
+	}
+}

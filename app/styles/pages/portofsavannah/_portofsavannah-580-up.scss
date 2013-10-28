@@ -1,0 +1,19 @@
+$video-height: 348px;
+
+/************************/
+/* ROW 2 */
+.tilebutton.pos-video { 
+	height: $video-height;
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+	.video-player {
+		min-height: $video-height;
+	}
+} 
+
+.tilebutton.pos-gaports {
+	.tilebutton-table-cell  { 
+		h3{width: 52%;}
+	}
+}
