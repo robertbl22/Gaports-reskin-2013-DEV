@@ -1,11 +1,20 @@
-/************************/
-/* POS page variables */
-$photo-base-height: 200px;
+/*****************************/
+/* ROW 0: HEADLINE & BULLETS */
+.pos-headlinefacts ul {
+	padding:0 10px 0 40px;
+	ul {
+		line-height:1.2em;
+	}
+	li {
+		margin:.4em 0;
+	}
+}
+
 
 /************************/
 /* ROW 1: TWO TERMINALS */
 .pos-row-1 {
-	background-color: $gpa-blue;
+	background-color: $gpa-dark-blue;
 	margin-top: 10px;
 }
 .tilebutton.pos-gardencity {
@@ -18,7 +27,7 @@ $photo-base-height: 200px;
 			padding-bottom: 2px;	
 		}
 		.innerbutton:hover {
-			background-color: $gpa-dark-blue;
+			background-color: $gpa-blue;
 		}
 	}
 }
@@ -32,108 +41,67 @@ $photo-base-height: 200px;
 			padding-bottom: 2px;		
 		}
 		.innerbutton:hover {
-			background-color: $gpa-blue;
+			background-color: $gpa-dark-blue;
 		}
 	}
 }
-	
 
 
 /************************/
-/* ROW 2 */
-
+/* ROW 2: Contact Us, Video, SHEP */
 .tilebutton.pos-contactus {} 
 
 .tilebutton.pos-video { 
 	height: $photo-base-height;
 
-	.tilebutton-table-cell  { 
-		text-align: left;
+	.tilebutton-table-cell  {
 		padding: 0px;
 	}
-
 	.video-player {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		min-height: $photo-base-height;
 	}
-} 
-
-.tilebutton.pos-shep { 
-
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 40px;
-	}
-} 
+}
 
 
 /************************/
 /* ROW 3: Press Release Headline */
 
+
 /************************/
 /* ROW 4 */
-
-.tilebutton.pos-containerized {
-	height: auto;
-	
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
-		height: auto;
-
-
-	}
-	h3 {
-		padding: 5px 0px !important;
-	}
-}
-
 .tilebutton.pos-gaports {
 	height: $photo-base-height;
-	background-color: #0A0608;
-	@include background-photo('../images/pos/coast_port.jpg', center, right);
+	background-color: $gpa-gray;
+	@include background-photo('../images/pos/coast_port.jpg', center, left);
 
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
-
-		&:hover{
-
-			background-color: transparentize(#00274C, 0.8);
-
+	.tilebutton-table-cell {
+		vertical-align: bottom;
+		h3 {
+			width: 90%;
+			padding-bottom: 20px;
+		}
+		&:hover {
+			background-color: rgba($gpa-dark-blue, 0.3);
 		}
 	}
 }
 
 /************************/
 /* ROW 5 */
-
-.tilebutton.pos-warehouse {
-
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
-	}
-}
-
 .tilebutton.pos-less-diesel {
 	height: $photo-base-height;
-	background-color: #9299A0;
+	background-color: $gpa-pale-blue;
 	@include background-photo('../images/pos/sustainability_ertg.jpg', center, right);
 
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
+	.tilebutton-table-cell { 
 		h3{
-			color:#000 !important;
+			color: #000000;
 		}
-
-		&:hover{
-
-			background-color: transparentize(#00274C, 0.8);
-
+		&:hover {
+			background-color: rgba($gpa-orange-accent, 0.3);
 		}
 	}
 }
@@ -143,41 +111,33 @@ $photo-base-height: 200px;
 /* ROW 6: Exporter Chart */
 .pos-exportList {
 
-	.export-label{width: 11.66667%;	}
+	.export-label{
+		width: 11.66667%;	
+	}
 	.progress {
-
 		background-color: #fff;
-
 		-webkit-box-shadow: none;
 		box-shadow: none; 
-				/************************/
-				/* Progress Bars */
 
-				.progress-bar{
-					.soft-right {padding-right: 10px;}
+		.progress-bar {
+			.soft-right {
+				padding-right: 10px;
+			}
 
-					&.dark-blue { background-color: $gpa-dark-blue;
-						&:hover{
-							background-color: $gpa-dark-blue-accent;
-						}
-					}
-					&.orange { background-color: $gpa-orange;
-						&:hover{
-							background-color: $gpa-orange-accent;
-						}
-					}
+			&.dark-blue { 
+				background-color: $gpa-dark-blue;
+
+				&:hover {
+					background-color: $gpa-dark-blue-accent;
+				}
+			}
+			&.orange { 
+				background-color: $gpa-orange;
+
+				&:hover {
+					background-color: $gpa-orange-accent;
 				}
 			}
 		}
-
-
-
-
-
-
-
-
-
-
-
-
+	}
+}

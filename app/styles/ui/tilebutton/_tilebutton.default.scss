@@ -6,6 +6,7 @@ $tilebutton-height-base: 60px;
 	color: $white;
 	padding: 0;
 	min-height: $tilebutton-height-base;
+	overflow: hidden;
 
 	a {
 		text-decoration: none;
@@ -34,11 +35,13 @@ $tilebutton-height-base: 60px;
 		}
 	}
 	a.tilebutton-table-cell {
-		padding: 0 20px 0 20px;
+		padding: 20px;
 	}
 	div.tilebutton-table-cell {
+		padding: 20px 0;
+
 		.innerbutton {
-			padding: 0 20px 0 20px;
+			padding: 0 20px;
 		}
 	}
 	.tilebutton-content {
@@ -51,6 +54,10 @@ $tilebutton-height-base: 60px;
 			display: inline !important;
 			float: none !important;
 		}
+	}
+	.badge-light {
+		border-color: $white;
+		color: $white;
 	}
 }
 

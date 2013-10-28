@@ -1,73 +1,33 @@
-/************************/
-/* Home page variables */
-
-$row3-height: 290px;
-$row5-height: 210px;
-/************************/
-/* ROW 1 */
+$video-height: 292px;
 
 /************************/
 /* ROW 2 */
-
-.tilebutton.pos-contactus { 
-	
-	.tilebutton-table-cell  { 
-		
-	}
-
-} 
 .tilebutton.pos-video { 
-	height: 450px;
-
+	height: $video-height;
 	.tilebutton-table-cell  { 
-		
+		height: $video-height;
 	}
 	.video-player {
-		min-height: 450px;
+		min-height: $video-height;
 	}
-
 } 
-.tilebutton.pos-shep { 
-
-
-	.tilebutton-table-cell  { 
-	}
-
-} 
-/************************/
-/* ROW 3: Press Release Headline */
 
 
 /************************/
 /* ROW 4 */
 .tilebutton.pos-gaports {
 	.tilebutton-table-cell  { 
-		h3{width: 30%;}
+		h3{width: 60%;}
 	}
 }
 
-.tilebutton.pos-containerized {
-	.tilebutton-table-cell  { 
-
-}
-}
 
 /************************/
 /* ROW 5 */
-
 .tilebutton.pos-less-diesel {
 	.tilebutton-table-cell  { 
 		h3{width: 30%;}
 	}
 }
-
-.tilebutton.pos-warehouse {
-
-	.tilebutton-table-cell  {  
-
-}
-}
-/************************/
-/* ROW 6: Exporter Chart */
 
 

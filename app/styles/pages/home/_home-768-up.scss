@@ -1,14 +1,8 @@
 /************************/
-/* Home page variables */
-$row3-height: 290px;
-$row5-height: 210px;
-
-
-/************************/
 /* ROW 3 */
-.tilebutton.home-videos {
+
+.tilebutton.home-press-releases {
 	height:$row3-height;
-	min-width: 180px;
 	.tilebutton-table-cell { 
 		height:$row3-height; 
 	}
@@ -49,9 +43,36 @@ $row5-height: 210px;
 	}
 }
 
-.tilebutton.home-press-releases {
+.tilebutton.home-videos {
 	height:$row5-height;
+	min-width: 180px;
 	.tilebutton-table-cell { 
 		height:$row5-height; 
 	}
+}
+
+/************************/
+/* ROW 6 */
+$row6-height: 242px;
+
+.tilebutton.home-jobsvideo { 
+	height: $row6-height;
+
+	.tilebutton-table-cell  { 
+		height: $row6-height;
+	}
+	.video-player {
+		min-height: $row6-height;
+	}
+} 
+
+.tilebutton.home-gftc {
+	height: $row6-height;
+
+	.tilebutton-table-cell {
+		height: $row6-height;
+	}
+} 
+.home-gftc-logo {
+	max-width:70px;
 }

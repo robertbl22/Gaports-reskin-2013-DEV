@@ -1,79 +1,15 @@
-/************************/
-/* Home page variables */
+$video-height: 258px;
 
-$row3-height: 290px;
-$row5-height: 210px;
-/************************/
-/* ROW 1 */
-
-/************************/
-/* ROW 2 */
-
-.tilebutton.pos-contactus { 
-
-	.tilebutton-table-cell  { 
-		padding-left: 20px;
-
-	}
-
-} 
 .tilebutton.pos-video { 
-	height: 258px;
-	@media (min-width: 481px) and (max-width: 580px){ height: 292px !important;}
-	@media (min-width: 320px) and (max-width: 480px){ height: 285px;}
-	.tilebutton-table-cell  { 
-		@media (min-width: 481px) and (max-width: 580px){ height: 292px !important;}
-		@media (min-width: 320px) and (max-width: 480px){ height: 285px;}
-	}
+	height: $video-height;
+	
 	.video-player {
-		min-height: 258px;
-		@media (min-width: 481px) and (max-width: 580px){ min-height: 292px !important;}
-		@media (min-width: 320px) and (max-width: 480px){ min-height: 285px;}
-	}
-
-} 
-.tilebutton.pos-shep { 
-
-
-	.tilebutton-table-cell  { 
-	}
-
-} 
-/************************/
-/* ROW 3: Press Release Headline */
-
-
-/************************/
-/* ROW 4 */
-.tilebutton.pos-gaports {
-	background-position: left center;
-	.tilebutton-table-cell  { 
-		h3 {width: 50%;}
+		min-height: $video-height;
 	}
 }
-
-.tilebutton.pos-containerized {
-	.tilebutton-table-cell  { 
-
-	}
-}
-
-/************************/
-/* ROW 5 */
 
 .tilebutton.pos-less-diesel {
 	.tilebutton-table-cell  { 
 		h3{width: 30%;}
 	}
 }
-
-.tilebutton.pos-warehouse {
-
-	.tilebutton-table-cell  { 
-
-	}
-}
-/************************/
-/* ROW 6: Exporter Chart */
-
-

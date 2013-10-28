@@ -1,66 +1,44 @@
-/************************/
-/* Home page variables */
-$row3-height: 290px;
-$row5-height: 302px;
+$video-height: 242px;
 
 /************************/
-/* ROW 1 */
+/* ROW 0 */
+.pob-headlinefacts {
+	margin-bottom: 30px;
+}
+
 
 /************************/
 /* ROW 2 */
-.col-sm-2 {
-	width: 19.66667%;
-}
-
 .tilebutton.pob-contactus { 
-	height: $row5-height;
-	@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
-
+	height: $video-height;
 	.tilebutton-table-cell  { 
-		height: $row5-height;
+		height: $video-height;
 		text-align: left;
 		padding-left: 10px;
-		h3 {font-size: 24px;
-			text-align: center;}
-			@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+	}
+}
+
+.tilebutton.pob-video { 
+	height: $video-height;
+	
+	.tilebutton-table-cell  { 
+		height: $video-height;
+	}
+	.video-player {
+		min-height: $video-height;
+	}
+}
+
+.tilebutton.pob-dload { 
+	height: $video-height;
+	
+	.tilebutton-table-cell  { 
+		height: $video-height;
+		h3 { font-size: 18px; }
+	}
+}
 
 
-		}
-
-
-
-	} 
-	.tilebutton.pob-video { 
-		height: $row5-height;
-		@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
-		.tilebutton-table-cell  { 
-			height: $row5-height;
-			@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
-		}
-		.video-player {
-			min-height: $row5-height;
-			@media (min-width: 1200px){ min-height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ min-height: 242px !important;}
-		}
-
-	} 
-	.tilebutton.pob-dload { 
-		height: $row5-height;
-		@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
-		.tilebutton-table-cell  { 
-			height: $row5-height;
-			@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
-			h3 {font-size: 18px;
-				text-align: center;}
-			}
-
-		} 
 /************************/
 /* ROW 3: Press Release Headline */
 
@@ -75,35 +53,17 @@ $row5-height: 302px;
 
 .tilebutton.pob-shed {
 	height: $photo-base-height;
-	
-	.tilebutton-table-cell  { 
-		
-	}
 }
+
 
 /************************/
 /* ROW 5 */
+.tilebutton.pob-pollutionFree {
+	.tilebutton-table-cell  { 
+		h3{width: 45%;}
+	}
+}
 
 .tilebutton.pob-agriProd {
 	height: $photo-base-height;
-	.tilebutton-table-cell  { 
-		
-	}
-}
-
-.tilebutton.pob-pollutionFree {
-	
-	.tilebutton-table-cell  { 
-		h3{width: 45%;}
-
-	}
-}
-/************************/
-/* ROW 6: Exporter Chart */
-
-/************************/
-/* ROW 7: Exporter List */
-.pob-exportList {
-
-	.export-label{width: 14.66667%;	}
 }

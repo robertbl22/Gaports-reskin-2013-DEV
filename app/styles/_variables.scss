@@ -13,6 +13,7 @@ $gpa-bright-blue: 	#04a7ea;
 $gpa-light-blue: 	#88cbde;
 $gpa-pale-blue:     #c2d1d4;
 $gpa-orange: 		#f7971e;
+$gpa-light-orange: 	lighten($gpa-orange, 25%);
 $gpa-dark-gray: 	#425968;   
 $gpa-gray: 			#96a0a9; 
 $gpa-light-gray: 	#ccd2d7;

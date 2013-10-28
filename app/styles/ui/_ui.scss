@@ -1,3 +1,4 @@
+@import "badge/badge-default";
 @import "breadcrumb/breadcrumb-default";
 @import "carousel/carousel";
 @import "footer/footer-default";
@@ -5,6 +6,8 @@
 @import "navbar/navbar-default";
 @import "sidenav/sidenav-default"; 
 @import "tilebutton/tilebutton";
+@import "dnn-controls/dnn-login-link";
+@import "dnn-controls/dnn-radscheduler";
 
 /*********************************/
 /* Responsive Diagnostic Panel */
@@ -25,12 +28,12 @@
 	@import "navbar/navbar-768-up";
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 991px) {
 	/* @import "xxx-768-979"; */
 	@import "navbar/navbar-768-979";
 }
 
-@media (min-width: 980px) {
+@media (min-width: 992px) {
 	/* @import "xxx-980-up"; */
 }
 

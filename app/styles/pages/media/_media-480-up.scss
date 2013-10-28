@@ -1,25 +1,6 @@
-/************************/
-/* Home page variables */
-$row3-height: 290px;
-$row5-height: 302px;
-
-
-/************************/
-/* ROW 1 */
-.contentpane {
-
-	.media-feature {
-
-		.media-video {
-
-			.video-player {
-				min-height: 322px;
-				@media (min-width: 580px) and (max-width: 768px){ min-height: 430px !important;}
-
-			}
-
-		}
-
+.media-feature {
+	.video-player {
+		min-height: 322px;
+		@media (min-width: 580px) and (max-width: 768px){ min-height: 430px !important;}
 	}
-
 }

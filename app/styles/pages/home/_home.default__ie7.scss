@@ -2,6 +2,12 @@
 /* Adjust padding because IE7 doesn't 
 support CSS table layout */
 
+.tilebutton.home-press-releases {
+	h3 {
+		margin-bottom: 0;
+	}
+}
+
 .tilebutton.home-more-impact  {
 	h3 {
 		line-height: 200px;
@@ -12,11 +18,5 @@ support CSS table layout */
 .tilebutton.home-sustainability  {
 	h3 {
 		line-height: 200px;
-	}
-}
-
-.tilebutton.home-press-releases {
-	h3 {
-		margin-bottom: 0;
 	}
 }

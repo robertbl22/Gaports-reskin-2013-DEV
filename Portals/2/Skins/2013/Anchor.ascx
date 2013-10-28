@@ -108,17 +108,29 @@
 
 <!-- DOTNETNUKE CONTROL PANEL -->
 <style>
-#dnnCPWrap { top: 50px; }
+#dnnCPWrap {
+	top: 50px;
+}
 </style>
-<dnn:CONTROLPANEL runat="server" id="cp"  IsDockable="True" />
+<div class="hidden-print">
+	<dnn:CONTROLPANEL runat="server" id="cp" IsDockable="True" />
+</div>
 <!-- // END: DOTNETNUKE CONTROL PANEL -->
 
 
 <!-- *********************************** -->
 <!-- GPA DESKTOP BANNER -->
-<div class="container gpa-banner hidden-xs">
+<div class="container gpa-banner hidden-xs hidden-print">
 	<div class="row">
 		<div class="col-sm-3">
+			<img src="<%=skinpath%>images/gpa-banner.png" alt="Georgia Ports Authority" />
+		</div>
+	</div>
+</div>
+<!-- GPA PRINT BANNER -->
+<div class="container gpa-banner-print visible-print">
+	<div class="row">
+		<div class="col-xs-2 pull-right">
 			<img src="<%=skinpath%>images/gpa-banner.png" alt="Georgia Ports Authority" />
 		</div>
 	</div>
@@ -181,18 +193,26 @@
 
 <!-- *********************************** --> 
 <!-- FOOTER -->
-<footer class="container-fluid footer">
+<footer class="container-fluid footer hidden-print">
 	<div class="container">
 		<dnn:FOOTER id="dnnFOOTER" runat="server" />
 		<div class="row copyright">
 			<div class="col-sm-4">
 				<dnn:COPYRIGHT runat="server" id="dnnCOPYRIGHT" />
 			</div>
-			<div class="col-sm-5 center"><a href="/site/sitemap.aspx">Site Map</a> | <a href="/site/PrivacyStatement.aspx">Privacy Statement</a> | <a href="/site/TermsandConditions.aspx">Terms&nbsp;&amp;&nbsp;Conditions</a> | <dnn:LOGIN runat="server" id="dnnLOGIN" /></div>
-			<div class="col-sm-3">Website by <a href="http://www.realmadvertising.com">Realm Advertising</a></div>
+			<div class="col-sm-5 center">
+				<a href="/site/sitemap.aspx" class="nobreak">Site Map</a> | <a href="/site/PrivacyStatement.aspx" class="nobreak">Privacy Statement</a> | <a href="/site/TermsandConditions.aspx" class="nobreak">Terms &amp Conditions</a> <span class="dnn-login-link">| <dnn:LOGIN runat="server" id="dnnLOGIN" /></span>
+			</div>
+			<div class="col-sm-3">
+				Website by <a href="http://www.realmadvertising.com" class="nobreak">Realm Advertising</a>
+			</div>
 		</div>
 	</div>
 </footer>
+<!-- PRINT FOOTER -->
+<div class="visible-print copyright">
+	<dnn:COPYRIGHT runat="server" id="dnnCOPYRIGHT_PRINT" />
+</div>
 <!-- // END: FOOTER -->
 
 <!--[if lt IE 7]>

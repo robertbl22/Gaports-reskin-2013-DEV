@@ -1,42 +1,28 @@
 @import "media.default";
-.lt-ie8 {
-	@import "media.default__ie7"; 
-}
 
 @media (min-width: 320px) {
 	/* @import "xxx-480-up"; */
 	@import "media-320-up";
-	.lt-ie8 {
-		@import "media-320-up__ie7";
-	}
 }
 
 @media (min-width: 480px) {
 	/* @import "xxx-480-up"; */
 	@import "media-480-up";
-	.lt-ie8 {
-		@import "media-480-up__ie7";
-	}
 }
 
 @media (min-width: 768px) {
 	/* @import "xxx-768-up"; */
 	@import "media-768-up";
-	.lt-ie8 {
-		@import "media-768-up__ie7";
-	}
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-	/* @import "xxx-768-979"; */
-}
-
-@media (min-width: 980px) {
+@media (min-width: 992px) {
 	/* @import "xxx-980-up"; */
+	@import "media-980-up";
 }
 
 @media (min-width: 1200px) {
 	/* @import "xxx-1200-up"; */
+	@import "media-1200-up";
 }
 
 @media (min-width: 1700px){

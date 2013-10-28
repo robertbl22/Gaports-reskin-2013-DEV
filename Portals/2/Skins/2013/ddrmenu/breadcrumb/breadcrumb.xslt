@@ -11,7 +11,7 @@
 	
 	
 	<xsl:template match="root">
-		<ul class="{$CSSClass}">
+		<ul class="{$CSSClass} hidden-print">
 			<li><a href="/"><i class="icon-home"></i></a></li>
 			<xsl:apply-templates select="//node[@breadcrumb=1]" />
 		</ul>

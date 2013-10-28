@@ -1,23 +1,5 @@
-/************************/
-/* Home page variables */
-$row3-height: 290px;
-$row5-height: 210px;
-
-
-/************************/
-/* ROW 1 */
-.contentpane {
-
-	.media-feature {
-
-		.media-video {
-
-			.video-player {
-				min-height: 255px;
-			}
-
-		}
-
+.media-feature {
+	.video-player {
+		min-height: 255px;
 	}
-
 }

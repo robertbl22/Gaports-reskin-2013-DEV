@@ -1,7 +1,6 @@
-.tilebutton.home-videos {
+.tilebutton.home-press-releases {
 	h3 {
-		margin:0;
-		line-height: $row3-height;
+		margin-top: 40px;
 	}
 }
 
@@ -25,8 +24,10 @@
 	}
 }
 
-.tilebutton.home-press-releases {
+.tilebutton.home-videos {
 	h3 {
-		margin-top: 40px;
+		margin:0;
+		line-height: $row5-height;
 	}
 }
+

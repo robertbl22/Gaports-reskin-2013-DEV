@@ -28,7 +28,7 @@
 	<!-- TEMPLATE: Current root page -->
 	<xsl:template match="node">
 		<xsl:if test="@breadcrumb = 1">
-			<ul class="nav sidenav">
+			<ul class="nav sidenav hidden-print">
 				
 				<!-- Normal root page -->
 				<li>

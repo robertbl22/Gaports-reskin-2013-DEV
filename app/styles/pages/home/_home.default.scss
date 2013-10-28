@@ -1,9 +1,4 @@
 /************************/
-/* Home page variables */
-$photo-base-height: 200px;
-
-
-/************************/
 /* ROW 1: TWO PORTS */
 .home-row-1 {
 	background-color: $gpa-blue;
@@ -40,8 +35,12 @@ $photo-base-height: 200px;
 
 
 /************************/
-/* ROW 2: VIDEOS, MORE IMPACT */
-.tilebutton.home-videos {}
+/* ROW 2: PRESS RELEASES, MORE IMPACT */
+.tilebutton.home-press-releases {
+	height: auto;
+
+	.innerbutton:hover {background-color: $gpa-orange;}
+}
 
 .tilebutton.home-more-impact {
 	height: $photo-base-height;
@@ -65,7 +64,7 @@ $photo-base-height: 200px;
 
 
 /***********************************************/
-/* ROW 4: SUSTAINABILITY, SHEP, PRESS RELEASES */
+/* ROW 4: SUSTAINABILITY, SHEP, VIDEOS */
 .tilebutton.home-sustainability {
 	height: $photo-base-height;
 	background-color: $gpa-gray;
@@ -81,9 +80,33 @@ $photo-base-height: 200px;
 }
 
 .tilebutton.home-shep {}
+.tilebutton.home-videos {}
 
-.tilebutton.home-press-releases {
-	height: auto;
 
-	.innerbutton:hover {background-color: $gpa-blue;}
+/***************************/
+/* ROW 5 */
+
+
+/***************************/
+/* ROW 6: Jobs Video, GFTC */
+$row6-height: 202px;
+
+.tilebutton.home-jobsvideo { 
+	height: $row6-height;
+
+	.tilebutton-table-cell  {
+		padding: 0px;
+	}
+	.video-player {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		min-height: $row6-height;
+	}
+}
+
+.tilebutton.home-gftc {} 
+.home-gftc-logo {
+	max-width:80px;
+	margin-bottom:10px;
 }

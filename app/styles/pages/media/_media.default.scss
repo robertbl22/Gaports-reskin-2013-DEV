@@ -1,11 +1,8 @@
 /************************/
-/* Home page variables */
-
-
-/************************/
 /* ROW 1 */
 .media-feature {
 	.media-video{
+		margin-bottom: 30px;
 
 		.img-responsive {
 			min-height: 480px;
@@ -13,23 +10,18 @@
 	}
 }
 
+
 /************************/
 /* ROW 2 */
-
 .media-videoThumbs {
 	.media-thumbs {
 		padding-top: 20px;
-
 	}
-	
 }
 
 
 /************************/
 /* ROW 3 */
-
-
-
 
 
 /************************/
@@ -39,22 +31,19 @@
 	padding-bottom: 10px; 
 	.media-newsImage{	}
 	span.media-news-description {
-		padding-left: 15px;
 		display: inline-block;
 	}
 	img.img-reponsive {
-
 		width: 100%;
 		max-height: 180px;
 	}
 }
 
+
 /************************/
 /* ROW 5 */
-
 .media-newsThumb {
 	img.img-reponsive {
-
 		width: 100%;
 		max-height: 180px;
 	}
@@ -65,6 +54,7 @@
 		}
 	}
 }
+
 
 /************************/
 /* ROW 6 */

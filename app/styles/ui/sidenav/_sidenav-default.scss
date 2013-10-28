@@ -22,6 +22,10 @@ $sidenav-childindicator-width: 11px;
 	background-color: $gpa-blue;
 	color: $white;
 }
+.sidenav .root.active > a {
+	background-color: $gpa-pale-blue;
+	color: $gpa-blue;
+}
 .sidenav .root > a:hover, 
 .sidenav .root.disabled > a:hover {
 	background-color: $gpa-blue;

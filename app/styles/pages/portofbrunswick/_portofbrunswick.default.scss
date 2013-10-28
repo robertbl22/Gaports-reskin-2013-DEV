@@ -1,12 +1,20 @@
-/************************/
-/* POB page variables */
-$photo-base-height: 200px;
+/*****************************/
+/* ROW 0: HEADLINE & BULLETS */
+.pob-headlinefacts ul {
+	padding:0 10px 0 40px;
+	ul {
+		line-height:1.2em;
+	}
+	li {
+		margin:.4em 0;
+	}
+}
 
 
 /************************/
 /* ROW 1: TWO TERMINALS */
 .pob-row-1 {
-	background-color: $gpa-blue;
+	background-color: $gpa-dark-blue;
 	margin-top: 10px;
 }
 .tilebutton.pob-colonelsisland {
@@ -19,7 +27,7 @@ $photo-base-height: 200px;
 			padding-bottom: 2px;	
 		}
 		.innerbutton:hover {
-			background-color: $gpa-dark-blue;
+			background-color: $gpa-blue;
 		}
 	}
 }
@@ -33,148 +41,65 @@ $photo-base-height: 200px;
 			padding-bottom: 2px;		
 		}
 		.innerbutton:hover {
-			background-color: $gpa-blue;
+			background-color: $gpa-dark-blue;
 		}
 	}
 }
-	
+
 
 /************************/
 /* ROW 2: Contact Us, VIDEOS, Download */
-
-.tilebutton.pob-contactus {
-	
-} 
+.tilebutton.pob-contactus {} 
 
 .tilebutton.pob-video { 
 	height: $photo-base-height;
 
-	.tilebutton-table-cell  { 
-		text-align: left;
+	.tilebutton-table-cell  {
 		padding: 0px;
 	}
-
 	.video-player {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		min-height: $photo-base-height;
 	}
-} 
-
-.tilebutton.pob-dload { 
-
-	.tilebutton-table-cell  { 
-		h3 { text-align: center;}
-		
-	}
-} 
+}
 
 
 /************************/
 /* ROW 3: Press Release Headline */
 
+
 /************************/
-/* ROW 4: Shed Space, Busy Ro/Ro */
-
-.tilebutton.pob-shed{
-	height: auto;
-
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
-		height: auto;
-
-	}
-
-	h3{
-		padding: 10px 0px;
-	}
-}
-
+/* ROW 4: 355,000 Ft2, 3rd Busiest */
 .tilebutton.pob-busyPort  {
 	height: $photo-base-height;
 	background-color: $gpa-light-blue;
 	@include background-photo('../images/pob/coast_port.jpg', center, right);
 
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
+	.tilebutton-table-cell  {
 		&:hover{
-
-			background-color: transparentize(#00274C, 0.8);
-
+			background-color: rgba($gpa-dark-blue, 0.5);
 		}
 	}
 }
 
 /************************/
-/* ROW 5: pollution free, agri-products */
-
+/* ROW 5: Pollution Free, Agri-Products */
 .tilebutton.pob-pollutionFree {
 	height: $photo-base-height;
 	background-color: $gpa-light-blue;
 	@include background-photo('../images/pob/sustainability_ertg.jpg', center, right);
 
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
-		h3{
-			color:#000 !important;
-		}
+	.tilebutton-table-cell  {
 		&:hover{
-
-			background-color: transparentize(#00274C, 0.8);
-
+			background-color: rgba($gpa-dark-blue, 0.4);
 		}
-	}
-}
-
-.tilebutton.pob-agriProd {
-	height: auto;
-	.tilebutton-table-cell  { 
-		text-align: left;
-		padding-left: 20px;
 	}
 }
 
 /************************/
 /* ROW 6: Header Title */
-
-
-/************************/
-/* ROW 7: Export List */
-.pob-exportList {
-
-	.export-label{width: 11.66667%;	}
-	.progress {
-
-		background-color: #fff;
-
-		-webkit-box-shadow: none;
-		box-shadow: none; 
-				/************************/
-				/* Progress Bars */
-
-				.progress-bar{
-					.soft-right {padding-right: 10px;}
-
-					&.dark-blue { background-color: $gpa-dark-blue;
-						&:hover{
-							background-color: $gpa-dark-blue-accent;
-						}
-					}
-					&.orange { background-color: $gpa-orange;
-						&:hover{
-							background-color: $gpa-orange-accent;
-						}
-					}
-				}
-			}
-		}
-
-/************************/
-/* ROW 7: Exporter Chart */
 
 
 

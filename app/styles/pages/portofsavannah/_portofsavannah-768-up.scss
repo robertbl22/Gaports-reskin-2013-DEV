@@ -1,59 +1,43 @@
-/************************/
-/* Home page variables */
-$row3-height: 290px;
-$row5-height: 302px;
+$video-height: 242px;
 
 /************************/
-/* ROW 1 */
+/* ROW 0 */
+.pos-headlinefacts {
+	margin-bottom: 30px;
+}
+
 
 /************************/
 /* ROW 2 */
-.col-sm-2 {
-	width: 19.66667%;
-}
-
 .tilebutton.pos-contactus { 
-	height: $row5-height;
-	@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+	height: $video-height;
 	.tilebutton-table-cell  { 
-		height: $row5-height;
+		height: $video-height;
 		text-align: left;
 		padding-left: 20px;
-		@media (min-width: 1200px){ height: 355px !important;}
-		@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
 	}
-
 } 
+
 .tilebutton.pos-video { 
-	height: $row5-height;
-	@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+	height: $video-height;
 
 	.tilebutton-table-cell  { 
-		height: $row5-height;
-		@media (min-width: 1200px){ height: 355px !important;}
-		@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+		height: $video-height;
 	}
 	.video-player {
-		min-height: $row5-height;
-		@media (min-width: 1200px){ min-height: 355px !important;}
-		@media (min-width: 769px) and (max-width: 980px){ min-height: 242px !important;}
+		min-height: $video-height;
 	}
-
 } 
+
 .tilebutton.pos-shep { 
-	height: $row5-height;
-	@media (min-width: 1200px){ height: 355px !important;}
-	@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+	height: $video-height;
 
 	.tilebutton-table-cell  { 
-		height: $row5-height;
-		@media (min-width: 1200px){ height: 355px !important;}
-		@media (min-width: 769px) and (max-width: 980px){ height: 242px !important;}
+		height: $video-height;
 	}
-
 } 
+
+
 /************************/
 /* ROW 3: Press Release Headline */
 
@@ -62,39 +46,30 @@ $row5-height: 302px;
 /* ROW 4 */
 .tilebutton.pos-gaports {
 	.tilebutton-table-cell  { 
-		h3{width: 40%;}
+		h3{width: 60%;}
 	}
 }
 
 .tilebutton.pos-containerized {
 	height: $photo-base-height;
-
-	.tilebutton-table-cell  { 
-		
-		
-	}
 }
+
 
 /************************/
 /* ROW 5 */
-
 .tilebutton.pos-less-diesel {
-
 	.tilebutton-table-cell  { 
-		h3{width: 40%;}
+		h3{width: 35%;}
 	}
 }
 
 .tilebutton.pos-warehouse {
 	height: $photo-base-height;
-	.tilebutton-table-cell  { 
-
-
-	}
 }
+
+
 /************************/
 /* ROW 6: Exporter Chart */
 .pos-exportList {
-
 	.export-label{width: 14.66667%;	}
 }
