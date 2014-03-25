@@ -1,0 +1,96 @@
+<form>
+  <controls>
+    <select1 ref="IsCurrentIssue" class="NormalTextBox" repeatdirection="horizontal" repeatlayout="table" appearance="full">
+      <label>Status:</label>
+      <items>
+        <item selected="true">
+         <label>Current Issue</label>
+         <value>Current</value>
+       </item>
+       <item>
+         <label>Past Issue</label>
+         <value>Past</value>
+       </item>
+       <item selected="true">
+         <label>Archived (not visible)</label>
+         <value>Archived</value>
+       </item>
+     </items>
+   </select1>
+   <register tagprefix="fgfu" namespace="fatgeorge.FileUpload" assembly="fatgeorge.FileUpload" />
+<!--
+    <input ref="IssueYear" class="NormalTextBox" width="150" maxlength="4">
+      <label>Year:</label>
+      <validate type="required" message="Year is required" />
+    </input>
+    <input ref="IssueVolumeNo" class="NormalTextBox" width="150" maxlength="4">
+      <label>Volume No.:</label>
+      <validate type="required" message="Volume No. is required" />
+    </input>
+    <input ref="IssueNo" class="NormalTextBox" width="150" maxlength="4">
+      <label>Issue No.:</label>
+      <validate type="required" message="Issue No. is required" />
+    </input>
+  --> 
+  <input ref="IssueDescription" class="NormalTextBox" width="300">
+    <label>Issue (format "YYYY, Vol #, No. #"):</label>
+    <default>{XMOD_Now:yyyy}, Vol. ?, No. ?</default>
+    <validate type="required" message="Issue is required" />
+  </input>
+  <dateinput ref="PublishDate" class="NormalTextBox" width="150px" culture="en-US">
+    <label>Publish Date (format "mm/dd/yyyy"):</label>
+    <calendar text="Select Date" display="imagebutton" imageurl="~/images/SmallCalendar.gif" format="MM/dd/yyyy"/>
+    <validate type="required" message="Publish Date is required" />
+    <validate type="date" message="Publish Date must be a valid date in the format 'mm/dd/yyyy'" class="NormalRed"/>
+  </dateinput>
+  <custom tagprefix="fgfu" 
+    name="FileUpload" 
+    ref="IssueDocument" 
+    cssclass="NormalTextBox" 
+    cssclasslink="CommandButton" 
+    extensions="pdf" 
+    uploaddirectory="AnchorAge/pdf" 
+    uploadsuccessmsg="Document has been uploaded"
+    listwidth="300px"
+    sync="true">
+    <label>PDF Document:</label>
+  </custom>
+  <custom tagprefix="fgfu" 
+    name="FileUpload" 
+    ref="CoverImage" 
+    displaymode="uploadandselect"
+    cssclass="NormalTextBox" 
+    cssclasslink="CommandButton" 
+    extensions="jpg,gif,png,bmp" 
+    uploaddirectory="AnchorAge/cover" 
+    thumbnailfolder="thumbs"
+    overwrite="true" 
+    shrinkonly="true" 
+    noneselected="true" 
+    imageconfirm="true" 
+    uploadsuccessmsg="Image has been uploaded" 
+    thumbnail="150,150" 
+    maxfilesize="2048" 
+    resize="250,250"
+    listwidth="300px"
+    sync="true">
+    <label>Cover Image (min 190 x 250px):</label>
+  </custom>
+  <input ref="CoverStoryTitle" class="NormalTextBox" width="300">
+    <label>Cover Story Title:</label>
+    <validate type="required" message="Cover Story Title is required" />
+  </input>
+  <htmlinput ref="Features" width="500" height="300">
+    <label>Features:</label>
+    <validate type="required" message="Features is required" />
+  </htmlinput>
+  <textarea ref="Keywords" class="NormalTextBox" cols="50" rows="5">
+    <label>Search Keywords:</label>
+    <validate type="required" message="Search Keywords is required" />
+  </textarea>
+  <textarea ref="Summary" class="NormalTextBox" cols="50" rows="5">
+    <label>Search Summary:</label>
+    <validate type="required" message="Search Summary is required" />
+  </textarea>
+</controls>
+</form>

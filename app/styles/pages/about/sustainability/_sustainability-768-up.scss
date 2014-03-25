@@ -1,0 +1,25 @@
+.sustainability {
+
+	.inline-tile .inline-tile-inner {
+		padding: 0 15px;
+	}
+
+	.inline-tile.left {
+		padding-right:0;
+		.inline-tile-inner {
+			padding-left:0;
+		}
+	}
+
+	.inline-tile.right {
+		padding-left:0;
+		.inline-tile-inner {
+			padding-right:0;
+		}
+	}
+
+	.tilebutton.white .tilebutton-table-cell {
+		padding: 15px;
+	}
+	
+}

@@ -1,0 +1,14 @@
+
+<h3>
+	Press <span class="nobreak">Releases <i class="icon-angle-right"></i></span>
+</h3>
+
+
+
+
+<xmod:list>
+	<h5>
+		<a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx"><span class="badge badge-light"><xmod:format type="date" value='<xmod:field name="ReleaseDate" />' pattern="MM/dd/yyy" /></span> <xmod:field name="Title" /></a>
+	</h5>
+</xmod:list>
+

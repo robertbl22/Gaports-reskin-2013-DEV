@@ -1,0 +1,8 @@
+.tilebutton.white {
+	background-color: $white;
+	color: #000000;
+
+	.tilebutton-table-cell:hover {
+		background-color: $gpa-light-gray;
+	}
+}

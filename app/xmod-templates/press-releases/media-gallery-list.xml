@@ -1,0 +1,37 @@
+<!-- *********************************** -->
+<!-- ROW 5: News Feed Thumbnails -->
+<div class="row media-newsThumb">
+
+
+    <xmod:list>
+        <xmod:select>
+            <case value="{XMOD_PositionInResults}" operator=">" expression="2" comparetype="numeric">
+
+                <div class="col-xs-3 col-sm-3 col-lg-3 media-thumbs ">
+                    <a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx">
+                    <xmod:if name="ArticleImage">
+                        <img alt='<xmod:field name="Title" />' src='/portals/2/Media/PressReleases/thumbs/<xmod:field name="ArticleImage"/>' class="img-responsive img-thumbnail mobile_thumb" />
+                    </xmod:if>
+                </a>
+                <span class="badge  badge-light">
+                    <xmod:format type="date" value='<xmod:field name="ReleaseDate" />' pattern="MM/dd/yyy" />
+                </span>
+                <h5>
+                    <a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx">
+                    <xmod:field name="Title" />&nbsp;<em class="icon-angle-right"></em>
+                </a>
+            </h5>
+        </div>
+
+    </case>
+</xmod:select>
+</xmod:list>
+
+
+<div class="media-thumbs col-xs-3 col-sm-3 col-lg-3">
+    <a href="/Media/PressReleases.aspx">
+        <span class="blank"></span>
+        <h5>See All&nbsp;<em class="icon-angle-right"></em></h5>
+    </a>
+</div>
+</div>

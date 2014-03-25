@@ -12,6 +12,7 @@ $gpa-blue: 			#007db1;
 $gpa-bright-blue: 	#04a7ea;
 $gpa-light-blue: 	#88cbde;
 $gpa-pale-blue:     #c2d1d4;
+$gpa-green: 		#6cb33f; /* Introduced on Sustinability page */
 $gpa-orange: 		#f7971e;
 $gpa-light-orange: 	lighten($gpa-orange, 25%);
 $gpa-dark-gray: 	#425968;   
@@ -20,12 +21,14 @@ $gpa-light-gray: 	#ccd2d7;
 $gpa-banner-bg-blue: #074469;
 
 /* Accent Colors */
-$gpa-dark-blue-accent: 	darken($gpa-dark-blue, 6%);
-$gpa-blue-accent: 		darken($gpa-blue, 10%);
-$gpa-orange-accent: 	darken($gpa-orange, 14%);
-$gpa-light-blue-accent: darken($gpa-dark-blue, 14%);
-$gpa-gray-accent: 		darken($gpa-gray, 14%);
-$gpa-dark-gray-accent: 	darken($gpa-dark-gray, 10%);
+$gpa-dark-blue-accent: 		darken($gpa-dark-blue, 6%);
+$gpa-blue-accent: 			darken($gpa-blue, 10%);
+$gpa-bright-blue-accent: 	darken($gpa-bright-blue, 10%);
+$gpa-light-blue-accent: 	darken($gpa-dark-blue, 14%);
+$gpa-green-accent: 			darken($gpa-green, 10%);
+$gpa-orange-accent: 		darken($gpa-orange, 14%);
+$gpa-gray-accent: 			darken($gpa-gray, 14%);
+$gpa-dark-gray-accent: 		darken($gpa-dark-gray, 10%);
 
 /* Jump icons */
 $icon-jump-small: 	'../images/icon-jump-24px.png';

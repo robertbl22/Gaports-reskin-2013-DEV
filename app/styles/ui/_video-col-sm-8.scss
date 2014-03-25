@@ -1,0 +1,30 @@
+.video-col-sm-8 {
+    width: 100%;
+    height: 264px;
+}
+
+@media (min-width: 480px) {
+    .video-col-sm-8 {
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-col-sm-8 {
+        height: 264px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .video-col-sm-8 {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-col-sm-8 {
+        height: 424px;
+    }
+}

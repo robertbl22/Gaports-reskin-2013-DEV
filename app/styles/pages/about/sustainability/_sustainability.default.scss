@@ -1,0 +1,30 @@
+.sustainability {
+	
+	h2 {
+		text-transform: none;
+	}
+
+	.inline-tile {
+		font-size: 13pt;
+		font-weight: 300;
+
+		.inline-tile-inner {
+			padding: 15px 0;
+		}
+	}
+
+	.tilebutton .tilebutton-table-cell {
+		padding: 15px;
+	}
+
+	.tilebutton.white .tilebutton-table-cell {
+		padding: 15px 0;
+	}
+
+	.tilebutton.white .tilebutton-table-cell:hover {
+		background-color: $white;
+	}
+}
+
+
+

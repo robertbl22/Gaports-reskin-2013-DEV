@@ -1,0 +1,46 @@
+.words-blockquote-small {
+	margin-bottom: 30px;
+
+	figure {
+		padding: 15px;
+	}
+	&.blue > figure { 
+		background-color: $gpa-blue; 
+		color: $white;
+	}
+	&.orange > figure { 
+		background-color: $gpa-orange; 
+		color: $white;
+	}
+	&.gray > figure { 
+		background-color: $gpa-gray; 
+		color: $white;
+	}
+	&.white > figure { 
+		background-color: $white;
+		border: solid 1px $gpa-light-gray;
+	}
+
+	.icon-quote-left, .icon-quote-right {
+		/* font-size: 8px; */
+	}
+
+	blockquote {
+		padding: 0;
+		margin: 0;
+		border-left: none;
+		font-weight: 300;
+		/* font-size: 14px; */
+	}
+	figcaption {
+		/* font-size: 14px; */
+		margin-left: 30px;
+		margin-top: 8px;
+		font-weight: 600;
+
+		.dash {
+			float: left;
+			margin-left: -9px;
+		}
+	}
+}

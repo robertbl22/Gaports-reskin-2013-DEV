@@ -28,16 +28,16 @@
 	</div>
 	<div class="col-sm-3 col-lg-2"><strong>DEPARTMENTS</strong>
 		<ul>
-			<li class="li"><a href="/Departments/Tariffs.aspx">Tariffs</a></li>
-			<li class="li"><a href="/Departments/HumanResources.aspx">Human Resources</a></li>
-			<li class="li"><a href="/Departments/Purchasing.aspx">Purchasing <i class="icon-external-link"></i></a></li>
-			<li class="li"><a href="/Departments/Safety.aspx">Safety</a></li>
-			<li class="li"><a href="/Departments/Engineering.aspx">Engineering</a></li>
-			<li class="li"><a href="/Departments/Grants.aspx">Grants</a></li>
 			<li class="li"><a href="/Departments/Claims.aspx">Claims</a></li>
 			<li class="li"><a href="/Departments/CustomerService.aspx">Customer Service</a></li>
 			<li class="li"><a href="/Departments/EconomicDevelopment.aspx">Economic Development</a></li>
 			<li class="li"><a href="/employee">Employee Login <i class="icon-external-link"></i></a></li>
+			<li class="li"><a href="/Departments/Engineering.aspx">Engineering</a></li>
+			<li class="li"><a href="/Departments/Grants.aspx">Grants</a></li>
+			<li class="li"><a href="/Departments/HumanResources.aspx">Human Resources</a></li>
+			<li class="li"><a href="/Departments/Purchasing.aspx">Purchasing <i class="icon-external-link"></i></a></li>
+			<li class="li"><a href="/Departments/Safety.aspx">Safety</a></li>
+			<li class="li"><a href="/Departments/Tariffs.aspx">Tariffs</a></li>
 		</ul>
 	</div>
 	<div class="col-sm-3 col-lg-2"><strong>CARGO SOLUTIONS</strong>
@@ -67,20 +67,23 @@
 	</div>
 	<div class="col-sm-3 col-lg-2"><strong>CONTACT</strong>
 		<ul>
-			<li class="li"><a href="/Contact/ChiefCommercialOfficer.aspx">Chief Commercial Officer</a></li>
-			<li class="li"><a href="/Contact/CarrierandNonContainerSales.aspx">Carrier and Non-Container Sales</a></li>
+            <li class="li"><a href="/Contact/AdministrationandGovernmentalAffairs.aspx">Administration and Governmental Affairs</a></li>
 			<li class="li"><a href="/Contact/BCOSales.aspx">BCO Sales</a></li>
 			<li class="li"><a href="/Contact/BusinessDevelopment.aspx">Business Development</a></li>
+			<li class="li"><a href="/Contact/CarrierandNonContainerSales.aspx">Carrier and Non-Container Sales</a></li>
+			<li class="li"><a href="/Contact/ChiefCommercialOfficer.aspx">Chief Commercial Officer</a></li>
 			<li class="li"><a href="/Contact/CorporateCommunications.aspx">Corporate Communications</a></li>
 		</ul>
 	</div>
 	<div class="col-sm-3 col-lg-2"><strong>TOOLS</strong>
 		<ul>
-			<li class="li"><a href="/Tools/Webaccess.aspx">Webaccess</a></li>
-			<li class="li"><a href="/Tools/GlobalCarrierServices.aspx">Global Carrier Services</a></li>
+			<li class="li"><a href="/Departments/CustomerService/Credentialing.aspx">Credentialing</a></li>
 			<li class="li"><a href="/Tools/GeorgiaCommercialCorridors.aspx">Georgia Commercial Corridors</a></li>
+			<li class="li"><a href="/Tools/GlobalCarrierServices.aspx">Global Carrier Services</a></li>
 			<li class="li"><a href="/Departments/Tariffs/GPAInstaRate.aspx">GPA Insta-Rate</a></li>
 			<li class="li"><a href="/moreimpact">More Impact <i class="icon-external-link"></i></a></li>
+			<li class="li"><a href="http://www.gpaports.com" target="_blank">Ports Guide &amp; Directory <i class="icon-external-link"></i></a></li>
+			<li class="li"><a href="/Tools/Webaccess.aspx">Webaccess</a></li>
 		</ul>
 	</div>
 </div>

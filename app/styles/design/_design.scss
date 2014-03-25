@@ -7,6 +7,25 @@
 	padding-right: 0;
 }
 
+.vertical-gutter-xs {
+	height: $grid-gutter-width / 3;
+}
+.vertical-gutter-sm {
+	height: ($grid-gutter-width / 3) * 2;
+}
+.vertical-gutter, .vertical-gutter-md {
+	height: $grid-gutter-width;
+}
+.vertical-gutter-lg {
+	height: ($grid-gutter-width / 3) * 4;
+}
+.vertical-gutter-xlg {
+	height: ($grid-gutter-width / 3) * 5;
+}
+.vertical-gutter-2x {
+	height: $grid-gutter-width * 2;
+}
+
 @media (min-width: 480px) {
 	/* @import "xxx-480-up"; */
 	@import "typography/typography-480-up";

@@ -1,0 +1,21 @@
+.words-blockquote-small {
+	min-height: 275px;
+
+	figure {}
+
+	.icon-quote-left, .icon-quote-right {
+		font-size: 11px;
+	}
+
+	blockquote {
+		font-size: 18px;
+	}
+
+	figcaption {
+		font-size: 18px;
+
+		.dash {
+			margin-left: -15px;
+		}
+	}
+}

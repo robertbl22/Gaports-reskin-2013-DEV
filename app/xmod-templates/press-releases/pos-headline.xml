@@ -1,0 +1,15 @@
+<!-- ************************************ -->
+<!-- ROW 3: Press Release Headline -->
+<div class="row">
+	<div class="col-sm-12">  
+
+
+
+		<span style="margin-top:20px;" class="badge  badge-light"><xmod:format type="date" value='<xmod:field name="ReleaseDate" />' pattern="MM/dd/yyy" /></span>
+		<a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx"><h2 style="margin-top:0;"><xmod:field name="Title" /> <i class="icon-angle-right"></i></h2></a>
+
+
+
+		<a href="/Media/PressReleases.aspx"><h5 class="pull-right">More Press <i class="icon-angle-right"></i></h5></a>
+	</div>  
+</div>

@@ -1,0 +1,34 @@
+<!-- *********************************** -->
+<!-- ROW 2: PRESS RELEASES, MORE IMPACT -->
+<div class="row">
+	<div class="col-sm-4 tilebutton orange home-press-releases">
+		<div class="tilebutton-table">
+			<div class="tilebutton-table-cell gpa-icon-jump">
+				<h3 class="innerbutton">
+					<a href="/Media/PressReleases.aspx">Press <span class="nobreak">Releases <i class="icon-angle-right"></i></span></a>
+				</h3>
+
+
+
+
+				<xmod:list>
+					<h4 class="innerbutton">
+						<div class="tilebutton-content"><a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx"><span class="badge badge-light"><xmod:format type="date" value='<xmod:field name="ReleaseDate" />' pattern="MM/dd/yyy" /></span> <xmod:field name="Title" /></a></div>
+					</h4>
+				</xmod:list>
+
+
+
+			</div>
+		</div>                       
+	</div>
+	<div class="col-sm-7 tilebutton home-more-impact">
+		<div class="tilebutton-table">
+			<a href="/moreimpact" class="tilebutton-table-cell gpa-icon-jump">
+				<h3>
+					<strong>More</strong> Impact <i class="icon-angle-right"></i>
+				</h3>
+			</a>
+		</div>
+	</div>
+</div>

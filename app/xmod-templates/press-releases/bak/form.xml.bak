@@ -1,0 +1,133 @@
+<form>
+	<controls>
+
+		
+		<input ref="Title" required="true" errormessage="Story Title is required" class="form-control" width="400px">
+			<label>Story Title</label>
+		</input>
+
+		<input ref="ShortTitle" required="true" errormessage="Short Title is required" class="form-control ShortTitle" width="200px" maxlength="35">
+			<label>Short Title (approx 25 chars)</label>
+		</input>
+
+		<scriptblock scriptid="AlertScripts" registeronce="true">
+			<script type="text/javascript">
+				$(document).ready(function(){
+				var st = $("input.ShortTitle");
+				var cnt = getCharCountString(st);
+				st.after('<span class="ShortTitleCharCount SubHead" style="padding:0 10px;">' + cnt + '</span>');
+				st.change(function(e){
+				var cnt1 = getCharCountString($(this));
+				$(".ShortTitleCharCount").html(cnt1);
+				});
+				});
+				function getCharCountString(el){
+				return el.val().length + " chars";
+				}
+			</script>
+		</scriptblock>
+
+		<input ref="Contact" class="form-control" width="400px">
+			<label>Contact</label>
+		</input>
+
+		<input ref="Location" class="form-control" width="400px">
+			<label>Location</label>
+		</input>
+
+		<displaydate interval="ctrl" value="ReleaseDate" />
+		<dateinput ref="ReleaseDate" class="form-control" width="150px" culture="en-US" required="true">
+			<label>Release Date</label>
+			<default>{XMOD_Now:MM/dd/yyyy}</default>
+			<validate type="date" message="You must enter a valid date for Release Date" class="NormalRed"/>
+			<calendar text="Select Date" display="imagebutton" imageurl="~/images/SmallCalendar.gif" format="MM/dd/yyyy" />
+		</dateinput>
+
+		<select ref="Tags" appearance="full" repeatcolumns="3" class="form-control">
+			<label>Tags</label>
+			<items>
+				<item>
+					<label>Environmental</label>
+					<value>Environmental</value>
+				</item>
+				<item>
+					<label>SHEP</label>
+					<value>SHEP</value>
+				</item>
+				<item>
+					<label>Savannah</label>
+					<value>Savannah</value>
+				</item>
+				<item>
+					<label>Brunswick</label>
+					<value>Brunswick</value>
+				</item>
+				<item>
+					<label>Container</label>
+					<value>Container</value>
+				</item>
+				<item>
+					<label>Reefer</label>
+					<value>Reefer</value>
+				</item>
+				<item>
+					<label>Ro/Ro</label>
+					<value>Ro/Ro</value>
+				</item>
+				<item>
+					<label>Breakbulk</label>
+					<value>Breakbulk</value>
+				</item>
+				<item>
+					<label>Heavy Lift</label>
+					<value>Heavy Lift</value>
+				</item>
+			</items>
+		</select>
+
+		<select1 ref="ddlCategory" appearance="minimal" class="form-control">
+			<label>Category</label>
+			<items>
+				<item>
+					<label>General</label>
+					<value>General</value>
+				</item>
+				<item>
+					<label>Environmental</label>
+					<value>Environmental</value>
+				</item>
+				<item>
+					<label>SHEP</label>
+					<value>SHEP</value>
+				</item>
+			</items>
+		</select1>
+
+		<select1 ref="IsArchived" class="form-control" repeatdirection="horizontal" appearance="full">
+			<label>Archive</label>
+			<items>
+				<item selected="true">
+					<label>Current</label>
+					<value>false</value>
+				</item>
+				<item>
+					<label>Article is archived</label>
+					<value>true</value>
+				</item>
+			</items>
+		</select1>
+
+		<textarea ref="Synopsis" required="true" errormessage="Synopsis is required" class="form-control" width="400px" cols="50" rows="5">
+			<label>Synopsis</label>
+		</textarea>
+
+		<htmlinput ref="Body" required="true" errormessage="Full Story is required" width="600" height="400">
+			<label>Full Story</label>
+		</htmlinput>
+
+		<input ref="MoreInfoUrl" class="form-control" width="400px">
+			<label>More Info. URL</label>
+		</input>
+
+	</controls>
+</form>

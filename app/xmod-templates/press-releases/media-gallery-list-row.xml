@@ -1,0 +1,33 @@
+<!-- *********************************** -->
+<!-- ROW 4: News Feed Rotator -->
+
+<xmod:list>
+    <xmod:select>
+        <case value="{XMOD_PositionInResults}" operator=">" expression="1" comparetype="numeric">
+
+
+            <div class="row newsRotator">
+                <div class="col-xs-6 col-sm-6 media-newsImage">
+                    <a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx">
+                    <xmod:if name="ArticleImage">
+                        <img alt='<xmod:field name="Title" />' src='/portals/2/Media/PressReleases/<xmod:field name="ArticleImage"/>' class="img-responsive img-thumbnail mobile_thumb" border="0" />
+                    </xmod:if>
+                </a>
+            </div>
+            <!-- *********************************** -->
+            <div class="col-xs-6 col-sm-6">
+                <span class="media-news-description">
+                    <span class="badge badge-light">
+                        <xmod:format type="date" value='<xmod:field name="ReleaseDate" />' pattern="MM/dd/yyy" />
+                    </span> 
+                    <xmod:field name="Synopsis" />
+                    &nbsp;<a href="/Media/PressReleases/tabid/379/xmmid/1097/xmid/<xmod:recordid/>/xmview/2/Default.aspx"><span class="nobreak">Read more <em class="icon-angle-right"></em></span>
+                </a>
+            </span>
+        </div>
+    </div>
+
+
+</case>
+</xmod:select>
+</xmod:list>

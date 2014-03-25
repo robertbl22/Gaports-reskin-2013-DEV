@@ -1,0 +1,219 @@
+
+<form format="custom">
+	<controls>
+		<register tagprefix="fgfu" namespace="fatgeorge.FileUpload" assembly="fatgeorge.FileUpload" />
+		<style>
+			.form-group .label {
+			font-weight:normal;
+			}
+		</style>
+
+		<displaydate interval="ctrl" value="ReleaseDate" />
+
+		<h2>Edit Press Release</h2>
+
+		<div class="form-group">
+			<label>Story Title<br/>
+			<span class="label label-primary">
+				<span class="icon-info-sign">&nbsp;</span> 
+				&nbsp;Shorter is better</span>
+			</label>
+			<input ref="Title" required="true" errormessage="Story Title is required" class="form-control">
+				<label>Story Title</label>
+			</input>
+		</div>
+
+		<div class="form-group">
+			<label>Archive</label>
+			<div class="well well-sm">
+				<select1 ref="IsArchived" repeatdirection="horizontal" appearance="full" cellpadding="5">
+					<label>Archive</label>
+					<items>
+						<item selected="true">
+							<label>Current</label>
+							<value>false</value>
+						</item>
+						<item>
+							<label>Article is archived</label>
+							<value>true</value>
+						</item>
+					</items>
+				</select1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 form-group">
+				<label>Location</label>
+				<input ref="Location" class="form-control">
+					<label>Location</label>
+				</input>
+			</div>
+
+			<div class="col-sm-6 form-group">
+				<label>Release Date</label>
+				<dateinput ref="ReleaseDate" class="form-control" culture="en-US" required="true">
+					<label>Release Date</label>
+					<default>{XMOD_Now:MM/dd/yyyy}</default>
+					<validate type="date" message="You must enter a valid date for Release Date" class="label label-warning" />
+					<calendar text="Select Date" display="imagebutton" imageurl="~/images/SmallCalendar.gif" format="MM/dd/yyyy" />
+				</dateinput>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Tags<br/>
+			<span class="label label-primary">
+				<span class="icon-info-sign">&nbsp;</span>
+				&nbsp;Select all sections where this article should appear
+			</span>
+		</label>
+		<div class="well well-sm">
+			<select ref="Tags" appearance="full" repeatcolumns="3" cellpadding="5">
+				<label>Tags</label>
+				<items>
+					<item>
+						<label>Environmental</label>
+						<value>Environmental</value>
+					</item>
+					<item>
+						<label>SHEP</label>
+						<value>SHEP</value>
+					</item>
+					<item>
+						<label>Savannah</label>
+						<value>Savannah</value>
+					</item>
+					<item>
+						<label>Brunswick</label>
+						<value>Brunswick</value>
+					</item>
+					<item>
+						<label>Container</label>
+						<value>Container</value>
+					</item>
+					<item>
+						<label>Reefer</label>
+						<value>Reefer</value>
+					</item>
+					<item>
+						<label>Ro/Ro</label>
+						<value>Ro/Ro</value>
+					</item>
+					<item>
+						<label>Breakbulk</label>
+						<value>Breakbulk</value>
+					</item>
+					<item>
+						<label>Heavy Lift</label>
+						<value>Heavy Lift</value>
+					</item>
+				</items>
+			</select>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label>Article Image<br/>
+		<span class="label label-warning">
+			<span class="icon-info-sign">&nbsp;</span> 
+			&nbsp;Must be 350 x 350 pixels</span>
+		</label>
+		<div class="well well-sm">
+			<custom tagprefix="fgfu" 
+				name="FileUpload" 
+				ref="ArticleImage" 
+				displaymode="uploadandselect"
+				cssclass="panel panel-default" 
+				cssclasslink="btn btn-primary" 
+				noneselected="true" 
+				imageconfirm="true" 
+				uploadsuccessmsg="Image has been uploaded" 
+				sync="true"
+
+				extensions="jpg,gif,png,bmp" 
+				uploaddirectory="Media/PressReleases" 
+				thumbnailfolder="thumbs"
+				namingpattern="{FileUpload_FileName}_{FileUpload_Date}{FileUpload_Time}.{FileUpload_FileExt}"
+				overwrite="true" 
+				
+				shrinkonly="false" 
+				thumbnail="155,155" 
+				resize="350,350"
+				maxfilesize="2048" >
+				<label>Article Image</label>
+			</custom>
+		</div>
+	</div>
+
+	<hidden ref="ddlCategory" />
+
+		<!-- div class="form-group">
+			<label>Category (do not use)</label>
+			<select1 ref="ddlCategory" appearance="minimal" class="form-control" width="200">
+				<label>Category</label>
+				<items>
+					<item>
+						<label>General</label>
+						<value>General</value>
+					</item>
+					<item>
+						<label>Environmental</label>
+						<value>Environmental</value>
+					</item>
+					<item>
+						<label>SHEP</label>
+						<value>SHEP</value>
+					</item>
+				</items>
+			</select1>
+		</div -->
+
+
+		<div class="form-group">
+			<label>Interesting quotation or synopsis<br/>
+			<span class="label label-warning">
+				<span class="icon-info-sign">&nbsp;</span>
+				&nbsp;Should be approx. 250 chars or 30 words
+			</span>&nbsp;
+			<span class="label label-primary">
+				<span class="icon-info-sign">&nbsp;</span>
+				&nbsp;Appears on Media page
+			</span>
+		</label>
+		<textarea ref="Synopsis" required="true" errormessage="Synopsis is required" class="form-control" rows="3">
+			<label>Synopsis</label>
+		</textarea>
+	</div>
+
+
+	<div class="form-group">
+		<label>Full Story</label>
+		<htmlinput ref="Body" required="true" errormessage="Full Story is required" height="600">
+			<label>Full Story</label>
+		</htmlinput>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6 form-group">
+			<label>More Info. URL</label>
+			<input ref="MoreInfoUrl" class="form-control">
+				<label>More Info. URL</label>
+			</input>
+		</div>
+
+		<div class="col-sm-6 form-group">
+			<label>Contact</label>
+			<input ref="Contact" class="form-control">
+				<label>Contact</label>
+			</input>
+		</div>
+	</div>
+
+
+	<updatebutton text="Update" class="btn btn-primary" />
+	<cancelbutton text="Cancel" class="btn btn-default" />
+
+
+</controls>
+</form>
